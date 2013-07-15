@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: funcmn
+# key: funcmn
+# --
+/*************************************************************
+*
+*function   : ${1:discri}
+*auther     : caowg
+*Written on : `(format-time-string "%D.")`
+*
+**************************************************************/

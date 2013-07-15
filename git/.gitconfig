@@ -1,0 +1,7 @@
+[user]
+	name = cpper
+	email = topcpper@gmail.com
+[core]
+	editor = emacsclient
+[color]
+	diff = true

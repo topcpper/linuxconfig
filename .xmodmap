@@ -1,0 +1,20 @@
+! ! swap the ctrl and alt
+! remove control = Control_L
+! remove mod1 = Alt_L
+! add control = Alt_L
+! add mod1 = Control_L
+
+! Swap Ctrl_L and cap_lock
+remove Lock = Caps_Lock
+remove control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add control = Control_L
+
+! swap ctrl_R and Alt_R
+remove control = Control_R
+remove mod1 = Alt_R
+add control = Alt_R
+add mod1 = Control_R
+
