@@ -136,7 +136,7 @@ that was stored with ska-point-to-register."
 ;;把c语言风格设置为k&r风格 
 (add-hook 'c-mode-hook 
    '(lambda () 
-    (c-set-style "k&r"))) 
+    (c-set-style "stroustrup"))) 
 	
 ;;set c++ style as stroustrup style 
 (add-hook 'c++-mode-hook 
@@ -165,34 +165,35 @@ that was stored with ska-point-to-register."
 ;;   (local-set-key (kbd "[") 'skeleton-pair-insert-maybe))
 ;; (add-hook 'c-mode-hook 'my-c-mode-auto-pair)
 ;;============================== end auto-pair ==============================
-;;代码缩进配置
-(setq indent-tabs-mode nil)
-(setq default-tab-width 4)
-(setq tab-width 4)
-(setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40
-      44 48 52 56 60 64 68 72 76 80 84 88 92 96)) 
 
-(defconst my-c-style
-  '((c-tab-always-indent        . t)
-    (c-comment-only-line-offset . 4)
-    (c-hanging-braces-alist     . ((substatement-open after)
-                                   (brace-list-open)))
-    (c-hanging-colons-alist     . ((member-init-intro before)
-                                   (inher-intro)
-                                   (case-label after)
-                                   (label after)
-                                   (access-label after)))
-    (c-cleanup-list             . (scope-operator
-                                   empty-defun-braces
-                                   defun-close-semi))
-    (c-offsets-alist            . ((arglist-close . c-lineup-arglist)
-                                   (substatement-open . 0)
-                                   (case-label        . 4)
-                                   (block-open        . 0)
-                                   (knr-argdecl-intro . -)))
-    (c-echo-syntactic-information-p . t)
-    )  "My C Programming Style"
-)
+;;代码缩进配置
+;; (setq indent-tabs-mode nil)
+;; (setq default-tab-width 4)
+;; (setq tab-width 4)
+;; (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40
+;;       44 48 52 56 60 64 68 72 76 80 84 88 92 96)) 
+
+;; (defconst my-c-style
+;;   '((c-tab-always-indent        . t)
+;;     (c-comment-only-line-offset . 4)
+;;     (c-hanging-braces-alist     . ((substatement-open after)
+;;                                    (brace-list-open)))
+;;     (c-hanging-colons-alist     . ((member-init-intro before)
+;;                                    (inher-intro)
+;;                                    (case-label after)
+;;                                    (label after)
+;;                                    (access-label after)))
+;;     (c-cleanup-list             . (scope-operator
+;;                                    empty-defun-braces
+;;                                    defun-close-semi))
+;;     (c-offsets-alist            . ((arglist-close . c-lineup-arglist)
+;;                                    (substatement-open . 0)
+;;                                    (case-label        . 4)
+;;                                    (block-open        . 0)
+;;                                    (knr-argdecl-intro . -)))
+;;     (c-echo-syntactic-information-p . t)
+;;     )  "My C Programming Style"
+;; )
 ;;============================== end my-c-style ============================================= 
 
 ;; offset customizations not in my-c-style
@@ -201,7 +202,7 @@ that was stored with ska-point-to-register."
 
 (defun my-c-mode-common-hook ()
   ;; add my personal style and set it for the current buffer
-  (c-add-style "PERSONAL" my-c-style t)
+  ;; (c-add-style "PERSONAL" my-c-style t)
   ;; other customizations
   (setq tab-width 4  indent-tabs-mode nil)
   ;; we like auto-newline and hungry-delete 
@@ -497,25 +498,25 @@ that was stored with ska-point-to-register."
 
 ;; ECB
 ;ECB
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb-2.40")
-;(load-file "~/.emacs.d/site-lisp/ecb-2.40/ecb.el")
-(require 'ecb)
-;;自动启动 ECB
-;;;; 自动启动ecb，并且不显示每日提示
-(setq ecb-auto-activate t
-      ecb-tip-of-the-day nil)
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/ecb-2.40")
+;; ;(load-file "~/.emacs.d/site-lisp/ecb-2.40/ecb.el")
+;; (require 'ecb)
+;; ;;自动启动 ECB
+;; ;;;; 自动启动ecb，并且不显示每日提示
+;; (setq ecb-auto-activate t
+;;       ecb-tip-of-the-day nil)
 
 
-;;ECB layout
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-layout-name "left8")
- '(ecb-layout-window-sizes (quote (("left8" (0.23870967741935484 . 0.2857142857142857) (0.23870967741935484 . 0.23809523809523808) (0.23870967741935484 . 0.30158730158730157) (0.23870967741935484 . 0.15873015873015872)) ("my-cscope-layout" (0.16774193548387098 . 0.3968253968253968) (0.16774193548387098 . 0.2857142857142857)))))
- '(ecb-options-version "2.40"))
-  '(ecb-layout-name "left8")
+;; ;;ECB layout
+;; (custom-set-variables
+;;   ;; custom-set-variables was added by Custom.
+;;   ;; If you edit it by hand, you could mess it up, so be careful.
+;;   ;; Your init file should contain only one such instance.
+;;   ;; If there is more than one, they won't work right.
+;;  '(ecb-layout-name "left8")
+;;  '(ecb-layout-window-sizes (quote (("left8" (0.23870967741935484 . 0.2857142857142857) (0.23870967741935484 . 0.23809523809523808) (0.23870967741935484 . 0.30158730158730157) (0.23870967741935484 . 0.15873015873015872)) ("my-cscope-layout" (0.16774193548387098 . 0.3968253968253968) (0.16774193548387098 . 0.2857142857142857)))))
+;;  '(ecb-options-version "2.40"))
+;;   '(ecb-layout-name "left8")
 ;;(ecb-layout-function-left8)
 
 ;;============================== end ECB ====================================
