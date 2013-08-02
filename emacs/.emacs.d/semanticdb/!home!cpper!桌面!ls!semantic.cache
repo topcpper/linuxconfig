@@ -1,0 +1,2512 @@
+;; Object ls/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ls/"
+  :tables (list 
+   (semanticdb-table "sample.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sample.h" include nil nil [2 21])
+            ("initial" function
+               (:arguments 
+                  ( ("low" variable (:type "int") (reparse-symbol arg-sub-list) [35 43])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [44 53]))                  
+                :type "void")
+                nil [22 354])
+            ("initial2" function
+               (:arguments 
+                  ( ("low" variable (:type "int") (reparse-symbol arg-sub-list) [369 377])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [377 386]))                  
+                :type "void")
+                nil [355 546])
+            ("initialdb" function
+               (:arguments 
+                  ( ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [558 571]))                  
+                :type "int")
+                nil [548 634])
+            ("calcreachable" function (:type "int") nil [636 1426])
+            ("calcdismut" function (:type "int") nil [1427 1691])
+            ("getf" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1703 1709]))                  
+                :type "void")
+                nil [1693 3094])
+            ("getpainball" function (:type "int") nil [3099 3651])
+            ("calc_ebd" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3668 3674])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [3674 3680]))                  
+                :type "double")
+                nil [3652 3828])
+            ("niwu_ramda" function
+               (:arguments 
+                  ( ("first" variable (:type "int") (reparse-symbol arg-sub-list) [3840 3850])
+                    ("second" variable (:type "int") (reparse-symbol arg-sub-list) [3850 3861])
+                    ("third" variable (:type "int") (reparse-symbol arg-sub-list) [3862 3872]))                  
+                :type "int")
+                nil [3829 4971])
+            ("find_holes" function
+               (:arguments 
+                  ( ("ipara" variable (:type "double") (reparse-symbol arg-sub-list) [4983 4996]))                  
+                :type "int")
+                nil [4972 8837])
+            ("gj_rearrange2" function (:type "int") nil [8838 9165])
+            ("test_rep" function
+               (:arguments 
+                  ( ("uu_in" variable (:type "double") (reparse-symbol arg-sub-list) [9179 9192])
+                    ("uu_array" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9192 9209])
+                    ("arraylen" variable (:type "int") (reparse-symbol arg-sub-list) [9209 9222]))                  
+                :type "int")
+                nil [9166 9339])
+            ("widen" function
+               (:arguments 
+                  ( ("inhaunt_times" variable (:type "int") (reparse-symbol arg-sub-list) [9350 9368])
+                    ("inuubest" variable (:type "double") (reparse-symbol arg-sub-list) [9368 9384]))                  
+                :type "int")
+                nil [9340 9533])
+            ("stastic_outputer" function (:type "int") nil [9534 10004])
+            ("getf2" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [10016 10022]))                  
+                :type "void")
+                nil [10005 11548])
+            ("genuine_niwu" function (:type "double") nil [11549 13718])
+            ("gj_jump2" function (:type "int") nil [13719 18895])
+            ("gj_rearrange" function (:type "int") nil [18900 19959])
+            ("evaluate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20001 20016])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20025 20050])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20059 20078])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [20087 20099])
+                    ("step" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20108 20144]))                  
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                nil [19960 22119])
+            ("progress" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22148 22163])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22169 22194])
+                    ("g" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22200 22225])
+                    ("fx" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22231 22256])
+                    ("xnorm" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22262 22290])
+                    ("gnorm" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22296 22324])
+                    ("step" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22330 22357])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [22363 22369])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [22375 22381])
+                    ("ls" variable (:type "int") (reparse-symbol arg-sub-list) [22387 22400]))                  
+                :type "int")
+                nil [22122 22602])
+            ("niwu" function
+               (:arguments 
+                  ( ("times" variable (:type "int") (reparse-symbol arg-sub-list) [22613 22623]))                  
+                :type "int")
+                nil [22604 23313])
+            ("exchange_cor" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [23327 23333])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [23333 23339])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [23339 23352]))                  
+                :type "int")
+                nil [23314 23716])
+            ("explore_bestchain_cmb" function (:type "int") nil [23717 25394])
+            ("explore_bestchain" function (:type "int") nil [25395 27588])
+            ("explore" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [27601 27607])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [27607 27613]))                  
+                :type "int")
+                nil [27589 29634])
+            ("four_explore" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [29652 29658])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [29658 29664])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [29664 29670])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [29670 29676]))                  
+                :type "int")
+                nil [29635 31496])
+            ("explore_tri" function
+               (:arguments 
+                  ( ("first" variable (:type "int") (reparse-symbol arg-sub-list) [31513 31523])
+                    ("second" variable (:type "int") (reparse-symbol arg-sub-list) [31523 31534])
+                    ("third" variable (:type "int") (reparse-symbol arg-sub-list) [31534 31544]))                  
+                :type "int")
+                nil [31497 34905])
+            ("move_explore" function
+               (:arguments 
+                  ( ("ballno" variable (:type "int") (reparse-symbol arg-sub-list) [34919 34930]))                  
+                :type "int")
+                nil [34906 35807])
+            ("niwu_spe" function
+               (:arguments 
+                  ( ("stillno" variable (:type "int") (reparse-symbol arg-sub-list) [35817 35829]))                  
+                :type "int")
+                nil [35808 36477])
+            ("insert_explore" function
+               (:arguments 
+                  ( ("ballno" variable (:type "int") (reparse-symbol arg-sub-list) [36500 36511])
+                    ("holeno" variable (:type "int") (reparse-symbol arg-sub-list) [36511 36522]))                  
+                :type "double")
+                nil [36478 38939])
+            ("set_insert_pair" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [38956 38976])
+                    ("in_tbinslen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [38980 38997])
+                    ("start_pos" variable (:type "int") (reparse-symbol arg-sub-list) [38997 39011]))                  
+                :type "int")
+                nil [38940 39452])
+            ("set_mating_pair" function (:type "int") nil [39453 40204])
+            ("set_exch_pair2" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [40220 40242])
+                    ("in_tbexclen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40246 40263]))                  
+                :type "int")
+                nil [40205 40658])
+            ("set_exch_pair" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [40674 40696])
+                    ("in_tbexclen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40700 40717])
+                    ("stapos" variable (:type "int") (reparse-symbol arg-sub-list) [40717 40728])
+                    ("stepdislim" variable (:type "int") (reparse-symbol arg-sub-list) [40728 40743])
+                    ("minstepdis" variable (:type "int") (reparse-symbol arg-sub-list) [40743 40758]))                  
+                :type "int")
+                nil [40660 41039])
+            ("annealing" function
+               (:arguments 
+                  ( ("nbidx" variable (:type "int") (reparse-symbol arg-sub-list) [41054 41064])
+                    ("iter_times" variable (:type "int") (reparse-symbol arg-sub-list) [41064 41079]))                  
+                :type "int")
+                nil [41040 42105])
+            ("iterate_all_pairs" function
+               (:arguments 
+                  ( ("tt1" variable (:type "int") (reparse-symbol arg-sub-list) [42124 42132])
+                    ("tt2" variable (:type "int") (reparse-symbol arg-sub-list) [42132 42140])
+                    ("tt3" variable (:type "int") (reparse-symbol arg-sub-list) [42140 42148]))                  
+                :type "int")
+                nil [42106 47672])
+            ("iterate_double_pairs" function (:type "int") nil [47673 49447])
+            ("nei_neibor_exchange" function (:type "int") nil [49449 50772])
+            ("neibor_exchange" function
+               (:arguments 
+                  ( ("low" variable (:type "int") (reparse-symbol arg-sub-list) [50790 50798])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [50799 50808]))                  
+                :type "int")
+                nil [50774 50885])
+            ("initial_reachable" function (:type "int") nil [50886 51179])
+            ("initial_movable_reachable" function (:type "int") nil [51182 51405])
+            ("verify" function (:type "int") nil [51407 51612])
+            ("gj_cpy" function
+               (:arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [51620 51642])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [51646 51662])
+                    ("src_uu" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [51666 51687])
+                    ("dst_uu" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [51688 51703]))                  
+                :type "int")
+                nil [51613 51850])
+            ("ITS" function
+               (:arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [51860 51875])
+                    ("ptr_in_uubest" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [51879 51901])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [51901 51911]))                  
+                :type "int")
+                nil [51851 53085])
+            ("Tabu" function
+               (:arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [53091 53106])
+                    ("ptr_in_uubest" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [53110 53132]))                  
+                :type "int")
+                nil [53086 55722])
+            ("adjustgj" function (:type "int") nil [55723 56349])
+            ("insertopb" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [56364 56376]))                  
+                :type "int")
+                nil [56350 56509])
+            ("gj_jump" function
+               (:arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [56518 56540])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [56544 56560])
+                    ("ptr_uu" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [56564 56579])
+                    ("level" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [56579 56595]))                  
+                :type "int")
+                nil [56510 57625])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [57635 57644])
+                    ("argv" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57645 57656]))                  
+                :type "int")
+                nil [57626 64184]))          
+    :file "sample.c"
+    :pointmax 64185
+    :fsize 67480
+    :lastmodtime '(20979 12715)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sample.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("time.h" include (:system-flag t) nil [23 40])
+            ("stdio.h" include (:system-flag t) nil [41 59])
+            ("string.h" include (:system-flag t) nil [83 102])
+            ("math.h" include (:system-flag t) nil [103 119])
+            ("stdlib.h" include (:system-flag t) nil [121 139])
+            ("memory.h" include (:system-flag t) nil [162 181])
+            ("Cryptdll.h" include nil nil [203 224])
+            ("pi" variable (:constant-flag t) nil [329 331])
+            ("pi" variable (:constant-flag t) nil [329 331])
+            ("lbfgs.c" include nil nil [266 287])
+            ("pi" variable (:constant-flag t) nil [329 331])
+            ("lbfgs.c" include nil nil [266 287])
+            ("pi" variable (:constant-flag t) nil [329 331])
+            ("lbfgs.h" include nil nil [247 265])
+            ("pi" variable (:constant-flag t) nil [329 331])
+            ("NBTL" variable (:constant-flag t) nil [358 362])
+            ("NBNUM" variable (:constant-flag t) nil [373 378])
+            ("CDNUM" variable (:constant-flag t) nil [412 417])
+            ("TBLEN" variable (:constant-flag t) nil [429 434])
+            ("LLENGTH" variable (:constant-flag t) nil [446 453])
+            ("BESTARRAYLEN" variable (:constant-flag t) nil [465 477])
+            ("content" variable
+               (:pointer 1
+                :type "unsigned char")
+                nil [480 508])
+            ("key" variable
+               (:pointer 1
+                :type "unsigned char")
+                nil [480 508])
+            ("Rseed" variable (:type "unsigned int") nil [509 528])
+            ("recbt" variable (:type "int") nil [529 541])
+            ("accuracy" variable (:type "double") nil [542 563])
+            ("dual_mode" variable (:type "int") nil [564 580])
+            ("clslim" variable (:type "int") nil [581 596])
+            ("flip" variable
+               (:dereference 1
+                :type "int")
+                nil [597 611])
+            ("pernum" variable (:type "int") nil [612 623])
+            ("greedymode" variable (:type "int") nil [624 641])
+            ("tabumode" variable (:type "int") nil [642 657])
+            ("globaltabumode" variable (:type "int") nil [682 703])
+            ("cutb" variable (:type "int") nil [704 715])
+            ("globalgreedy" variable (:type "int") nil [716 735])
+            ("redono" variable (:type "int") nil [736 749])
+            ("totalno" variable (:type "int") nil [750 764])
+            ("recmode" variable (:type "int") nil [765 779])
+            ("improved" variable (:type "int") nil [780 795])
+            ("start_time2" variable (:type ("clock_t" type (:type "class") nil nil)) nil [796 816])
+            ("iterno" variable
+               (:dereference 1
+                :type "int")
+                nil [841 855])
+            ("Slen" variable (:type "int") nil [857 868])
+            ("isexplore" variable (:type "int") nil [870 887])
+            ("tabuptr" variable (:type "int") nil [909 921])
+            ("uubestheu" variable (:type "double") nil [922 948])
+            ("outputbestuu" variable
+               (:dereference 1
+                :type "double")
+                nil [950 975])
+            ("opb_len" variable (:type "int") nil [976 990])
+            ("perturb_tag" variable (:type "int") nil [992 1010])
+            ("imp_perturb_array" variable
+               (:dereference 1
+                :type "int")
+                nil [1013 1040])
+            ("imp_array_len" variable (:type "int") nil [1041 1061])
+            ("raodong_small" variable (:type "int") nil [1063 1083])
+            ("reapeat_times" variable (:type "int") nil [1084 1104])
+            ("totaltimes" variable (:type "int") nil [1107 1124])
+            ("raodong_big" variable (:type "int") nil [1127 1145])
+            ("reapeat_times2" variable (:type "int") nil [1146 1167])
+            ("totaltimes2" variable (:type "int") nil [1168 1186])
+            ("jumperflag" variable (:type "int") nil [1189 1206])
+            ("toler" variable (:type "int") nil [1207 1219])
+            ("ranmda" variable (:type "double") nil [1221 1239])
+            ("stren_s" variable (:type "double") nil [1242 1261])
+            ("stren_g" variable (:type "double") nil [1262 1282])
+            ("evaluated_times" variable (:type "int") nil [1284 1304])
+            ("last_evaluated_times" variable (:type "int") nil [1305 1332])
+            ("temperature" variable (:type "double") nil [1335 1359])
+            ("ML" variable (:type "int") nil [1360 1369])
+            ("globaltrytimes" variable (:type "int") nil [1370 1391])
+            ("bigareatrytimes" variable (:type "int") nil [1392 1414])
+            ("smallareatrytimes" variable (:type "int") nil [1415 1439])
+            ("neibornum" variable (:type "int") nil [1440 1454])
+            ("ci" variable
+               (:dereference 2
+                :type "double")
+                nil [1455 1473])
+            ("painman" variable (:type "int") nil [1476 1488])
+            ("jumper" variable (:type "int") nil [1489 1500])
+            ("altried" variable (:type "int") nil [1504 1516])
+            ("nbstren_uu" variable
+               (:dereference 2
+                :type "double")
+                nil [1536 1567])
+            ("nbstren_pair" variable
+               (:dereference 3
+                :type "int")
+                nil [1570 1603])
+            ("nbstren_pair_len" variable
+               (:dereference 1
+                :type "int")
+                nil [1606 1633])
+            ("nbstren_gj" variable
+               (:dereference 4
+                :type "double")
+                nil [1636 1675])
+            ("nb_ptr" variable (:type "int") nil [1676 1689])
+            ("nb_len" variable (:type "int") nil [1692 1705])
+            ("condidate_hole_ei" variable
+               (:dereference 3
+                :type "double")
+                nil [1709 1749])
+            ("condidate_hole_uu" variable
+               (:dereference 1
+                :type "double")
+                nil [1750 1782])
+            ("condidate_len" variable (:type "int") nil [1783 1803])
+            ("T_limit" variable (:type "int") nil [1805 1822])
+            ("last_uubest_taboo" variable
+               (:dereference 1
+                :type "double")
+                nil [1824 1856])
+            ("luub_tab_len" variable (:type "int") nil [1857 1876])
+            ("luub_tab_ptr" variable (:type "int") nil [1877 1896])
+            ("di" variable
+               (:dereference 2
+                :type "double")
+                nil [1900 1918])
+            ("si" variable
+               (:dereference 2
+                :type "double")
+                nil [1937 1955])
+            ("ps" variable
+               (:dereference 2
+                :type "double")
+                nil [1959 1977])
+            ("slot" variable
+               (:dereference 1
+                :type "int")
+                nil [1980 1993])
+            ("modscale" variable (:type "int") nil [1997 2010])
+            ("modscale2" variable (:type "int") nil [2011 2025])
+            ("f" variable
+               (:dereference 2
+                :type "double")
+                nil [2027 2044])
+            ("N" variable (:type "int") nil [2047 2053])
+            ("R" variable
+               (:dereference 1
+                :type "double")
+                nil [2056 2070])
+            ("r" variable
+               (:dereference 1
+                :type "double")
+                nil [2071 2085])
+            ("reachable" variable
+               (:dereference 2
+                :type "int")
+                nil [2086 2110])
+            ("haveexchanged" variable
+               (:dereference 2
+                :type "int")
+                nil [2113 2141])
+            ("tobeexchange" variable
+               (:dereference 3
+                :type "int")
+                nil [2142 2172])
+            ("tbexclen" variable
+               (:dereference 1
+                :type "int")
+                nil [2173 2189])
+            ("ptr_tbex" variable (:type "int") nil [2190 2203])
+            ("popu" variable (:type "int") nil [2204 2215])
+            ("tobeinsert" variable
+               (:dereference 2
+                :type "int")
+                nil [2219 2244])
+            ("tbinslen" variable (:type "int") nil [2245 2258])
+            ("tobemating" variable
+               (:dereference 2
+                :type "int")
+                nil [2259 2283])
+            ("tbmatlen" variable (:type "int") nil [2284 2297])
+            ("temptoformtbm" variable
+               (:dereference 2
+                :type "int")
+                nil [2298 2325])
+            ("bktbexclen" variable
+               (:dereference 1
+                :type "int")
+                nil [2366 2386])
+            ("bkuubest" variable
+               (:dereference 1
+                :type "double")
+                nil [2387 2408])
+            ("bk_si" variable
+               (:dereference 3
+                :type "double")
+                nil [2409 2435])
+            ("bk_timestamp" variable
+               (:dereference 1
+                :type "int")
+                nil [2436 2458])
+            ("bkstacklen" variable (:type "int") nil [2459 2476])
+            ("bktest4repuu" variable
+               (:dereference 1
+                :type "double")
+                nil [2477 2502])
+            ("bktest4repuulen" variable (:type "int") nil [2503 2525])
+            ("annealingtobeexchange" variable
+               (:dereference 2
+                :type "int")
+                nil [2527 2563])
+            ("altbexclen" variable (:type "int") nil [2564 2582])
+            ("annealing_tempsi" variable
+               (:dereference 2
+                :type "double")
+                nil [2583 2615])
+            ("jump_tobeexchange" variable
+               (:dereference 2
+                :type "int")
+                nil [2617 2649])
+            ("j_tbexclen" variable (:type "int") nil [2650 2667])
+            ("jump_tobeinsert" variable
+               (:dereference 2
+                :type "int")
+                nil [2668 2698])
+            ("j_tbinslen" variable (:type "int") nil [2699 2716])
+            ("ei" variable
+               (:dereference 3
+                :type "double")
+                nil [2717 2738])
+            ("hole_ei" variable
+               (:dereference 2
+                :type "double")
+                nil [2739 2762])
+            ("tag" variable (:type "int") nil [2798 2808])
+            ("gbi" variable
+               (:dereference 2
+                :type "double")
+                nil [2809 2828])
+            ("dismut" variable
+               (:dereference 2
+                :type "double")
+                nil [2831 2855])
+            ("movabler" variable
+               (:dereference 1
+                :type "int")
+                nil [2875 2893])
+            ("movablex" variable
+               (:dereference 1
+                :type "int")
+                nil [2896 2914])
+            ("hole_movavlex" variable
+               (:dereference 1
+                :type "int")
+                nil [2917 2940])
+            ("alrdych" variable (:type "int") nil [2941 2953])
+            ("maxembed1" variable (:type "double") nil [2955 2972])
+            ("maxembed2" variable (:type "double") nil [2975 2992])
+            ("random_walk_mode" variable (:type "int") nil [2996 3019])
+            ("random_walk_length" variable (:type "int") nil [3020 3045])
+            ("temptaboo_exch" variable
+               (:dereference 2
+                :type "int")
+                nil [3049 3074])
+            ("temptaboo_ins" variable
+               (:dereference 1
+                :type "int")
+                nil [3075 3096])
+            ("taboomatrix" variable
+               (:dereference 3
+                :type "int")
+                nil [3133 3162])
+            ("taboolenbase1" variable (:type "int") nil [3165 3186])
+            ("taboolenbase2" variable (:type "int") nil [3187 3208])
+            ("timestampexch" variable (:type "int") nil [3209 3229])
+            ("timestampins" variable (:type "int") nil [3230 3249])
+            ("start_time" variable (:type ("clock_t" type (:type "class") nil nil)) nil [3250 3269])
+            ("dure_time" variable (:type "double") nil [3270 3288])
+            ("tabooarray" variable
+               (:dereference 2
+                :type "int")
+                nil [3289 3312])
+            ("timesnoimp_lev1" variable (:type "int") nil [3313 3335])
+            ("timesnoimp_lev2" variable (:type "int") nil [3336 3358])
+            ("limitnoimpnumlev1" variable
+               (:dereference 1
+                :type "int")
+                nil [3359 3384])
+            ("limitnoimpnumlev2" variable (:type "int") nil [3385 3409])
+            ("lastcaled_uubest" variable (:type "double") nil [3410 3440])
+            ("notable_imp" variable (:type "int") nil [3441 3459])
+            ("zero_tol_mode" variable (:type "int") nil [3460 3480])
+            ("iterate_finish" variable (:type "int") nil [3483 3504])
+            ("zzzlim" variable (:type "int") nil [3505 3516])
+            ("isexchturn" variable (:type "int") nil [3517 3534])
+            ("lastturnselectedbestuu" variable (:type "double") nil [3535 3565])
+            ("turn_bestuu" variable
+               (:dereference 1
+                :type "double")
+                nil [3568 3590])
+            ("turn_bestgj" variable
+               (:dereference 3
+                :type "double")
+                nil [3593 3623])
+            ("best_sofar_gj" variable
+               (:dereference 2
+                :type "double")
+                nil [3626 3655])
+            ("out1" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [3660 3672])
+            ("whistle" variable (:type "int") nil [3773 3787])
+            ("ti" variable
+               (:dereference 2
+                :type "double")
+                nil [3793 3811])
+            ("uu_hole" variable
+               (:dereference 1
+                :type "double")
+                nil [3814 3834])
+            ("hole_num" variable (:type "int") nil [3837 3850])
+            ("uu" variable (:type "double") nil [3852 3862])
+            ("uubest" variable (:type "double") nil [3865 3879])
+            ("uu50" variable (:type "double") nil [3881 3893])
+            ("uu50min" variable (:type "double") nil [3894 3917])
+            ("not_all_cut" variable (:type "int") nil [3918 3936])
+            ("lastuubest" variable (:type "double") nil [3938 3956])
+            ("last_uubest" variable (:type "double") nil [3957 3986])
+            ("current_uubest" variable
+               (:dereference 1
+                :type "double")
+                nil [3987 4012])
+            ("worstpos" variable (:type "int") nil [4015 4028])
+            ("cunum" variable (:type "int") nil [4029 4039])
+            ("routine_uubest" variable (:type "double") nil [4041 4071])
+            ("global_uubest" variable (:type "double") nil [4072 4100])
+            ("firstuu" variable (:type "double") nil [4101 4116])
+            ("makeimp" variable (:type "int") nil [4164 4176])
+            ("uup" variable
+               (:dereference 1
+                :type "double")
+                nil [4177 4193])
+            ("uus" variable
+               (:dereference 1
+                :type "double")
+                nil [4196 4212])
+            ("changed" variable (:type "int") nil [4215 4227])
+            ("total_htimes" variable (:type "int") nil [4230 4286])
+            ("probality" variable (:type "int") nil [4230 4286])
+            ("modbase" variable (:type "int") nil [4230 4286])
+            ("haunt_times" variable (:type "int") nil [4230 4286])
+            ("may_account" variable (:type "int") nil [4287 4305])
+            ("iap_flag" variable (:type "int") nil [4306 4324])
+            ("uu_uplimit" variable (:type "double") nil [4325 4343])
+            ("limit_haunt_times" variable (:type "int") nil [4344 4370])
+            ("four_expl_factor" variable (:type "double") nil [4371 4400])
+            ("four_expl_inc_factor" variable (:type "double") nil [4401 4433])
+            ("gj_ni_lim" variable
+               (:dereference 1
+                :type "int")
+                nil [4435 4453])
+            ("levelno" variable (:type "int") nil [4454 4468])
+            ("Mbest" variable (:type "double") nil [4469 4499])
+            ("bestR" variable (:type "double") nil [4469 4499])
+            ("cltslim" variable (:type "int") nil [4500 4514])
+            ("x" variable
+               (:pointer 1
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                nil [4516 4535])
+            ("param" variable (:type ("lbfgs_parameter_t" type (:type "class") nil nil)) nil [4537 4561])
+            ("outputer" function (:type "int") nil [4563 5069])
+            ("outputer2" function (:type "int") nil [5070 5594])
+            ("cutuulen" variable (:type "int") nil [5595 5611])
+            ("cutuu" variable
+               (:dereference 1
+                :type "double")
+                nil [5612 5629])
+            ("cutuulast" variable (:type "double") nil [5630 5655])
+            ("cutuu2" variable
+               (:dereference 2
+                :type "double")
+                nil [5656 5677])
+            ("insertbest" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [5714 5726])
+                    ("cutp" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5727 5740]))                  
+                :type "int")
+                nil [5699 6049])
+            ("bestarraylen" variable (:type "int") nil [6051 6071])
+            ("stepbestgj" variable
+               (:dereference 3
+                :type "double")
+                nil [6072 6102])
+            ("stepbestuu" variable
+               (:dereference 1
+                :type "double")
+                nil [6103 6125])
+            ("stepptr" variable (:type "int") nil [6126 6140])
+            ("insertbestchain" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [6162 6174])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [6174 6189])
+                    ("uu_array" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6193 6210])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [6210 6228])
+                    ("gj_array_len" variable (:type "int") (reparse-symbol arg-sub-list) [6238 6255])
+                    ("starti" variable (:type "int") (reparse-symbol arg-sub-list) [6255 6266]))                  
+                :type "int")
+                nil [6142 7796])
+            ("jtemp" variable (:type "int") nil [7797 7809])
+            ("isglbbest" variable (:type "int") nil [7810 7826])
+            ("chain_random_out" function
+               (:arguments 
+                  ( ("inuup" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7844 7858])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [7858 7873]))                  
+                :type "int")
+                nil [7827 8628])
+            ("measure_tblen" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8649 8655])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [8655 8661]))                  
+                :type "int")
+                nil [8631 8819])
+            ("smallmode" variable (:type "int") nil [8822 8838])
+            ("itls_times" variable (:type "int") nil [8839 8856])
+            ("itls_times2" variable (:type "int") nil [8857 8875])
+            ("cls_times" variable (:type "int") nil [8876 8892])
+            ("tabuuuu_ptr" variable (:type "int") nil [8893 8911])
+            ("tabuuuu_len" variable (:type "int") nil [8912 8931])
+            ("tabu_uubest" variable
+               (:dereference 1
+                :type "double")
+                nil [8932 8955])
+            ("insert_tabu_uubest" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [8975 8987]))                  
+                :type "int")
+                nil [8956 9063])
+            ("test_tabu_collide" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [9082 9094]))                  
+                :type "int")
+                nil [9064 9186])
+            ("bestzi" variable
+               (:dereference 3
+                :type "double")
+                nil [9396 9422])
+            ("bestzuu" variable
+               (:dereference 1
+                :type "double")
+                nil [9425 9444])
+            ("bestzlen" variable (:type "int") nil [9445 9460])
+            ("needtaboo" variable (:type "int") nil [9461 9477])
+            ("bestzzztaboo" variable
+               (:dereference 2
+                :type "int")
+                nil [9478 9505])
+            ("bestzzztabuedptr" variable
+               (:dereference 1
+                :type "int")
+                nil [9506 9533])
+            ("insertbestchain2" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [9551 9563])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [9563 9578])
+                    ("uu_array" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9582 9599])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [9599 9617])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [9626 9643])
+                    ("gj_array_len" variable (:type "int") (reparse-symbol arg-sub-list) [9648 9665])
+                    ("aball" variable (:type "int") (reparse-symbol arg-sub-list) [9665 9675])
+                    ("bball" variable (:type "int") (reparse-symbol arg-sub-list) [9675 9685])
+                    ("tabued" variable (:type "int") (reparse-symbol arg-sub-list) [9685 9696]))                  
+                :type "int")
+                nil [9534 11023])
+            ("recent_uucut" variable
+               (:dereference 2
+                :type "double")
+                nil [11032 11059])
+            ("ruc_ptr" variable
+               (:dereference 1
+                :type "int")
+                nil [11060 11075])
+            ("ptr_curr" variable (:type "int") nil [11076 11091])
+            ("insertbestchain3" function
+               (:arguments 
+                  ( ("inuu" variable (:type "double") (reparse-symbol arg-sub-list) [11113 11125])
+                    ("uu_array" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11125 11142])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11142 11151]))                  
+                :type "int")
+                nil [11092 11597])
+            ("order_pair" type
+               (:members 
+                  ( ("disidx" variable (:type "int") (reparse-symbol classsubparts) [11618 11629])
+                    ("dis" variable (:type "double") (reparse-symbol classsubparts) [11630 11641]))                  
+                :type "struct")
+                nil [11598 11664])
+            ("tempdo" variable (:type ("order_pair" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [11598 11664])
+            ("diskop" variable
+               (:dereference 1
+                :type ("order_pair" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11598 11664])
+            ("pm" variable (:type "int") nil [11665 11672])
+            ("elstas" variable
+               (:dereference 1
+                :type "int")
+                nil [11673 11689])
+            ("tnstas" variable
+               (:dereference 1
+                :type "int")
+                nil [11690 11706])
+            ("maxtnt" variable (:type "int") nil [11707 11718]))          
+    :file "sample.h"
+    :pointmax 11723
+    :fsize 12371
+    :lastmodtime '(20977 55189)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LLENGTH" . ((number "10" 448 . 450)))
+          ("pi" . ((number "3.141592653589793" 332 . 349)))
+          ("NBTL" . ((number "1" 357 . 358)))
+          ("TBLEN" . ((number "45" 429 . 431)))
+          ("CDNUM" . ((number "20" 412 . 414)))
+          ("NBNUM" . ((number "10" 373 . 375)))
+          ("BESTARRAYLEN" . ((number "3" 472 . 473)))
+          )
+
+    )
+   (semanticdb-table "Cryptdll.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("rcon_tab" variable
+               (:dereference 1
+                :constant-flag t
+                :type "unsigned int")
+                nil [448 666])
+            ("ft_tab" variable
+               (:dereference 2
+                :constant-flag t
+                :type "unsigned int")
+                nil [669 189148])
+            ("fl_tab" variable
+               (:dereference 2
+                :constant-flag t
+                :type "unsigned int")
+                nil [189150 216111])
+            ("it_tab" variable
+               (:dereference 2
+                :constant-flag t
+                :type "unsigned int")
+                nil [216113 971891])
+            ("il_tab" variable
+               (:dereference 2
+                :constant-flag t
+                :type "unsigned int")
+                nil [971893 1000120])
+            ("im_tab" variable
+               (:dereference 2
+                :constant-flag t
+                :type "unsigned int")
+                nil [1000122 1755898])
+            ("aes_enc_blk" function
+               (:arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1755925 1755944])
+                    ("out" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1755945 1755965])
+                    ("ks" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1755966 1755984]))                  
+                :type "unsigned int")
+                nil [1755900 1764380])
+            ("aes_dec_blk" function
+               (:arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1764407 1764426])
+                    ("out" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1764426 1764446])
+                    ("ks" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1764446 1764464]))                  
+                :type "unsigned int")
+                nil [1764382 1772700])
+            ("aes_enc_key" function
+               (:arguments 
+                  ( ("in_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1772727 1772756])
+                    ("k_sch" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1772756 1772776]))                  
+                :type "unsigned int")
+                nil [1772702 1777386])
+            ("aes_dec_key" function
+               (:arguments 
+                  ( ("in_key" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1777413 1777442])
+                    ("k_sch" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1777442 1777463]))                  
+                :type "unsigned int")
+                nil [1777388 1785885])
+            ("AesEnc" function
+               (:arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1785907 1785926])
+                    ("key" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1785926 1785946])
+                    ("in_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1785946 1785966]))                  
+                :type "unsigned int")
+                nil [1785887 1786268])
+            ("AesDec" function
+               (:arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1786290 1786309])
+                    ("key" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1786309 1786329])
+                    ("in_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1786329 1786349]))                  
+                :type "unsigned int")
+                nil [1786270 1786648]))          
+    :file "Cryptdll.h"
+    :pointmax 1786649
+    :fsize 1791819
+    :lastmodtime '(20977 11124)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lbfgs.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__LBFGS_H__" variable (:constant-flag t) nil [1327 1338])
+            ("lbfgs_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19096 19115]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19080 19116])
+            ("lbfgs_malloc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [18918 18924]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18888 18925])
+            ("lbfgs_parameter_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18449 18474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18423 18475])
+            ("lbfgs" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [17975 17981])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17986 18005])
+                    ("ptr_fx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18010 18034])
+                    ("proc_evaluate" variable (:type ("lbfgs_evaluate_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18039 18070])
+                    ("proc_progress" variable (:type ("lbfgs_progress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18075 18106])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18111 18126])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18131 18161]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17960 18162])
+            ("lbfgs_progress_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [14455 14727])
+            ("lbfgs_evaluate_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil)
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [13213 13378])
+            ("lbfgs_parameter_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("m" variable (:type "int") (reparse-symbol classsubparts) [6523 6541])
+                          ("epsilon" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6867 6891])
+                          ("past" variable (:type "int") (reparse-symbol classsubparts) [7239 7260])
+                          ("delta" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7695 7717])
+                          ("max_iterations" variable (:type "int") (reparse-symbol classsubparts) [8093 8124])
+                          ("linesearch" variable (:type "int") (reparse-symbol classsubparts) [8279 8306])
+                          ("max_linesearch" variable (:type "int") (reparse-symbol classsubparts) [8545 8576])
+                          ("min_step" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8907 8932])
+                          ("max_step" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9255 9280])
+                          ("ftol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9487 9508])
+                          ("gtol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10041 10062])
+                          ("xtol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10441 10462])
+                          ("orthantwise_c" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11222 11252])
+                          ("orthantwise_start" variable (:type "int") (reparse-symbol classsubparts) [11901 11935])
+                          ("orthantwise_end" variable (:type "int") (reparse-symbol classsubparts) [12252 12284]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6026 12305])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("LBFGS_LINESEARCH_DEFAULT" variable
+                       (:constant-flag t
+                        :default-value (5474 5475)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5447 5475])
+                    ("LBFGS_LINESEARCH_MORETHUENTE" variable
+                       (:constant-flag t
+                        :default-value (5571 5572)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5540 5572])
+                    ("LBFGS_LINESEARCH_BACKTRACKING_STRONG" variable
+                       (:constant-flag t
+                        :default-value (5677 5678)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5638 5678])
+                    ("LBFGS_LINESEARCH_BACKTRACKING" variable
+                       (:constant-flag t
+                        :default-value (5777 5778)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5745 5778])
+                    ("LBFGS_LINESEARCH_BACKTRACKING_LOOSE" variable
+                       (:constant-flag t
+                        :default-value (5883 5884)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5845 5884]))                  )
+                (reparse-symbol extern-c-contents) [5381 5888])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("LBFGS_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (2223 2224)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2207 2224])
+                    ("LBFGS_CONVERGENCE" variable
+                       (:constant-flag t
+                        :default-value (2250 2251)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2230 2251])
+                    ("LBFGS_STOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2257 2268])
+                    ("LBFGS_ALREADY_MINIMIZED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2347 2371])
+                    ("LBFGSERR_UNKNOWNERROR" variable
+                       (:constant-flag t
+                        :default-value (2427 2432)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2403 2432])
+                    ("LBFGSERR_LOGICERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2462 2482])
+                    ("LBFGSERR_OUTOFMEMORY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2519 2540])
+                    ("LBFGSERR_CANCELED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2600 2618])
+                    ("LBFGSERR_INVALID_N" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2673 2692])
+                    ("LBFGSERR_INVALID_N_SSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2757 2780])
+                    ("LBFGSERR_INVALID_X_SSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2841 2864])
+                    ("LBFGSERR_INVALID_EPSILON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2936 2961])
+                    ("LBFGSERR_INVALID_TESTPERIOD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3030 3058])
+                    ("LBFGSERR_INVALID_DELTA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3128 3151])
+                    ("LBFGSERR_INVALID_LINESEARCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3226 3254])
+                    ("LBFGSERR_INVALID_MINSTEP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3327 3352])
+                    ("LBFGSERR_INVALID_MAXSTEP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3425 3450])
+                    ("LBFGSERR_INVALID_FTOL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3519 3541])
+                    ("LBFGSERR_INVALID_GTOL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3610 3632])
+                    ("LBFGSERR_INVALID_XTOL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3701 3723])
+                    ("LBFGSERR_INVALID_MAXLINESEARCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3802 3833])
+                    ("LBFGSERR_INVALID_ORTHANTWISE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3911 3940])
+                    ("LBFGSERR_INVALID_ORTHANTWISE_START" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4022 4057])
+                    ("LBFGSERR_INVALID_ORTHANTWISE_END" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4137 4170])
+                    ("LBFGSERR_OUTOFINTERVAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4248 4271])
+                    ("LBFGSERR_INCORRECT_TMINMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4380 4407])
+                    ("LBFGSERR_ROUNDING_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4553 4577])
+                    ("LBFGSERR_MINIMUMSTEP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4663 4684])
+                    ("LBFGSERR_MAXIMUMSTEP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4769 4790])
+                    ("LBFGSERR_MAXIMUMLINESEARCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4873 4900])
+                    ("LBFGSERR_MAXIMUMITERATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4980 5006])
+                    ("LBFGSERR_WIDTHTOOSMALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5112 5135])
+                    ("LBFGSERR_INVALIDPARAMETERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5203 5230])
+                    ("LBFGSERR_INCREASEGRADIENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5315 5341]))                  )
+                (reparse-symbol extern-c-contents) [2157 5344])
+            ("lbfgsfloatval_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "double"
+                :typedef ("double"))
+                (reparse-symbol extern-c-contents) [1786 1817])
+            ("LBFGS_IEEE_FLOAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1651 1667])
+            ("LBFGS_FLOAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1500 1511])
+            ("C" extern (:members 
+              ( ("LBFGS_FLOAT" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [1500 1511])
+                ("LBFGS_IEEE_FLOAT" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [1651 1667])
+                ("lbfgsfloatval_t" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :superclasses "double"
+                    :typedef ("double"))
+                    (reparse-symbol extern-c-contents) [1786 1817])
+                ("" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "enum"
+                    :members 
+                      ( ("LBFGS_SUCCESS" variable
+                           (:constant-flag t
+                            :default-value (2223 2224)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2207 2224])
+                        ("LBFGS_CONVERGENCE" variable
+                           (:constant-flag t
+                            :default-value (2250 2251)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2230 2251])
+                        ("LBFGS_STOP" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2257 2268])
+                        ("LBFGS_ALREADY_MINIMIZED" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2347 2371])
+                        ("LBFGSERR_UNKNOWNERROR" variable
+                           (:constant-flag t
+                            :default-value (2427 2432)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2403 2432])
+                        ("LBFGSERR_LOGICERROR" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2462 2482])
+                        ("LBFGSERR_OUTOFMEMORY" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2519 2540])
+                        ("LBFGSERR_CANCELED" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2600 2618])
+                        ("LBFGSERR_INVALID_N" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2673 2692])
+                        ("LBFGSERR_INVALID_N_SSE" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2757 2780])
+                        ("LBFGSERR_INVALID_X_SSE" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2841 2864])
+                        ("LBFGSERR_INVALID_EPSILON" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [2936 2961])
+                        ("LBFGSERR_INVALID_TESTPERIOD" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3030 3058])
+                        ("LBFGSERR_INVALID_DELTA" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3128 3151])
+                        ("LBFGSERR_INVALID_LINESEARCH" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3226 3254])
+                        ("LBFGSERR_INVALID_MINSTEP" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3327 3352])
+                        ("LBFGSERR_INVALID_MAXSTEP" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3425 3450])
+                        ("LBFGSERR_INVALID_FTOL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3519 3541])
+                        ("LBFGSERR_INVALID_GTOL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3610 3632])
+                        ("LBFGSERR_INVALID_XTOL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3701 3723])
+                        ("LBFGSERR_INVALID_MAXLINESEARCH" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3802 3833])
+                        ("LBFGSERR_INVALID_ORTHANTWISE" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [3911 3940])
+                        ("LBFGSERR_INVALID_ORTHANTWISE_START" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4022 4057])
+                        ("LBFGSERR_INVALID_ORTHANTWISE_END" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4137 4170])
+                        ("LBFGSERR_OUTOFINTERVAL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4248 4271])
+                        ("LBFGSERR_INCORRECT_TMINMAX" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4380 4407])
+                        ("LBFGSERR_ROUNDING_ERROR" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4553 4577])
+                        ("LBFGSERR_MINIMUMSTEP" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4663 4684])
+                        ("LBFGSERR_MAXIMUMSTEP" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4769 4790])
+                        ("LBFGSERR_MAXIMUMLINESEARCH" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4873 4900])
+                        ("LBFGSERR_MAXIMUMITERATION" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [4980 5006])
+                        ("LBFGSERR_WIDTHTOOSMALL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5112 5135])
+                        ("LBFGSERR_INVALIDPARAMETERS" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5203 5230])
+                        ("LBFGSERR_INCREASEGRADIENT" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5315 5341]))                      )
+                    (reparse-symbol extern-c-contents) [2157 5344])
+                ("" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "enum"
+                    :members 
+                      ( ("LBFGS_LINESEARCH_DEFAULT" variable
+                           (:constant-flag t
+                            :default-value (5474 5475)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5447 5475])
+                        ("LBFGS_LINESEARCH_MORETHUENTE" variable
+                           (:constant-flag t
+                            :default-value (5571 5572)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5540 5572])
+                        ("LBFGS_LINESEARCH_BACKTRACKING_STRONG" variable
+                           (:constant-flag t
+                            :default-value (5677 5678)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5638 5678])
+                        ("LBFGS_LINESEARCH_BACKTRACKING" variable
+                           (:constant-flag t
+                            :default-value (5777 5778)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5745 5778])
+                        ("LBFGS_LINESEARCH_BACKTRACKING_LOOSE" variable
+                           (:constant-flag t
+                            :default-value (5883 5884)
+                            :type "int")
+                            (reparse-symbol enumsubparts) [5845 5884]))                      )
+                    (reparse-symbol extern-c-contents) [5381 5888])
+                ("lbfgs_parameter_t" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :typedef ("" type
+                         (:members 
+                            ( ("m" variable (:type "int") (reparse-symbol classsubparts) [6523 6541])
+                              ("epsilon" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6867 6891])
+                              ("past" variable (:type "int") (reparse-symbol classsubparts) [7239 7260])
+                              ("delta" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7695 7717])
+                              ("max_iterations" variable (:type "int") (reparse-symbol classsubparts) [8093 8124])
+                              ("linesearch" variable (:type "int") (reparse-symbol classsubparts) [8279 8306])
+                              ("max_linesearch" variable (:type "int") (reparse-symbol classsubparts) [8545 8576])
+                              ("min_step" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8907 8932])
+                              ("max_step" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9255 9280])
+                              ("ftol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9487 9508])
+                              ("gtol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10041 10062])
+                              ("xtol" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10441 10462])
+                              ("orthantwise_c" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11222 11252])
+                              ("orthantwise_start" variable (:type "int") (reparse-symbol classsubparts) [11901 11935])
+                              ("orthantwise_end" variable (:type "int") (reparse-symbol classsubparts) [12252 12284]))                            
+                          :type "struct")
+                          nil nil))
+                    (reparse-symbol extern-c-contents) [6026 12305])
+                ("lbfgs_evaluate_t" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("lbfgsfloatval_t" type (:type "class") nil nil)
+                    :functionpointer-flag t)
+                    (reparse-symbol extern-c-contents) [13213 13378])
+                ("lbfgs_progress_t" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :functionpointer-flag t)
+                    (reparse-symbol extern-c-contents) [14455 14727])
+                ("lbfgs" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [17975 17981])
+                        ("x" variable
+                           (:pointer 1
+                            :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [17986 18005])
+                        ("ptr_fx" variable
+                           (:pointer 1
+                            :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [18010 18034])
+                        ("proc_evaluate" variable (:type ("lbfgs_evaluate_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18039 18070])
+                        ("proc_progress" variable (:type ("lbfgs_progress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18075 18106])
+                        ("instance" variable
+                           (:pointer 1
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [18111 18126])
+                        ("param" variable
+                           (:pointer 1
+                            :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [18131 18161]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [17960 18162])
+                ("lbfgs_parameter_init" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("param" variable
+                           (:pointer 1
+                            :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [18449 18474]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [18423 18475])
+                ("lbfgs_malloc" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("lbfgsfloatval_t" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [18918 18924]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [18888 18925])
+                ("lbfgs_free" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("x" variable
+                           (:pointer 1
+                            :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [19096 19115]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [19080 19116]))              ) nil [1360 19150]))          
+    :file "lbfgs.h"
+    :pointmax 29145
+    :fsize 29144
+    :lastmodtime '(20977 55623)
+    :unmatched-syntax '((TYPEDEF 14447 . 14454) (TYPEDEF 13205 . 13212) (TYPEDEF 14447 . 14454) (TYPEDEF 13205 . 13212) (TYPEDEF 14447 . 14454) (TYPEDEF 13205 . 13212) (TYPEDEF 14441 . 14448) (TYPEDEF 13199 . 13206))
+    :lexical-table 
+        '(("__LBFGS_H__")
+          ("LBFGS_IEEE_FLOAT" . ((number "1" 1671 . 1672)))
+          ("LBFGS_FLOAT" . ((number "64" 1516 . 1518)))
+          )
+
+    )
+   (semanticdb-table "lbfgs.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2915 2933])
+            ("stdlib.h" include (:system-flag t) nil [2934 2953])
+            ("math.h" include (:system-flag t) nil [2954 2971])
+            ("lbfgs.h" include nil nil [2973 2991])
+            ("arithmetic_ansi.h" include nil nil [3442 3470])
+            ("min2" variable (:constant-flag t) nil [3512 3516])
+            ("cutoff" variable (:type "int") nil [3480 3493])
+            ("min2" variable (:constant-flag t) nil [3512 3516])
+            ("max2" variable (:constant-flag t) nil [3561 3565])
+            ("max3" variable (:constant-flag t) nil [3610 3614])
+            ("tag_callback_data" type
+               (:members 
+                  ( ("n" variable (:type "int") (reparse-symbol classsubparts) [3685 3691])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3696 3711])
+                    ("proc_evaluate" variable (:type ("lbfgs_evaluate_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3716 3747])
+                    ("proc_progress" variable (:type ("lbfgs_progress_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3752 3783]))                  
+                :type "struct")
+                nil [3654 3786])
+            ("callback_data_t" type
+               (:typedef ("tag_callback_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "tag_callback_data"
+                :type "typedef")
+                nil [3787 3836])
+            ("tag_iteration_data" type
+               (:members 
+                  ( ("alpha" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3870 3892])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3897 3916])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3935 3954])
+                    ("ys" variable (:type ("lbfgsfloatval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3973 3992]))                  
+                :type "struct")
+                nil [3838 4018])
+            ("iteration_data_t" type
+               (:typedef ("tag_iteration_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "tag_iteration_data"
+                :type "typedef")
+                nil [4019 4070])
+            ("_defparam" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                nil [4072 4231])
+            ("line_search_proc" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [4279 4590])
+            ("line_search_backtracking" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4637 4643])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4648 4667])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4672 4691])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4696 4715])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4720 4739])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4744 4765])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4770 4796])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4801 4827])
+                    ("wa" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4832 4852])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4857 4877])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4882 4918]))                  
+                :type "int")
+                nil [4596 4919])
+            ("line_search_backtracking_owlqn" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4968 4974])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4979 4998])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5003 5022])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5027 5046])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5051 5070])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5075 5096])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5101 5127])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5132 5158])
+                    ("wp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5163 5183])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5188 5208])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5213 5249]))                  
+                :type "int")
+                nil [4921 5250])
+            ("line_search_morethuente" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5292 5298])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5303 5322])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5327 5346])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5351 5370])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5375 5394])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5399 5420])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5425 5451])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5456 5482])
+                    ("wa" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5487 5507])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5512 5532])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5537 5573]))                  
+                :type "int")
+                nil [5252 5574])
+            ("update_trial_interval" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5614 5633])
+                    ("fx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5638 5658])
+                    ("dx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5663 5683])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5688 5707])
+                    ("fy" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5712 5732])
+                    ("dy" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5737 5757])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5762 5781])
+                    ("ft" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5786 5806])
+                    ("dt" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5811 5831])
+                    ("tmin" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5836 5863])
+                    ("tmax" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5868 5895])
+                    ("brackt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5900 5917]))                  
+                :type "int")
+                nil [5576 5918])
+            ("owlqn_x1norm" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5961 5986])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5991 6007])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6012 6029]))                  
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                nil [5920 6030])
+            ("owlqn_pseudo_gradient" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pg" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6071 6091])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6096 6121])
+                    ("g" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6126 6151])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6156 6168])
+                    ("c" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6173 6197])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6202 6218])
+                    ("end" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6223 6242]))                  
+                :type "void")
+                nil [6032 6243])
+            ("owlqn_project" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6276 6295])
+                    ("sign" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6300 6328])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6333 6349])
+                    ("end" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6354 6373]))                  
+                :type "void")
+                nil [6245 6374])
+            ("lbfgs_malloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6595 6601]))                  
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                nil [6565 6800])
+            ("lbfgs_free" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6818 6837]))                  
+                :type "void")
+                nil [6802 6857])
+            ("lbfgs_parameter_init" function
+               (:arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6885 6910]))                  
+                :type "void")
+                nil [6859 6961])
+            ("lbfgs" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [6978 6984])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6989 7008])
+                    ("ptr_fx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7013 7037])
+                    ("proc_evaluate" variable (:type ("lbfgs_evaluate_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7042 7073])
+                    ("proc_progress" variable (:type ("lbfgs_progress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7078 7109])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7114 7129])
+                    ("_param" variable
+                       (:pointer 1
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7134 7165]))                  
+                :type "int")
+                nil [6963 18913])
+            ("line_search_backtracking" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [18958 18964])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18969 18988])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18993 19012])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19017 19036])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19041 19060])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19065 19086])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19091 19117])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19122 19148])
+                    ("wp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19153 19173])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19178 19198])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19203 19239]))                  
+                :type "int")
+                nil [18917 21311])
+            ("line_search_backtracking_owlqn" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [21362 21368])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21373 21392])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21397 21416])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21421 21440])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21445 21464])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21469 21490])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21495 21521])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21526 21552])
+                    ("wp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21557 21577])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21582 21602])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21607 21643]))                  
+                :type "int")
+                nil [21315 23362])
+            ("line_search_morethuente" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [23406 23412])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23417 23436])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23441 23460])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23465 23484])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23489 23508])
+                    ("stp" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23513 23534])
+                    ("xp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23539 23565])
+                    ("gp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23570 23596])
+                    ("wa" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23601 23621])
+                    ("cd" variable
+                       (:pointer 1
+                        :type ("callback_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23626 23646])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgs_parameter_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23651 23687]))                  
+                :type "int")
+                nil [23366 29705])
+            ("USES_MINIMIZER" variable (:constant-flag t) nil [29781 29795])
+            ("CUBIC_MINIMIZER" variable (:constant-flag t) nil [30239 30254])
+            ("CUBIC_MINIMIZER2" variable (:constant-flag t) nil [31196 31212])
+            ("QUARD_MINIMIZER" variable (:constant-flag t) nil [32203 32218])
+            ("QUARD_MINIMIZER2" variable (:constant-flag t) nil [32643 32659])
+            ("update_trial_interval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34247 34266])
+                    ("fx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34271 34291])
+                    ("dx" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34296 34316])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34321 34340])
+                    ("fy" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34345 34365])
+                    ("dy" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34370 34390])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34395 34414])
+                    ("ft" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34419 34439])
+                    ("dt" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34444 34464])
+                    ("tmin" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34469 34496])
+                    ("tmax" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34501 34528])
+                    ("brackt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [34533 34550]))                  
+                :type "int")
+                nil [34209 39390])
+            ("owlqn_x1norm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39437 39462])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39467 39483])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39488 39505]))                  
+                :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                nil [39396 39636])
+            ("owlqn_pseudo_gradient" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pg" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39677 39697])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39702 39727])
+                    ("g" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39732 39757])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39762 39774])
+                    ("c" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39779 39803])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39808 39824])
+                    ("end" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39829 39848]))                  
+                :type "void")
+                nil [39638 40629])
+            ("owlqn_project" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40662 40681])
+                    ("sign" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40686 40714])
+                    ("start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40719 40735])
+                    ("end" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40740 40759]))                  
+                :type "void")
+                nil [40631 40882]))          
+    :file "lbfgs.c"
+    :pointmax 40883
+    :fsize 40882
+    :lastmodtime '(20977 55587)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("QUARD_MINIMIZER" (spp-arg-list ("qm" "u" "fu" "du" "v" "fv") 32194 . 32216) . 
+              ((symbol "a" 32223 . 32224) (punctuation "=" 32225 . 32226) (semantic-list "(v)" 32227 . 32230) (punctuation "-" 32231 . 32232) (semantic-list "(u)" 32233 . 32236) (punctuation ";" 32236 . 32237) (semantic-list "(qm)" 32244 . 32248) (punctuation "=" 32249 . 32250) (semantic-list "(u)" 32251 . 32254) (punctuation "+" 32255 . 32256) (semantic-list "(du)" 32257 . 32261) (punctuation "/" 32262 . 32263) (semantic-list "(((fu) - (fv)) / a + (du))" 32264 . 32290) (punctuation "/" 32291 . 32292) (number "2" 32293 . 32294) (punctuation "*" 32295 . 32296) (symbol "a" 32297 . 32298) (punctuation ";" 32298 . 32299)))
+          ("CUBIC_MINIMIZER" (spp-arg-list ("cm" "u" "fu" "du" "v" "fv" "dv") 30230 . 30256) . 
+              ((symbol "d" 30263 . 30264) (punctuation "=" 30265 . 30266) (semantic-list "(v)" 30267 . 30270) (punctuation "-" 30271 . 30272) (semantic-list "(u)" 30273 . 30276) (punctuation ";" 30276 . 30277) (symbol "theta" 30284 . 30289) (punctuation "=" 30290 . 30291) (semantic-list "((fu) - (fv))" 30292 . 30305) (punctuation "*" 30306 . 30307) (number "3" 30308 . 30309) (punctuation "/" 30310 . 30311) (symbol "d" 30312 . 30313) (punctuation "+" 30314 . 30315) (semantic-list "(du)" 30316 . 30320) (punctuation "+" 30321 . 30322) (semantic-list "(dv)" 30323 . 30327) (punctuation ";" 30327 . 30328) (symbol "p" 30335 . 30336) (punctuation "=" 30337 . 30338) (symbol "fabs" 30339 . 30343) (semantic-list "(theta)" 30343 . 30350) (punctuation ";" 30350 . 30351) (symbol "q" 30358 . 30359) (punctuation "=" 30360 . 30361) (symbol "fabs" 30362 . 30366) (semantic-list "(du)" 30366 . 30370) (punctuation ";" 30370 . 30371) (symbol "r" 30378 . 30379) (punctuation "=" 30380 . 30381) (symbol "fabs" 30382 . 30386) (semantic-list "(dv)" 30386 . 30390) (punctuation ";" 30390 . 30391) (symbol "s" 30398 . 30399) (punctuation "=" 30400 . 30401) (symbol "max3" 30402 . 30406) (semantic-list "(p, q, r)" 30406 . 30415) (punctuation ";" 30415 . 30416) (symbol "a" 30482 . 30483) (punctuation "=" 30484 . 30485) (symbol "theta" 30486 . 30491) (punctuation "/" 30492 . 30493) (symbol "s" 30494 . 30495) (punctuation ";" 30495 . 30496) (symbol "gamma" 30503 . 30508) (punctuation "=" 30509 . 30510) (symbol "s" 30511 . 30512) (punctuation "*" 30513 . 30514) (symbol "sqrt" 30515 . 30519) (semantic-list "(a * a - ((du) / s) * ((dv) / s))" 30519 . 30552) (punctuation ";" 30552 . 30553) (IF "if" 30560 . 30562) (semantic-list "((v) < (u))" 30563 . 30574) (symbol "gamma" 30575 . 30580) (punctuation "=" 30581 . 30582) (punctuation "-" 30583 . 30584) (symbol "gamma" 30584 . 30589) (punctuation ";" 30589 . 30590) (symbol "p" 30597 . 30598) (punctuation "=" 30599 . 30600) (symbol "gamma" 30601 . 30606) (punctuation "-" 30607 . 30608) (semantic-list "(du)" 30609 . 30613) (punctuation "+" 30614 . 30615) (symbol "theta" 30616 . 30621) (punctuation ";" 30621 . 30622) (symbol "q" 30629 . 30630) (punctuation "=" 30631 . 30632) (symbol "gamma" 30633 . 30638) (punctuation "-" 30639 . 30640) (semantic-list "(du)" 30641 . 30645) (punctuation "+" 30646 . 30647) (symbol "gamma" 30648 . 30653) (punctuation "+" 30654 . 30655) (semantic-list "(dv)" 30656 . 30660) (punctuation ";" 30660 . 30661) (symbol "r" 30668 . 30669) (punctuation "=" 30670 . 30671) (symbol "p" 30672 . 30673) (punctuation "/" 30674 . 30675) (symbol "q" 30676 . 30677) (punctuation ";" 30677 . 30678) (semantic-list "(cm)" 30685 . 30689) (punctuation "=" 30690 . 30691) (semantic-list "(u)" 30692 . 30695) (punctuation "+" 30696 . 30697) (symbol "r" 30698 . 30699) (punctuation "*" 30700 . 30701) (symbol "d" 30702 . 30703) (punctuation ";" 30703 . 30704)))
+          ("max2" (spp-arg-list ("a" "b") 3541 . 3547) . ((semantic-list "((a) >= (b) ? (a) : (b))" 3553 . 3577)))
+          ("QUARD_MINIMIZER2" (spp-arg-list ("qm" "u" "du" "v" "dv") 32635 . 32653) . 
+              ((symbol "a" 32660 . 32661) (punctuation "=" 32662 . 32663) (semantic-list "(u)" 32664 . 32667) (punctuation "-" 32668 . 32669) (semantic-list "(v)" 32670 . 32673) (punctuation ";" 32673 . 32674) (semantic-list "(qm)" 32681 . 32685) (punctuation "=" 32686 . 32687) (semantic-list "(v)" 32688 . 32691) (punctuation "+" 32692 . 32693) (semantic-list "(dv)" 32694 . 32698) (punctuation "/" 32699 . 32700) (semantic-list "((dv) - (du))" 32701 . 32714) (punctuation "*" 32715 . 32716) (symbol "a" 32717 . 32718) (punctuation ";" 32718 . 32719)))
+          ("max3" (spp-arg-list ("a" "b" "c") 3590 . 3599) . 
+              ((symbol "max2" 3602 . 3606) (semantic-list "(max2((a), (b)), (c))" 3606 . 3627) (punctuation ";" 3627 . 3628)))
+          ("USES_MINIMIZER" . 
+              ((symbol "lbfgsfloatval_t" 29778 . 29793) (symbol "a" 29794 . 29795) (punctuation "," 29795 . 29796) (symbol "d" 29797 . 29798) (punctuation "," 29798 . 29799) (symbol "gamma" 29800 . 29805) (punctuation "," 29805 . 29806) (symbol "theta" 29807 . 29812) (punctuation "," 29812 . 29813) (symbol "p" 29814 . 29815) (punctuation "," 29815 . 29816) (symbol "q" 29817 . 29818) (punctuation "," 29818 . 29819) (symbol "r" 29820 . 29821) (punctuation "," 29821 . 29822) (symbol "s" 29823 . 29824) (punctuation ";" 29824 . 29825)))
+          ("min2" (spp-arg-list ("a" "b") 3516 . 3522) . ((semantic-list "((a) <= (b) ? (a) : (b))" 3528 . 3552)))
+          ("CUBIC_MINIMIZER2" (spp-arg-list ("cm" "u" "fu" "du" "v" "fv" "dv" "xmin" "xmax") 31188 . 31226) . 
+              ((symbol "d" 31233 . 31234) (punctuation "=" 31235 . 31236) (semantic-list "(v)" 31237 . 31240) (punctuation "-" 31241 . 31242) (semantic-list "(u)" 31243 . 31246) (punctuation ";" 31246 . 31247) (symbol "theta" 31254 . 31259) (punctuation "=" 31260 . 31261) (semantic-list "((fu) - (fv))" 31262 . 31275) (punctuation "*" 31276 . 31277) (number "3" 31278 . 31279) (punctuation "/" 31280 . 31281) (symbol "d" 31282 . 31283) (punctuation "+" 31284 . 31285) (semantic-list "(du)" 31286 . 31290) (punctuation "+" 31291 . 31292) (semantic-list "(dv)" 31293 . 31297) (punctuation ";" 31297 . 31298) (symbol "p" 31305 . 31306) (punctuation "=" 31307 . 31308) (symbol "fabs" 31309 . 31313) (semantic-list "(theta)" 31313 . 31320) (punctuation ";" 31320 . 31321) (symbol "q" 31328 . 31329) (punctuation "=" 31330 . 31331) (symbol "fabs" 31332 . 31336) (semantic-list "(du)" 31336 . 31340) (punctuation ";" 31340 . 31341) (symbol "r" 31348 . 31349) (punctuation "=" 31350 . 31351) (symbol "fabs" 31352 . 31356) (semantic-list "(dv)" 31356 . 31360) (punctuation ";" 31360 . 31361) (symbol "s" 31368 . 31369) (punctuation "=" 31370 . 31371) (symbol "max3" 31372 . 31376) (semantic-list "(p, q, r)" 31376 . 31385) (punctuation ";" 31385 . 31386) (symbol "a" 31452 . 31453) (punctuation "=" 31454 . 31455) (symbol "theta" 31456 . 31461) (punctuation "/" 31462 . 31463) (symbol "s" 31464 . 31465) (punctuation ";" 31465 . 31466) (symbol "gamma" 31473 . 31478) (punctuation "=" 31479 . 31480) (symbol "s" 31481 . 31482) (punctuation "*" 31483 . 31484) (symbol "sqrt" 31485 . 31489) (semantic-list "(max2(0, a * a - ((du) / s) * ((dv) / s)))" 31489 . 31531) (punctuation ";" 31531 . 31532) (IF "if" 31539 . 31541) (semantic-list "((u) < (v))" 31542 . 31553) (symbol "gamma" 31554 . 31559) (punctuation "=" 31560 . 31561) (punctuation "-" 31562 . 31563) (symbol "gamma" 31563 . 31568) (punctuation ";" 31568 . 31569) (symbol "p" 31576 . 31577) (punctuation "=" 31578 . 31579) (symbol "gamma" 31580 . 31585) (punctuation "-" 31586 . 31587) (semantic-list "(dv)" 31588 . 31592) (punctuation "+" 31593 . 31594) (symbol "theta" 31595 . 31600) (punctuation ";" 31600 . 31601) (symbol "q" 31608 . 31609) (punctuation "=" 31610 . 31611) (symbol "gamma" 31612 . 31617) (punctuation "-" 31618 . 31619) (semantic-list "(dv)" 31620 . 31624) (punctuation "+" 31625 . 31626) (symbol "gamma" 31627 . 31632) (punctuation "+" 31633 . 31634) (semantic-list "(du)" 31635 . 31639) (punctuation ";" 31639 . 31640) (symbol "r" 31647 . 31648) (punctuation "=" 31649 . 31650) (symbol "p" 31651 . 31652) (punctuation "/" 31653 . 31654) (symbol "q" 31655 . 31656) (punctuation ";" 31656 . 31657) (IF "if" 31664 . 31666) (semantic-list "(r < 0. && gamma != 0.)" 31667 . 31690) (semantic-list "{ \\
+        (cm) = (v) - r * d; \\
+    }" 31691 . 31730) (ELSE "else" 31731 . 31735) (IF "if" 31736 . 31738) (semantic-list "(a < 0)" 31739 . 31746) (semantic-list "{ \\
+        (cm) = (xmax); \\
+    }" 31747 . 31781) (ELSE "else" 31782 . 31786) (semantic-list "{ \\
+        (cm) = (xmin); \\
+    }" 31787 . 31821)))
+          )
+
+    )
+   (semanticdb-table "arithmetic_ansi.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1273 1292])
+            ("memory.h" include (:system-flag t) nil [1293 1312])
+            ("fsigndiff" variable (:constant-flag t) nil [1454 1463])
+            ("vecalloc" function
+               (:pointer 1
+                :typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1561 1573]))                  
+                :type "void")
+                nil [1532 1694])
+            ("vecfree" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("memblock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1723 1738]))                  
+                :type "void")
+                nil [1696 1762])
+            ("vecset" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1790 1809])
+                    ("c" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1810 1834])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1835 1847]))                  
+                :type "void")
+                nil [1764 1919])
+            ("veccpy" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1947 1966])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1967 1992])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1993 2005]))                  
+                :type "void")
+                nil [1921 2076])
+            ("vecncpy" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2105 2124])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2125 2150])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2151 2163]))                  
+                :type "void")
+                nil [2078 2235])
+            ("vecadd" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2263 2282])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2283 2308])
+                    ("c" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2309 2333])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2334 2346]))                  
+                :type "void")
+                nil [2237 2422])
+            ("vecdiff" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2451 2470])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2496])
+                    ("y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2497 2522])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2523 2535]))                  
+                :type "void")
+                nil [2424 2613])
+            ("vecscale" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2643 2662])
+                    ("c" variable
+                       (:constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2663 2687])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2688 2700]))                  
+                :type "void")
+                nil [2615 2769])
+            ("vecmul" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("y" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2797 2816])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2817 2842])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2843 2855]))                  
+                :type "void")
+                nil [2771 2927])
+            ("vecdot" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2955 2974])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2975 3000])
+                    ("y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3001 3026])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3027 3039]))                  
+                :type "void")
+                nil [2929 3128])
+            ("vec2norm" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3158 3177])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3178 3203])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3204 3216]))                  
+                :type "void")
+                nil [3130 3280])
+            ("vec2norminv" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3313 3332])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lbfgsfloatval_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3333 3358])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3359 3371]))                  
+                :type "void")
+                nil [3282 3436]))          
+    :file "arithmetic_ansi.h"
+    :pointmax 3437
+    :fsize 3436
+    :lastmodtime '(20977 11124)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("fsigndiff" (spp-arg-list ("x" "y") 1463 . 1469) . ((semantic-list "(*(x) * (*(y) / fabs(*(y))) < 0.)" 1470 . 1503)))
+          )
+
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("sample" function (:arguments ("sample.o" "lbfgs.o")) nil [1 61])
+            ("sample.o" function (:arguments ("sample.c" "sample.h" "Cryptdll.h")) nil [61 116])
+            ("lbfgs.o" function (:arguments ("lbfgs.c" "lbfgs.h")) nil [116 156])
+            ("clean" function nil nil [156 174]))          
+    :file "makefile"
+    :pointmax 299
+    :fsize 299
+    :lastmodtime '(20977 55842)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!home!cpper!桌面!ls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

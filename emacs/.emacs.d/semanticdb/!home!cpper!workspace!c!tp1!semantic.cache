@@ -1,0 +1,41 @@
+;; Object tp1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tp1/"
+  :tables (list 
+   (semanticdb-table "tp1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unistd.h" include (:system-flag t) nil [197 216])
+            ("sys/types.h" include (:system-flag t) nil [217 239])
+            ("stdio.h" include (:system-flag t) nil [240 258])
+            ("print_exit" function (:type "void") nil [262 329])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [342 352])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [353 367]))                  
+                :type "int")
+                nil [332 776]))          
+    :file "tp1.c"
+    :pointmax 780
+    :fsize 805
+    :lastmodtime '(20950 54512)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "makefile"
+    :pointmax 100
+    :fsize 74
+    :lastmodtime '(20950 53629)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!c!tp1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

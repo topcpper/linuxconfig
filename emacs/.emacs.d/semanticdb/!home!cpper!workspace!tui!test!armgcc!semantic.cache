@@ -1,0 +1,42 @@
+;; Object armgcc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "armgcc/"
+  :tables (list 
+   (semanticdb-table "armgcc.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [204 223])
+            ("stdio.h" include (:system-flag t) nil [224 242])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [253 262])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [263 276]))                  
+                :type "int")
+                nil [244 401]))          
+    :file "armgcc.c"
+    :pointmax 402
+    :fsize 401
+    :lastmodtime '(20920 2675)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("armgcc" function (:arguments ("armgcc.o")) nil [1 51])
+            ("armgcc.o" function (:arguments ("armgcc.c")) nil [51 96])
+            ("clean" function nil nil [96 114]))          
+    :file "makefile"
+    :pointmax 94
+    :fsize 113
+    :lastmodtime '(20920 2340)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!armgcc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

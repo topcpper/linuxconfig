@@ -1,0 +1,59 @@
+;; Object atoi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "atoi/"
+  :tables (list 
+   (semanticdb-table "atoi.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ctype.h" include (:system-flag t) nil [217 235])
+            ("stdio.h" include (:system-flag t) nil [236 254])
+            ("myatoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [268 277]))                  
+                :type "int")
+                nil [256 278])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [289 298])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [298 310]))                  
+                :type "int")
+                nil [280 545])
+            ("myatoi" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [558 567]))                  
+                :type "int")
+                nil [546 822]))          
+    :file "atoi.c"
+    :pointmax 823
+    :fsize 822
+    :lastmodtime '(20908 24118)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("atoi" function (:arguments ("atoi.o")) nil [1 34])
+            ("atoi.o" function (:arguments ("atoi.c")) nil [34 63])
+            ("clean" function nil nil [63 81]))          
+    :file "makefile"
+    :pointmax 81
+    :fsize 80
+    :lastmodtime '(20908 24137)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!c!atoi!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

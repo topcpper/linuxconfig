@@ -1,0 +1,86 @@
+;; Object menu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "menu/"
+  :tables (list 
+   (semanticdb-table "menu.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("menu.h" include (:system-flag t) nil [200 217])
+            ("ARRAY_SIZE" variable (:constant-flag t) nil [227 237])
+            ("CTRLD" variable (:constant-flag t) nil [274 279])
+            ("choices" variable
+               (:pointer 1
+                :dereference 1
+                :type "char")
+                nil [283 404])
+            ("print_in_middle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [433 447])
+                    ("starty" variable (:type "int") (reparse-symbol arg-sub-list) [447 458])
+                    ("startx" variable (:type "int") (reparse-symbol arg-sub-list) [458 470])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [471 482])
+                    ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [482 496])
+                    ("color" variable (:type ("chtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [496 509]))                  
+                :type "void")
+                nil [412 510])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [521 530])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [531 544]))                  
+                :type "int")
+                nil [512 2052])
+            ("print_in_middle" function
+               (:arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2077 2091])
+                    ("starty" variable (:type "int") (reparse-symbol arg-sub-list) [2091 2102])
+                    ("startx" variable (:type "int") (reparse-symbol arg-sub-list) [2102 2114])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2115 2126])
+                    ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2126 2140])
+                    ("color" variable (:type ("chtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2140 2153]))                  
+                :type "void")
+                nil [2056 2599]))          
+    :file "menu.c"
+    :pointmax 2600
+    :fsize 2599
+    :lastmodtime '(20915 5751)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CTRLD" . ((number "4" 279 . 280)))
+          ("ARRAY_SIZE" (spp-arg-list ("a") 236 . 239) . ((semantic-list "(sizeof(a)/sizeof(a[0]))" 240 . 264)))
+          )
+
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("menu" function (:arguments ("menu.o")) nil [1 52])
+            ("menu.o" function (:arguments ("menu.c")) nil [52 83])
+            ("clean" function nil nil [83 101]))          
+    :file "makefile"
+    :pointmax 96
+    :fsize 100
+    :lastmodtime '(20915 5725)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!menu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

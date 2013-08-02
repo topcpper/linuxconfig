@@ -1,0 +1,18 @@
+;; Object tchin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tchin/"
+  :tables (list 
+   (semanticdb-table "lcd.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "lcd.c"
+    :pointmax 74
+    :fsize 2677
+    :lastmodtime '(20944 63426)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!tchin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,166 @@
+;; Object bittree/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bittree/"
+  :tables (list 
+   (semanticdb-table "bittree.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("list" include (:system-flag t) nil [219 234])
+            ("iostream" include (:system-flag t) nil [235 254])
+            ("bittree.h" include nil nil [255 275])
+            ("queue" include (:system-flag t) nil [276 292])
+            ("stack" include (:system-flag t) nil [293 309])
+            ("string" include (:system-flag t) nil [310 327])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [329 349])
+            ("createBittree" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vectype" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [405 436]))                  
+                :parent "bittree")
+                nil [351 1891])
+            ("preOrder" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "bittree")
+                nil [1893 2265])
+            ("inOrder" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "bittree")
+                nil [2269 2716])
+            ("tstatic" function (:type "void") nil [2719 2792])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [2804 2813])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2813 2825]))                  
+                :type "int")
+                nil [2795 3623]))          
+    :file "bittree.cpp"
+    :pointmax 3624
+    :fsize 3651
+    :lastmodtime '(20985 4704)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bittree.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BITTREE_H" variable (:constant-flag t) nil [27 36])
+            ("vector" include (:system-flag t) nil [37 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 75])
+            ("Node" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("left" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [144 157])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [183 197])
+                    ("data" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [224 231]))                  )
+                nil [104 246])
+            ("vectype" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("data" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [344 352])
+                    ("isnull" variable (:type "bool") (reparse-symbol classsubparts) [358 371]))                  )
+                nil [301 374])
+            ("bittree" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [414 421])
+                    ("proot" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [427 443])
+                    ("public" label nil (reparse-symbol classsubparts) [445 452])
+                    ("proot" function
+                       (:arguments 
+                          ( ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [481 486]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [475 500])
+                    ("createBittree" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("vec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("vectype" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [614 645]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [595 646])
+                    ("preOrder" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [658 674])
+                    ("inOrder" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 759]))                  )
+                nil [377 839]))          
+    :file "bittree.h"
+    :pointmax 850
+    :fsize 865
+    :lastmodtime '(20984 33822)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BITTREE_H")
+          )
+
+    )
+   (semanticdb-table "tet.H"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TET_H" variable (:constant-flag t) nil [23 28]))          
+    :file "tet.H"
+    :pointmax 161
+    :fsize 160
+    :lastmodtime '(20984 34276)
+    :unmatched-syntax '((semantic-list 41 . 147) (symbol 36 . 40) (CLASS 30 . 35) (semantic-list 67 . 74) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 67 . 74) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 41 . 123) (symbol 36 . 40) (CLASS 30 . 35) (semantic-list 71 . 82) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 71 . 82) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 41 . 95) (symbol 36 . 40) (CLASS 30 . 35) (symbol 92 . 93) (VOID 87 . 91) (semantic-list 71 . 82) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (symbol 92 . 93) (VOID 87 . 91) (semantic-list 71 . 82) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 41 . 64) (symbol 36 . 40) (CLASS 30 . 35) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (punctuation 61 . 62) (semantic-list 59 . 61) (symbol 55 . 59) (semantic-list 41 . 61) (symbol 36 . 40) (CLASS 30 . 35) (symbol 55 . 59) (symbol 55 . 59))
+    :lexical-table 
+        '(("TET_H")
+          )
+
+    )
+   )
+  :file "!home!cpper!workspace!cpp!cpplib!bittree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

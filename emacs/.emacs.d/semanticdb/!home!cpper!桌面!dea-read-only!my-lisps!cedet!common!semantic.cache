@@ -1,0 +1,44 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "cedet-settings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("when" code nil nil [250 382])
+            ("cedet" include nil nil [384 400])
+            ("cedet-eieio-settings" include nil nil [401 432])
+            ("cedet-ede-settings" include nil nil [433 462])
+            ("cedet-cogre-settings" include nil nil [463 494])
+            ("cedet-semantic-settings" include nil nil [495 529])
+            ("cedet-srecode-settings" include nil nil [530 563])
+            ("cedet-speedbar-settings" include nil nil [564 598])
+            ("pulse-settings" include nil nil [656 681])
+            ("cedet-settings-4-info" function nil nil [698 963])
+            ("eval-after-load" code nil nil [965 1016])
+            ("cedet-settings" package nil nil [1018 1043]))          
+    :file "cedet-settings.el"
+    :pointmax 1044
+    :fsize 1063
+    :lastmodtime '(20985 51938)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cedet-face-settings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("semantic-util-modes-face-settings" function nil nil [77 405])
+            ("semantic-tag-highlight-face-settings" function nil nil [407 671])
+            ("cedet-face-settings" function nil nil [673 813])
+            ("eval-after-load" code nil nil [815 879])
+            ("cedet-face-settings" package nil nil [881 911]))          
+    :file "cedet-face-settings.el"
+    :pointmax 912
+    :fsize 911
+    :lastmodtime '(20985 51938)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!桌面!dea-read-only!my-lisps!cedet!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,24 @@
+;; Object cedet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cedet/"
+  :tables (list 
+   (semanticdb-table "cedet-build.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cedet-build-location" variable (:default-value (let ((dir (file-name-directory (or load-file-name (buffer-file-name))))) dir)) nil [2058 2243])
+            ("cedet-build-in-default-emacs" function (:user-visible-flag t) nil [2245 2622])
+            ("cedet-build-in-this-emacs" function (:user-visible-flag t) nil [2624 2997])
+            ("cedet-build-msg" function (:arguments ("fmt" "args")) nil [2999 3257])
+            ("cedet-build" function (:arguments ("override-check")) nil [3259 7322])
+            ("cedet-build" package nil nil [7325 7347]))          
+    :file "cedet-build.el"
+    :pointmax 7377
+    :fsize 7376
+    :lastmodtime '(20813 25230)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!.emacs.d!site-lisp!cedet!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

@@ -1,0 +1,110 @@
+;; Object cpplib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpplib/"
+  :tables (list 
+   (semanticdb-table "1_averbtree2list.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [223 242])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [244 264])
+            ("bitree2list" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Node" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("proot" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [310 326]))                  
+                :pointer 1)
+                nil [266 669])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [681 690])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [690 702]))                  
+                :type "int")
+                nil [672 723]))          
+    :file "1_averbtree2list.cpp"
+    :pointmax 724
+    :fsize 723
+    :lastmodtime '(20966 13714)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2_array_asc.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [218 237])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [239 259])
+            ("_search" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [274 288])
+                    ("row" variable (:type "int") (reparse-symbol arg-sub-list) [288 297])
+                    ("col" variable (:type "int") (reparse-symbol arg-sub-list) [297 305])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [305 316]))                  
+                :type "bool")
+                nil [261 726])
+            ("_search1" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [742 752])
+                    ("row" variable (:type "int") (reparse-symbol arg-sub-list) [752 761])
+                    ("col" variable (:type "int") (reparse-symbol arg-sub-list) [761 769])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [769 780]))                  
+                :type "bool")
+                nil [728 1198])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [1209 1218])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1218 1230]))                  
+                :type "int")
+                nil [1200 1547]))          
+    :file "2_array_asc.cpp"
+    :pointmax 1406
+    :fsize 1550
+    :lastmodtime '(20967 37484)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("search" function (:arguments ("2_array_asc.o")) nil [1 51])
+            ("2_array_asc.o" function (:arguments ("2_array_asc.cpp")) nil [51 105])
+            ("clean" function nil nil [105 123]))          
+    :file "makefile"
+    :pointmax 123
+    :fsize 122
+    :lastmodtime '(20967 35859)
+    :unmatched-syntax '((shell-command 113 . 122) (bol 112 . 112) (shell-command 113 . 122) (bol 112 . 112) (shell-command 82 . 90) (bol 81 . 81) (symbol 65 . 66) (punctuation 64 . 65) (symbol 51 . 64) (bol 51 . 51) (symbol 51 . 52) (bol 51 . 51) (shell-command 23 . 38) (bol 22 . 22) (shell-command 23 . 32) (bol 22 . 22) (symbol 8 . 10) (punctuation 7 . 8) (symbol 1 . 7) (bol 1 . 1) (punctuation 7 . 8) (symbol 1 . 7) (bol 1 . 1))
+    )
+   )
+  :file "!home!cpper!workspace!cpp!cpplib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

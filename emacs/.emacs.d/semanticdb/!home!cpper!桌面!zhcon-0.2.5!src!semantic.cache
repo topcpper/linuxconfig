@@ -1,0 +1,573 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("zhcon")) nil [1 22])
+            ("zhcon_SOURCES" variable (:default-value ("basefont.cpp" "big52gbdecoder.cpp" "big5decoder.cpp" "configfile.cpp" "console.cpp" "gb2big5decoder.cpp" "gbdecoder.cpp" "gbkdecoder.cpp" "graphdev.cpp" "hzdecoder.cpp" "jisdecoder.cpp" "kscdecoder.cpp" "main.cpp" "window.cpp" "winime.cpp" "zhcon.cpp" "overspotclient.cpp" "nativeinputserver.cpp" "inputclient.cpp" "inputmanager.cpp" "inputserver.cpp" "candilist.cpp" "uniconinputserver.cpp" "nativebarclient.cpp" "mouse.cpp" "encfilter.c" "iconv_string.c" "cmdline.c")) nil [22 452])
+            ("EXTRA_DIST" variable (:default-value ("basefont.h" "big52gbdecoder.h" "big5decoder.h" "configfile.h" "console.h" "debug.h" "fade.h" "gb2big5decoder.h" "gbdecoder.h" "gbkdecoder.h" "global.h" "graphdev.h" "hzdecoder.h" "jisdecoder.h" "keymap.h" "kscdecoder.h" "utypes.h" "window.h" "winime.h" "zhcon.h" "zhcon.conf" "ImmClient.h" "ImmComm.h" "ImmDefs.h" "ImmModule.h" "Phrase.h" "inputclient.h" "inputmanager.h" "inputserver.h" "nativeinputserver.h" "overspotclient.h" "candilist.h" "uniconinputserver.h" "nativebarclient.h" "logo.ansi" "logo.h" "mouse.h" "encfilter.h" "iconv_string.h" "cmdline.h" "opt.sh")) nil [453 953])
+            ("zhcon_LDADD" variable (:default-value ("display/libdisplay.a")) nil [954 989])
+            ("SUBDIRS" variable (:default-value ("display")) nil [990 1008])
+            ("install-exec-local" function nil nil [1009 1057])
+            ("install-data-local" function nil nil [1058 1173])
+            ("uninstall-local" function nil nil [1174 1224])
+            ("INCLUDES" variable (:default-value ("$(all_includes)")) nil [1267 1293]))          
+    :file "Makefile.am"
+    :pointmax 1376
+    :fsize 1375
+    :lastmodtime '(17495 37641)
+    :unmatched-syntax '((bol 1293 . 1293))
+    )
+   (semanticdb-table "global.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLOBAL_H" variable (:constant-flag t) nil [1080 1088])
+            ("libintl.h" include (:system-flag t) nil [1131 1155])
+            ("locale.h" include (:system-flag t) nil [1156 1179])
+            ("_" variable (:constant-flag t) nil [1272 1273])
+            ("gettext_noop" variable (:constant-flag t) nil [1307 1319])
+            ("graphdev.h" include nil nil [1338 1359])
+            ("hzdecoder.h" include nil nil [1360 1382])
+            ("Zhcon" type
+               (:prototype t
+                :type "class")
+                nil [1400 1412])
+            ("gpScreen" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("GraphDev" type (:type "class") nil nil))
+                nil [1435 1461])
+            ("gpDecoder" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("HzDecoder" type (:type "class") nil nil))
+                nil [1462 1490])
+            ("gpZhcon" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("Zhcon" type (:type "class") nil nil))
+                nil [1491 1513])
+            ("Encode" type
+               (:members 
+                  ( ("NOCHANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1528 1537])
+                    ("ASCII" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1538 1544])
+                    ("GB2312" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1545 1552])
+                    ("GBK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1553 1557])
+                    ("BIG5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1558 1563])
+                    ("JIS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1564 1568])
+                    ("KSC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1569 1573]))                  
+                :type "enum")
+                nil [1515 1574])
+            ("BuildColor" variable (:constant-flag t) nil [1584 1594])
+            ("FgColor" variable (:constant-flag t) nil [1631 1638])
+            ("BgColor" variable (:constant-flag t) nil [1665 1672])
+            ("SignalHandle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [1708 1718]))                  
+                :type "void")
+                nil [1690 1719])
+            ("SignalChild" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [1737 1747]))                  
+                :type "void")
+                nil [1720 1748])
+            ("Beep" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1759 1764]))                  
+                :type "void")
+                nil [1749 1765])
+            ("Beep" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("onoff" variable (:type "bool") (reparse-symbol arg-sub-list) [1776 1787]))                  
+                :type "void")
+                nil [1766 1788]))          
+    :file "global.h"
+    :pointmax 1796
+    :fsize 1795
+    :lastmodtime '(17484 65282)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FgColor" (spp-arg-list ("fg") 1638 . 1642) . ((semantic-list "((fg) & 0x0f)" 1643 . 1656)))
+          ("GLOBAL_H")
+          ("_" (spp-arg-list ("String") 1273 . 1281) . ((symbol "gettext" 1282 . 1289) (semantic-list "(String)" 1290 . 1298)))
+          ("BgColor" (spp-arg-list ("bg") 1672 . 1676) . ((semantic-list "((bg) >> 4)" 1677 . 1688)))
+          ("BuildColor" (spp-arg-list ("fg" "bg") 1594 . 1601) . ((semantic-list "(((bg) << 4) + (fg))" 1602 . 1622)))
+          ("gettext_noop" (spp-arg-list ("String") 1319 . 1327) . ((semantic-list "(String)" 1328 . 1336)))
+          )
+
+    )
+   (semanticdb-table "graphdev.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GRPATHDEV_H" variable (:constant-flag t) nil [1132 1143])
+            ("asm/types.h" include (:system-flag t) nil [1163 1189])
+            ("stdexcept" include (:system-flag t) nil [1248 1268])
+            ("basefont.h" include nil nil [1269 1290])
+            ("CharBitMap" type
+               (:members 
+                  ( ("pBuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1316 1327])
+                    ("BufLen" variable (:type "int") (reparse-symbol classsubparts) [1359 1370])
+                    ("pLast" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1412 1424])
+                    ("ExtLen" variable (:type "int") (reparse-symbol classsubparts) [1463 1474])
+                    ("h" variable (:type "int") (reparse-symbol classsubparts) [1518 1524])
+                    ("w" variable (:type "int") (reparse-symbol classsubparts) [1552 1558])
+                    ("wBytes" variable (:type "int") (reparse-symbol classsubparts) [1585 1596])
+                    ("isMulti8" variable (:type "bool") (reparse-symbol classsubparts) [1622 1636]))                  
+                :type "struct")
+                nil [1292 1672])
+            ("OPEN_RC" type
+               (:members 
+                  ( ("NORMAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1689 1696])
+                    ("UNSUPPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1697 1707])
+                    ("FAILURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1708 1717]))                  
+                :type "enum")
+                nil [1674 1718])
+            ("GraphDev" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1741 1748])
+                    ("Open" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("drv" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1774 1785]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1757 1794])
+                    ("Open" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [1820 1829])
+                            ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [1830 1839])
+                            ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [1840 1850]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1803 1851])
+                    ("Close" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1860 1880])
+                    ("GraphDev" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1889 1911])
+                    ("mpGraphDev" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("GraphDev" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1922 1950])
+                    ("Height" function (:type "int") (reparse-symbol classsubparts) [1960 2010])
+                    ("Width" function (:type "int") (reparse-symbol classsubparts) [2019 2068])
+                    ("SetAscFont" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pAscFont" variable
+                               (:pointer 1
+                                :type ("BaseFont" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2117 2136]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2094 2137])
+                    ("SetDblFont" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pDblFont" variable
+                               (:pointer 1
+                                :type ("BaseFont" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2169 2188]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2146 2189])
+                    ("OutChar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2211 2217])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2218 2224])
+                            ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [2225 2232])
+                            ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [2233 2240])
+                            ("c" variable (:type "char") (reparse-symbol arg-sub-list) [2241 2248]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2198 2249])
+                    ("OutChar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2271 2277])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2278 2284])
+                            ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [2285 2292])
+                            ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [2293 2300])
+                            ("c1" variable (:type "char") (reparse-symbol arg-sub-list) [2301 2309])
+                            ("c2" variable (:type "char") (reparse-symbol arg-sub-list) [2310 2318]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2258 2319])
+                    ("DrawChar" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2375 2381])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2381 2387])
+                            ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [2387 2394])
+                            ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [2394 2401])
+                            ("pFont" variable
+                               (:pointer 1
+                                :type ("CharBitMap" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2401 2426]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2353 2431])
+                    ("BlockHeight" function
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2440 2509])
+                    ("BlockWidth" function
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2518 2585])
+                    ("mBlankLineHeight" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2594 2622])
+                    ("ClearScr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2632 2648])
+                    ("DrawLine" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [2671 2678])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [2678 2685])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [2685 2692])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [2692 2699])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [2699 2709]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2657 2710])
+                    ("DrawRect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [2733 2740])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [2740 2747])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [2747 2754])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [2754 2761])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [2761 2771]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2719 2772])
+                    ("PutPixel" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2804 2810])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2810 2816])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [2816 2826]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2782 2831])
+                    ("FillRect" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [2862 2869])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [2869 2876])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [2876 2883])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [2883 2890])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [2890 2900]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2840 2905])
+                    ("RevRect" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [2935 2942])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [2942 2949])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [2949 2956])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [2956 2963]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2914 2968])
+                    ("SwitchToGraph" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2978 3009])
+                    ("SwitchToText" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3019 3049])
+                    ("Update" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3059 3083])
+                    ("Name" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3093 3119])
+                    ("protected" label nil (reparse-symbol classsubparts) [3125 3135])
+                    ("mYres" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3144 3168])
+                    ("mXres" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3144 3168])
+                    ("mpAscFont" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("BaseFont" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3193 3220])
+                    ("mpDblFont" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("BaseFont" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3229 3256])
+                    ("mBlockWidth" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3266 3289])
+                    ("mBlockHeight" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3298 3322])
+                    ("mAsc" variable
+                       (:typemodifiers ("static")
+                        :type ("CharBitMap" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3331 3361])
+                    ("mDbl" variable
+                       (:typemodifiers ("static")
+                        :type ("CharBitMap" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3370 3400]))                  
+                :type "class")
+                nil [1720 3403])
+            ("fb_readb" variable (:constant-flag t) nil [3413 3421])
+            ("fb_readw" variable (:constant-flag t) nil [3464 3472])
+            ("fb_readl" variable (:constant-flag t) nil [3516 3524])
+            ("fb_writeb" variable (:constant-flag t) nil [3568 3577])
+            ("fb_writew" variable (:constant-flag t) nil [3628 3637])
+            ("fb_writel" variable (:constant-flag t) nil [3689 3698]))          
+    :file "graphdev.h"
+    :pointmax 3750
+    :fsize 3749
+    :lastmodtime '(17495 39939)
+    :unmatched-syntax '((punctuation 3083 . 3084) (punctuation 3049 . 3050) (punctuation 3009 . 3010) (punctuation 1911 . 1912) (string 1786 . 1792) (punctuation 1784 . 1785))
+    :lexical-table 
+        '(("GRPATHDEV_H")
+          ("fb_readb" (spp-arg-list ("addr") 3421 . 3427) . ((semantic-list "(*(volatile __u8 *) (addr))" 3428 . 3455)))
+          ("fb_writel" (spp-arg-list ("b" "addr") 3698 . 3706) . ((semantic-list "(*(volatile __u32 *) (addr) = (b))" 3707 . 3741)))
+          ("fb_writeb" (spp-arg-list ("b" "addr") 3577 . 3585) . ((semantic-list "(*(volatile __u8 *) (addr) = (b))" 3586 . 3619)))
+          ("fb_readw" (spp-arg-list ("addr") 3472 . 3478) . ((semantic-list "(*(volatile __u16 *) (addr))" 3479 . 3507)))
+          ("fb_readl" (spp-arg-list ("addr") 3524 . 3530) . ((semantic-list "(*(volatile __u32 *) (addr))" 3531 . 3559)))
+          ("fb_writew" (spp-arg-list ("b" "addr") 3637 . 3645) . ((semantic-list "(*(volatile __u16 *) (addr) = (b))" 3646 . 3680)))
+          )
+
+    )
+   (semanticdb-table "hzdecoder.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("HZDECODER_H" variable (:constant-flag t) nil [1081 1092])
+            ("HzDecoder" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1140 1147])
+                    ("HzDecoder" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("HzDecoder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1156 1168])
+                    ("HzDecoder" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1177 1198])
+                    ("IsCode2" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1229 1236]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1208 1241])
+                    ("IsCode1" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1271 1278]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1250 1283])
+                    ("Index" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("c1" variable (:type "char") (reparse-symbol arg-sub-list) [1319 1327])
+                            ("c2" variable (:type "char") (reparse-symbol arg-sub-list) [1327 1335]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1292 1340]))                  
+                :type "class")
+                nil [1118 1343]))          
+    :file "hzdecoder.h"
+    :pointmax 1351
+    :fsize 1350
+    :lastmodtime '(17484 65282)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("HZDECODER_H")
+          )
+
+    )
+   (semanticdb-table "basefont.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BASEFONT_H" variable (:constant-flag t) nil [1079 1089])
+            ("string" include (:system-flag t) nil [1114 1131])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1132 1152])
+            ("CharTag" type
+               (:members 
+                  ( ("FULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1202 1207])
+                    ("LEFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1207 1212])
+                    ("RIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1212 1219]))                  
+                :type "enum")
+                nil [1183 1220])
+            ("BaseFont" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1243 1250])
+                    ("BaseFont" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fn" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1268 1279])
+                            ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1279 1285])
+                            ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1285 1291]))                          
+                        :type ("BaseFont" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1259 1292])
+                    ("BaseFont" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1301 1321])
+                    ("Width" function (:type "int") (reparse-symbol classsubparts) [1330 1386])
+                    ("Height" function (:type "int") (reparse-symbol classsubparts) [1395 1453])
+                    ("WidthBytes" function (:type "int") (reparse-symbol classsubparts) [1462 1528])
+                    ("GetChar" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1551 1558]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [1537 1559])
+                    ("GetChar" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("c1" variable (:type "char") (reparse-symbol arg-sub-list) [1582 1590])
+                            ("c2" variable (:type "char") (reparse-symbol arg-sub-list) [1591 1599]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [1568 1600])
+                    ("protected" label nil (reparse-symbol classsubparts) [1606 1616])
+                    ("mFd" variable (:type "int") (reparse-symbol classsubparts) [1669 1677])
+                    ("mpBuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1686 1698])
+                    ("mpNull" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1707 1720])
+                    ("mBufSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [1729 1747])
+                    ("mWidth" variable (:type "int") (reparse-symbol classsubparts) [1756 1767])
+                    ("mHeight" variable (:type "int") (reparse-symbol classsubparts) [1776 1788])
+                    ("mNumChars" variable (:type "long") (reparse-symbol classsubparts) [1797 1812])
+                    ("mDataOffset" variable (:type "unsigned int") (reparse-symbol classsubparts) [1821 1842])
+                    ("mByteLen" variable (:type "int") (reparse-symbol classsubparts) [1851 1864])
+                    ("mWidthBytes" variable (:type "int") (reparse-symbol classsubparts) [1918 1934])
+                    ("GetInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1943 1958]))                  
+                :type "class")
+                nil [1222 1961]))          
+    :file "basefont.h"
+    :pointmax 1969
+    :fsize 1968
+    :lastmodtime '(17484 65283)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BASEFONT_H")
+          )
+
+    )
+   )
+  :file "!home!cpper!桌面!zhcon-0.2.5!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

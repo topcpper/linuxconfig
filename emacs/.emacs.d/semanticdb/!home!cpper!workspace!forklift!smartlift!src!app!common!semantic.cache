@@ -1,0 +1,1626 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "common.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("time.h" include (:system-flag t) nil [825 842])
+            ("sys/types.h" include (:system-flag t) nil [863 885])
+            ("sys/ipc.h" include (:system-flag t) nil [886 906])
+            ("IN" variable (:constant-flag t) nil [937 939])
+            ("INOUT" variable (:constant-flag t) nil [949 954])
+            ("OUT" variable (:constant-flag t) nil [963 966])
+            ("UINT" variable (:constant-flag t) nil [989 993])
+            ("BOOL" variable (:constant-flag t) nil [1036 1040])
+            ("BOOL_TRUE" variable (:constant-flag t) nil [1088 1097])
+            ("BOOL_FALSE" variable (:constant-flag t) nil [1135 1145])
+            ("DISTRICT_CONFIG_FILE" variable (:constant-flag t) nil [1164 1184])
+            ("RUELS_CONFIG_FILE" variable (:constant-flag t) nil [1214 1231])
+            ("ACCESSLIST_CONFIG_FILE" variable (:constant-flag t) nil [1261 1283])
+            ("CHECKLIST_CONFIG_FILE" variable (:constant-flag t) nil [1313 1334])
+            ("STATISTIC_CONFIG_FILE" variable (:constant-flag t) nil [1364 1385])
+            ("PARAMETER_CONFIG_FILE" variable (:constant-flag t) nil [1415 1436])
+            ("IMPACT_DEVICE_NAME" variable (:constant-flag t) nil [1469 1487])
+            ("KEY_DEVICE_NAME" variable (:constant-flag t) nil [1515 1530])
+            ("LCD_DEVICE_NAME" variable (:constant-flag t) nil [1558 1573])
+            ("BELT_DEVICE_NAME" variable (:constant-flag t) nil [1601 1617])
+            ("SEAT_DEVICE_NAME" variable (:constant-flag t) nil [1645 1661])
+            ("REPLAY_DEVICE_NAME" variable (:constant-flag t) nil [1689 1707])
+            ("RIFD_DEVICE_NAME" variable (:constant-flag t) nil [1735 1751])
+            ("READER_DEVICE_NAME" variable (:constant-flag t) nil [1779 1797])
+            ("SPEED_DEVICE_NAME" variable (:constant-flag t) nil [1826 1843])
+            ("WEIGHT_DEVICE_NAME" variable (:constant-flag t) nil [1871 1889])
+            ("HEIGHT_DEVICE_NAME" variable (:constant-flag t) nil [1917 1935])
+            ("ERROR_E" type
+               (:typedef ("_error" type (:type "enum") nil nil)
+                :superclasses "_error"
+                :type "typedef")
+                nil [1966 2141])
+            ("_error" type
+               (:members 
+                  ( ("ERROR_FAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1989 2002])
+                    ("ERROR_MEMORYFLOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2020 2037])
+                    ("ERROR_OPENFILE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2055 2070])
+                    ("ERROR_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (2106 2107)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2090 2107])
+                    ("ERROR_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2121 2133]))                  
+                :type "enum")
+                nil [1966 2141])
+            ("DISTRICT_ID_LEN" variable (:constant-flag t) nil [2153 2168])
+            ("RIFD_ID_LEN" variable (:constant-flag t) nil [2198 2209])
+            ("MAX_INFORMATION_LEN" variable (:constant-flag t) nil [2247 2266])
+            ("MAX_ACCESSMEMBER_NUM" variable (:constant-flag t) nil [2293 2313])
+            ("FORKLIFT_ID_LEN" variable (:constant-flag t) nil [2342 2357])
+            ("OPERATOR_ID_LEN" variable (:constant-flag t) nil [2382 2397])
+            ("PARAMETER_ST" type
+               (:typedef ("_parameter" type (:type "struct") nil nil)
+                :superclasses "_parameter"
+                :type "typedef")
+                nil [2429 2734])
+            ("_parameter" type
+               (:members 
+                  ( ("acForkliftId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2458 2495])
+                    ("iLockFlag" variable (:type "int") (reparse-symbol classsubparts) [2508 2525])
+                    ("iWorkMode" variable (:type "int") (reparse-symbol classsubparts) [2560 2577])
+                    ("fScaleFactor" variable (:type "float") (reparse-symbol classsubparts) [2612 2632])
+                    ("fInitialWeight" variable (:type "float") (reparse-symbol classsubparts) [2667 2689]))                  
+                :type "struct")
+                nil [2429 2734])
+            ("GPS_LOCATION_ST" type
+               (:typedef ("_GPS_location" type (:type "struct") nil nil)
+                :superclasses "_GPS_location"
+                :type "typedef")
+                nil [2748 2858])
+            ("_GPS_location" type
+               (:members 
+                  ( ("fLongitude" variable (:type "float") (reparse-symbol classsubparts) [2780 2797])
+                    ("fLatitude" variable (:type "float") (reparse-symbol classsubparts) [2811 2827]))                  
+                :type "struct")
+                nil [2748 2858])
+            ("RIFD_LOCATION_ST" type
+               (:typedef ("_rifd_location" type (:type "struct") nil nil)
+                :superclasses "_rifd_location"
+                :type "typedef")
+                nil [2873 2971])
+            ("_rifd_location" type
+               (:members 
+                  ( ("acRifdId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2906 2934]))                  
+                :type "struct")
+                nil [2873 2971])
+            ("LOCATION_DATA_U" type
+               (:typedef ("_location_data" type (:type "union") nil nil)
+                :superclasses "_location_data"
+                :type "typedef")
+                nil [2987 3144])
+            ("_location_data" type
+               (:members 
+                  ( ("stGpsLocation" variable (:type ("GPS_LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3019 3051])
+                    ("stRfidLocation" variable (:type ("RIFD_LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3074 3107]))                  
+                :type "union")
+                nil [2987 3144])
+            ("LOCATION_TYPE_E" type
+               (:typedef ("_location_type" type (:type "enum") nil nil)
+                :superclasses "_location_type"
+                :type "typedef")
+                nil [3159 3271])
+            ("_location_type" type
+               (:members 
+                  ( ("LOCATION_TYPE_GPS" variable
+                       (:constant-flag t
+                        :default-value (3210 3211)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3190 3211])
+                    ("LOCATION_TYPE_RIFD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3214 3233])
+                    ("LOCATION_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3235 3255]))                  
+                :type "enum")
+                nil [3159 3271])
+            ("LOCATION_ST" type
+               (:typedef ("_location" type (:type "struct") nil nil)
+                :superclasses "_location"
+                :type "typedef")
+                nil [3282 3422])
+            ("_location" type
+               (:members 
+                  ( ("uiLocationType" variable (:type "unsigned int") (reparse-symbol classsubparts) [3310 3342])
+                    ("uLocationData" variable (:type ("LOCATION_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3360 3391]))                  
+                :type "struct")
+                nil [3282 3422])
+            ("ACCESS_TYPE_E" type
+               (:typedef ("_access_type" type (:type "enum") nil nil)
+                :superclasses "_access_type"
+                :type "typedef")
+                nil [3609 3815])
+            ("_access_type" type
+               (:members 
+                  ( ("ACCESS_TYPE_OPERATOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3638 3659])
+                    ("ACCESS_TYPE_TECHNICIAN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3679 3702])
+                    ("ACCESS_TYPE_DIRECTOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3720 3741])
+                    ("ACCESS_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3761 3801]))                  
+                :type "enum")
+                nil [3609 3815])
+            ("LOGIN_MEMBER_ST" type
+               (:typedef ("_login_member" type (:type "struct") nil nil)
+                :superclasses "_login_member"
+                :type "typedef")
+                nil [3831 4028])
+            ("_login_member" type
+               (:members 
+                  ( ("acForkliftId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3863 3900])
+                    ("acOperatorId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3913 3950])
+                    ("uiAccessType" variable (:type "unsigned int") (reparse-symbol classsubparts) [3964 3984]))                  
+                :type "struct")
+                nil [3831 4028])
+            ("STATUS_TYPE_E" type
+               (:typedef ("_status_type" type (:type "enum") nil nil)
+                :superclasses "_status_type"
+                :type "typedef")
+                nil [4215 4398])
+            ("_status_type" type
+               (:members 
+                  ( ("STATUS_TYPE_WORKING" variable
+                       (:constant-flag t
+                        :default-value (4266 4267)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4244 4267])
+                    ("STATUS_TYPE_STOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4288 4305])
+                    ("STATUS_TYPE_FREE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4328 4345])
+                    ("STATUS_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4366 4384]))                  
+                :type "enum")
+                nil [4215 4398])
+            ("STATE_TYPE_E" type
+               (:typedef ("_state_type" type (:type "enum") nil nil)
+                :superclasses "_state_type"
+                :type "typedef")
+                nil [4413 4697])
+            ("_state_type" type
+               (:members 
+                  ( ("STATE_TYPE_DISTRICT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4441 4461])
+                    ("STATE_TYPE_HEIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4479 4497])
+                    ("STATE_TYPE_WEIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4516 4534])
+                    ("STATE_TYPE_SPEED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4553 4570])
+                    ("STATE_TYPE_LOCATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4590 4610])
+                    ("STATE_TYPE_STATUS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4627 4645])
+                    ("STATE_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4667 4684]))                  
+                :type "enum")
+                nil [4413 4697])
+            ("STATES_ST" type
+               (:typedef ("_states" type (:type "struct") nil nil)
+                :superclasses "_states"
+                :type "typedef")
+                nil [4716 5067])
+            ("_states" type
+               (:members 
+                  ( ("acDistrict" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4742 4780])
+                    ("fHeight" variable (:type "float") (reparse-symbol classsubparts) [4807 4825])
+                    ("fWeight" variable (:type "float") (reparse-symbol classsubparts) [4856 4874])
+                    ("fSpeed" variable (:type "float") (reparse-symbol classsubparts) [4905 4922])
+                    ("stLocation" variable (:type ("LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4954 4978])
+                    ("uiStatus" variable (:type "unsigned int") (reparse-symbol classsubparts) [5006 5025]))                  
+                :type "struct")
+                nil [4716 5067])
+            ("CONTROL_TYPE_E" type
+               (:typedef ("_control_type" type (:type "enum") nil nil)
+                :superclasses "_control_type"
+                :type "typedef")
+                nil [5255 5662])
+            ("_control_type" type
+               (:members 
+                  ( ("CONTROL_TYPE_STALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5285 5304])
+                    ("CONTROL_TYPE_LOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5326 5344])
+                    ("CONTROL_TYPE_REBOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5367 5387])
+                    ("CONTROL_TYPE_SHUTDOWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5408 5430])
+                    ("CONTROL_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5628 5647]))                  
+                :type "enum")
+                nil [5255 5662])
+            ("BEHAVOR_TYPE_E" type
+               (:typedef ("_behavor_type" type (:type "enum") nil nil)
+                :superclasses "_behavor_type"
+                :type "typedef")
+                nil [5677 5860])
+            ("_behavor_type" type
+               (:members 
+                  ( ("BEHAVOR_TYPE_IMMEDIATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5707 5730])
+                    ("BEHAVOR_TYPE_NEXTTIME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5788 5810])
+                    ("BEHAVOR_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5826 5845]))                  
+                :type "enum")
+                nil [5677 5860])
+            ("CONTROL_ARG_ST" type
+               (:typedef ("_control_arg" type (:type "struct") nil nil)
+                :superclasses "_control_arg"
+                :type "typedef")
+                nil [5873 5996])
+            ("_control_arg" type
+               (:members 
+                  ( ("uiArgNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [5904 5919])
+                    ("pArgsList" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [5942 5958]))                  
+                :type "struct")
+                nil [5873 5996])
+            ("CONTROL_MSG_ST" type
+               (:typedef ("_control_msg" type (:type "struct") nil nil)
+                :superclasses "_control_msg"
+                :type "typedef")
+                nil [6011 6196])
+            ("_control_msg" type
+               (:members 
+                  ( ("uiControlType" variable (:type "unsigned int") (reparse-symbol classsubparts) [6042 6072])
+                    ("uiBehavor" variable (:type "unsigned int") (reparse-symbol classsubparts) [6089 6115])
+                    ("stArg" variable (:type ("CONTROL_ARG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6136 6158]))                  
+                :type "struct")
+                nil [6011 6196])
+            ("QUERY_TYPE_E" type
+               (:typedef ("_query_type" type (:type "enum") nil nil)
+                :superclasses "_query_type"
+                :type "typedef")
+                nil [6386 6602])
+            ("_query_type" type
+               (:members 
+                  ( ("QUERY_TYPE_ALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6414 6429])
+                    ("QUERY_TYPE_USR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6454 6469])
+                    ("QUERY_TYPE_STATUS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6492 6510])
+                    ("QUERY_TYPE_STATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6532 6549])
+                    ("QUERY_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6572 6589]))                  
+                :type "enum")
+                nil [6386 6602])
+            ("QUERY_MSG_ST" type
+               (:typedef ("_query_msg" type (:type "struct") nil nil)
+                :superclasses "_query_msg"
+                :type "typedef")
+                nil [6618 6815])
+            ("_query_msg" type
+               (:members 
+                  ( ("uiQueryType" variable (:type "unsigned int") (reparse-symbol classsubparts) [6647 6664])
+                    ("uiQueryNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [6698 6714])
+                    ("uiStateTypes" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6750 6785]))                  
+                :type "struct")
+                nil [6618 6815])
+            ("INFORMATION_TYPE_E" type
+               (:typedef ("_information_type" type (:type "enum") nil nil)
+                :superclasses "_information_type"
+                :type "typedef")
+                nil [7004 7302])
+            ("_information_type" type
+               (:members 
+                  ( ("INFORMATION_TYPE_WARN" variable
+                       (:constant-flag t
+                        :default-value (7062 7063)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7038 7063])
+                    ("INFORMATION_TYPE_MAINTAIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7082 7108])
+                    ("INFORMATION_TYPE_SCHEDULE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7126 7152])
+                    ("INFORMATION_TYPE_NOTICE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7170 7194])
+                    ("INFORMATION_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7260 7283]))                  
+                :type "enum")
+                nil [7004 7302])
+            ("INFORMATION_MSG_ST" type
+               (:typedef ("_information_msg" type (:type "struct") nil nil)
+                :superclasses "_information_msg"
+                :type "typedef")
+                nil [7318 7504])
+            ("_information_msg" type
+               (:members 
+                  ( ("uiInformationType" variable (:type "unsigned int") (reparse-symbol classsubparts) [7353 7376])
+                    ("acInformationData" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7413 7457]))                  
+                :type "struct")
+                nil [7318 7504])
+            ("CYCLEUPLOAD_CONFIG_ST" type
+               (:typedef ("_cycleupload_config" type (:type "struct") nil nil)
+                :superclasses "_cycleupload_config"
+                :type "typedef")
+                nil [7695 7898])
+            ("_cycleupload_config" type
+               (:members 
+                  ( ("uiCycleTime" variable (:type "unsigned int") (reparse-symbol classsubparts) [7733 7752])
+                    ("uiStatesNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [7779 7798]))                  
+                :type "struct")
+                nil [7695 7898])
+            ("SERVER_CONFIG_ST" type
+               (:typedef ("_server_config" type (:type "struct") nil nil)
+                :superclasses "_server_config"
+                :type "typedef")
+                nil [7914 8287])
+            ("_server_config" type
+               (:members 
+                  ( ("uiIpType" variable (:type "unsigned int") (reparse-symbol classsubparts) [7947 7961])
+                    ("acIpAddr" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8000 8018])
+                    ("uiPort" variable (:type "unsigned int") (reparse-symbol classsubparts) [8053 8065])
+                    ("uiSndConnectType" variable (:type "unsigned int") (reparse-symbol classsubparts) [8092 8114])
+                    ("uiSndModel" variable (:type "unsigned int") (reparse-symbol classsubparts) [8137 8153])
+                    ("uiRcvConnectType" variable (:type "unsigned int") (reparse-symbol classsubparts) [8181 8203])
+                    ("uiRcvModel" variable (:type "unsigned int") (reparse-symbol classsubparts) [8226 8242]))                  
+                :type "struct")
+                nil [7914 8287])
+            ("ACCESS_MEMBER_ST" type
+               (:typedef ("_access_member" type (:type "struct") nil nil)
+                :superclasses "_access_member"
+                :type "typedef")
+                nil [8476 8635])
+            ("_access_member" type
+               (:members 
+                  ( ("acOperatorId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8509 8546])
+                    ("uiAccessType" variable (:type "unsigned int") (reparse-symbol classsubparts) [8563 8583]))                  
+                :type "struct")
+                nil [8476 8635])
+            ("ACESSLIST_CONFIG_ST" type
+               (:typedef ("_accesslist_config" type (:type "struct") nil nil)
+                :superclasses "_accesslist_config"
+                :type "typedef")
+                nil [8649 8845])
+            ("_accesslist_config" type
+               (:members 
+                  ( ("uiMemberNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [8686 8717]))                  
+                :type "struct")
+                nil [8649 8845])
+            ("CHECKITEM_TYPE_E" type
+               (:typedef ("_checkitem_type" type (:type "enum") nil nil)
+                :superclasses "_checkitem_type"
+                :type "typedef")
+                nil [9036 9673])
+            ("_checkitem_type" type
+               (:members 
+                  ( ("CHECKITEM_TYPE_BODY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9068 9088])
+                    ("CHECKITEM_TYPE_DASHBOARD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9110 9135])
+                    ("CHECKITEM_TYPE_HORN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9152 9172])
+                    ("CHECKITEM_TYPE_TYRES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9194 9215])
+                    ("CHECKITEM_TYPE_LIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9236 9257])
+                    ("CHECKITEM_TYPE_BRAKE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9278 9299])
+                    ("CHECKITEM_TYPE_STEERWHEEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9320 9346])
+                    ("CHECKITEM_TYPE_DIRECTIONBUTTON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9363 9394])
+                    ("CHECKITEM_TYPE_FUELLEAKAGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9406 9433])
+                    ("CHECKITEM_TYPE_ELECTROLYTE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9450 9477])
+                    ("CHECKITEM_TYPE_ELECEQUIMENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9494 9522])
+                    ("CHECKITEM_TYPE_INDICATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9538 9564])
+                    ("CHECKITEM_TYPE_TOWINGHOOK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9580 9606])
+                    ("CHECKITEM_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9622 9642]))                  
+                :type "enum")
+                nil [9036 9673])
+            ("CHECKSTATE_TYPE_E" type
+               (:typedef ("_checkstate_type" type (:type "enum") nil nil)
+                :superclasses "_checkstate_type"
+                :type "typedef")
+                nil [9690 9902])
+            ("_checkstate_type" type
+               (:members 
+                  ( ("CHECKSTATE_TYPE_PERFECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9723 9747])
+                    ("CHECKSTATE_TYPE_ACCEPT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9765 9788])
+                    ("CHECKSTATE_TYPE_BAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9809 9829])
+                    ("CHECKSTATE_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9851 9884]))                  
+                :type "enum")
+                nil [9690 9902])
+            ("CHECK_ITEM_ST" type
+               (:typedef ("_check_item" type (:type "struct") nil nil)
+                :superclasses "_check_item"
+                :type "typedef")
+                nil [9918 10102])
+            ("_check_item" type
+               (:members 
+                  ( ("uiItemType" variable (:type "unsigned int") (reparse-symbol classsubparts) [9948 9965])
+                    ("bNeedupload" variable (:type "unsigned int") (reparse-symbol classsubparts) [10053 10071]))                  
+                :type "struct")
+                nil [9918 10102])
+            ("CHECKLIST_CONFIG_ST" type
+               (:typedef ("_checklist_config" type (:type "struct") nil nil)
+                :superclasses "_checklist_config"
+                :type "typedef")
+                nil [10117 10303])
+            ("_checklist_config" type
+               (:members 
+                  ( ("uiNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [10153 10178])
+                    ("astCheckItems" variable
+                       (:dereference 1
+                        :type ("CHECK_ITEM_ST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10180 10215]))                  
+                :type "struct")
+                nil [10117 10303])
+            ("RIFD_SENSORID_LEN" variable (:constant-flag t) nil [10486 10503])
+            ("ZONEID_LEN" variable (:constant-flag t) nil [10515 10525])
+            ("DISTRICT_CONFIG_ST" type
+               (:typedef ("_district_config" type (:type "struct") nil nil)
+                :superclasses "_district_config"
+                :type "typedef")
+                nil [10549 10868])
+            ("_district_config" type
+               (:members 
+                  ( ("uiSensorNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [10584 10605])
+                    ("acZoneId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10716 10746]))                  
+                :type "struct")
+                nil [10549 10868])
+            ("RUEL_CONFIG" variable (:constant-flag t) nil [10879 10890])
+            ("RULE_TYPE_E" type
+               (:typedef ("_rule_type" type (:type "enum") nil nil)
+                :superclasses "_rule_type"
+                :type "typedef")
+                nil [11079 11479])
+            ("_rule_type" type
+               (:members 
+                  ( ("RULE_TYPE_IMPACT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11106 11123])
+                    ("RULE_TYPE_OVERDISTRICT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11142 11165])
+                    ("RULE_TYPE_OVERSPEED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11184 11204])
+                    ("RULE_TYPE_OVERLOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11220 11239])
+                    ("RULE_TYPE_OVERTOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11256 11274])
+                    ("RULE_TYPE_BELT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11292 11307])
+                    ("RUEL_TYPE_SEAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11329 11344])
+                    ("RUEL_TYPE_LOGIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11369 11385])
+                    ("RUEL_TYPE_ROUTECHECK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11408 11429])
+                    ("RUEL_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11451 11467]))                  
+                :type "enum")
+                nil [11079 11479])
+            ("ACTION_TYPE_E" type
+               (:typedef ("_action_type" type (:type "enum") nil nil)
+                :superclasses "_action_type"
+                :type "typedef")
+                nil [11496 11734])
+            ("_action_type" type
+               (:members 
+                  ( ("ACTION_TYPE_SOUND" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11525 11543])
+                    ("ACTION_TYPE_DISPLAY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11560 11580])
+                    ("ACTION_TYPE_UPLOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11597 11616])
+                    ("ACTION_TYPE_STALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11632 11650])
+                    ("ACTION_TYPE_LOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11667 11684])
+                    ("ACTION_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11702 11720]))                  
+                :type "enum")
+                nil [11496 11734])
+            ("THRESHOLD_U" type
+               (:typedef ("_threshold" type (:type "union") nil nil)
+                :superclasses "_threshold"
+                :type "typedef")
+                nil [11747 12031])
+            ("_threshold" type
+               (:members 
+                  ( ("fSpeed" variable (:type "float") (reparse-symbol classsubparts) [11775 11789])
+                    ("fWeight" variable (:type "float") (reparse-symbol classsubparts) [11811 11826])
+                    ("fHeight" variable (:type "float") (reparse-symbol classsubparts) [11847 11862])
+                    ("uiTimeout" variable (:type "unsigned int") (reparse-symbol classsubparts) [11885 11902])
+                    ("uiImpactStrenth" variable (:type "unsigned int") (reparse-symbol classsubparts) [11921 11944])
+                    ("bBeltSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [11959 11978])
+                    ("bDistrictSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [11980 12003]))                  
+                :type "union")
+                nil [11747 12031])
+            ("RUEL_ST" type
+               (:typedef ("_rule" type (:type "struct") nil nil)
+                :superclasses "_rule"
+                :type "typedef")
+                nil [12046 12309])
+            ("_rule" type
+               (:members 
+                  ( ("uiRuelType" variable (:type "unsigned int") (reparse-symbol classsubparts) [12070 12086])
+                    ("uThreshold" variable (:type ("THRESHOLD_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12143 12166])
+                    ("uiDelayTime" variable (:type "unsigned int") (reparse-symbol classsubparts) [12178 12195])
+                    ("uiActionTypes" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [12215 12252])
+                    ("bSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [12265 12278]))                  
+                :type "struct")
+                nil [12046 12309])
+            ("RUEL_CONFIG_ST" type
+               (:typedef ("_ruel_config" type (:type "struct") nil nil)
+                :superclasses "_ruel_config"
+                :type "typedef")
+                nil [12320 12632])
+            ("_ruel_config" type
+               (:members 
+                  ( ("acDistrictId" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [12351 12400])
+                    ("stRuels" variable
+                       (:dereference 1
+                        :type ("RUEL_ST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12416 12459]))                  
+                :type "struct")
+                nil [12320 12632])
+            ("MAINTAIN_CONFIG_ST" type
+               (:typedef ("_maintenance_config" type (:type "struct") nil nil)
+                :superclasses "_maintenance_config"
+                :type "typedef")
+                nil [12819 13076])
+            ("_maintenance_config" type
+               (:members 
+                  ( ("uiHour" variable (:type "unsigned int") (reparse-symbol classsubparts) [12857 12869])
+                    ("uiMileages" variable (:type "unsigned int") (reparse-symbol classsubparts) [12906 12922])
+                    ("acDescription" variable (:type "char") (reparse-symbol classsubparts) [12961 12980])
+                    ("bSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [13008 13021]))                  
+                :type "struct")
+                nil [12819 13076])
+            ("RENT_CONFIG_ST" type
+               (:typedef ("_rent_config" type (:type "struct") nil nil)
+                :superclasses "_rent_config"
+                :type "typedef")
+                nil [13090 13336])
+            ("_rent_config" type
+               (:members 
+                  ( ("uiHour" variable (:type "unsigned int") (reparse-symbol classsubparts) [13121 13133])
+                    ("uiMileages" variable (:type "unsigned int") (reparse-symbol classsubparts) [13170 13186])
+                    ("acDescription" variable (:type "char") (reparse-symbol classsubparts) [13225 13244])
+                    ("bSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [13272 13285]))                  
+                :type "struct")
+                nil [13090 13336])
+            ("CONFIG_TYPE_E" type
+               (:typedef ("_config_type" type (:type "enum") nil nil)
+                :superclasses "_config_type"
+                :type "typedef")
+                nil [13524 13934])
+            ("_config_type" type
+               (:members 
+                  ( ("CONFIG_TYPE_DISTRICT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13594 13615])
+                    ("CONFIG_TYPE_RUEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13632 13649])
+                    ("CONFIG_TYPE_ACESSLIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13669 13691])
+                    ("CONFIG_TYPE_CHECKLIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13709 13731])
+                    ("CONFIG_TYPE_MAINTAIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13749 13770])
+                    ("CONFIG_TYPE_CYCLEUPLOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13786 13810])
+                    ("CONFIG_TYPE_SERVER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13826 13845])
+                    ("CONFIG_TYPE_RENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13866 13883])
+                    ("CFG_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13905 13920]))                  
+                :type "enum")
+                nil [13524 13934])
+            ("CONFIG_DATA_U" type
+               (:typedef ("_config_data" type (:type "union") nil nil)
+                :superclasses "_config_data"
+                :type "typedef")
+                nil [13947 14284])
+            ("_config_data" type
+               (:members 
+                  ( ("stDistrict" variable (:type ("DISTRICT_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13977 14012])
+                    ("stRuel" variable (:type ("RUEL_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14014 14045])
+                    ("stAccesslist" variable (:type ("ACESSLIST_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14047 14084])
+                    ("stChecklist" variable (:type ("CHECKLIST_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14086 14122])
+                    ("stMaintain" variable (:type ("MAINTAIN_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14124 14159])
+                    ("stCycleupload" variable (:type ("CYCLEUPLOAD_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14161 14199])
+                    ("stServer" variable (:type ("SERVER_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14202 14235])
+                    ("stRent" variable (:type ("RENT_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14237 14268]))                  
+                :type "union")
+                nil [13947 14284])
+            ("CONFIG_MSG_ST" type
+               (:typedef ("_config_msg" type (:type "struct") nil nil)
+                :superclasses "_config_msg"
+                :type "typedef")
+                nil [14300 14479])
+            ("_config_msg" type
+               (:members 
+                  ( ("uiConfigType" variable (:type "unsigned int") (reparse-symbol classsubparts) [14330 14358])
+                    ("uiBehavor" variable (:type "unsigned int") (reparse-symbol classsubparts) [14374 14399])
+                    ("uData" variable (:type ("CONFIG_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14420 14441]))                  
+                :type "struct")
+                nil [14300 14479])
+            ("EVENT" variable (:constant-flag t) nil [14669 14674])
+            ("LOGIN_EVENT_ST" type
+               (:typedef ("_login_event" type (:type "struct") nil nil)
+                :superclasses "_login_event"
+                :type "typedef")
+                nil [14891 15119])
+            ("_login_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14922 14955])
+                    ("uiAccessType" variable (:type "unsigned int") (reparse-symbol classsubparts) [14988 15015])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15046 15067]))                  
+                :type "struct")
+                nil [14891 15119])
+            ("LOGOUT_EVENT_ST" type
+               (:typedef ("_logout_event" type (:type "struct") nil nil)
+                :superclasses "_logout_event"
+                :type "typedef")
+                nil [15302 15605])
+            ("_logout_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15334 15367])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15400 15426])
+                    ("stLocation" variable (:type ("LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15463 15493])
+                    ("uiStatus" variable (:type "unsigned int") (reparse-symbol classsubparts) [15526 15554]))                  
+                :type "struct")
+                nil [15302 15605])
+            ("ROUTECHECK_EVENT" variable (:constant-flag t) nil [15616 15632])
+            ("CHECKITEM_STATE_ST" type
+               (:typedef ("_checkitem_state" type (:type "struct") nil nil)
+                :superclasses "_checkitem_state"
+                :type "typedef")
+                nil [15819 16004])
+            ("_checkitem_state" type
+               (:members 
+                  ( ("uiCheckiemType" variable (:type "unsigned int") (reparse-symbol classsubparts) [15854 15888])
+                    ("uiCheckstateType" variable (:type "unsigned int") (reparse-symbol classsubparts) [15919 15955]))                  
+                :type "struct")
+                nil [15819 16004])
+            ("ROUTECHECK_EVENT_ST" type
+               (:typedef ("_routecheck_event" type (:type "struct") nil nil)
+                :superclasses "_routecheck_event"
+                :type "typedef")
+                nil [16019 16269])
+            ("_routecheck_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16055 16088])
+                    ("uiCheckstateType" variable (:type "unsigned int") (reparse-symbol classsubparts) [16121 16157]))                  
+                :type "struct")
+                nil [16019 16269])
+            ("MAINTAIN_TYPE_E" type
+               (:typedef ("_maintenance_type" type (:type "enum") nil nil)
+                :superclasses "_maintenance_type"
+                :type "typedef")
+                nil [16460 16613])
+            ("_maintenance_type" type
+               (:members 
+                  ( ("MAINTAIN_TYPE_QUALIFIED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16494 16518])
+                    ("MAINTAIN_TYPE_UNQUALIFIED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16535 16561])
+                    ("MAINTAIN_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16577 16597]))                  
+                :type "enum")
+                nil [16460 16613])
+            ("MAINTENCE_EVENT_ST" type
+               (:typedef ("_maintence_event" type (:type "struct") nil nil)
+                :superclasses "_maintence_event"
+                :type "typedef")
+                nil [16626 16870])
+            ("_maintence_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16661 16694])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16727 16753])
+                    ("uiMaintainType" variable (:type "unsigned int") (reparse-symbol classsubparts) [16788 16822]))                  
+                :type "struct")
+                nil [16626 16870])
+            ("FAULT_TYPE_E" type
+               (:typedef ("_fault_type" type (:type "enum") nil nil)
+                :superclasses "_fault_type"
+                :type "typedef")
+                nil [17056 17297])
+            ("_fault_type" type
+               (:members 
+                  ( ("FAULT_TYPE_CIRCUIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17084 17103])
+                    ("FAULT_TYPE_SENSOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17129 17147])
+                    ("FAULT_TYPE_ENGINER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17175 17194])
+                    ("FAULT_TYPE_PARTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17220 17237])
+                    ("FAULT_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17267 17284]))                  
+                :type "enum")
+                nil [17056 17297])
+            ("FAULT_EVENT_ST" type
+               (:typedef ("_fault_event" type (:type "struct") nil nil)
+                :superclasses "_fault_event"
+                :type "typedef")
+                nil [17310 17551])
+            ("_fault_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17341 17374])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17407 17433])
+                    ("uiFaultType" variable (:type "unsigned int") (reparse-symbol classsubparts) [17472 17503]))                  
+                :type "struct")
+                nil [17310 17551])
+            ("STALL_EVENT_ST" type
+               (:typedef ("_stall_event" type (:type "struct") nil nil)
+                :superclasses "_stall_event"
+                :type "typedef")
+                nil [17553 17984])
+            ("_stall_event" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17584 17617])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17650 17676])
+                    ("stLocation" variable (:type ("LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17713 17743])
+                    ("uiStatus" variable (:type "unsigned int") (reparse-symbol classsubparts) [17776 17804])
+                    ("uiMileage" variable (:type "unsigned int") (reparse-symbol classsubparts) [17841 17870])
+                    ("uiWorktime" variable (:type "unsigned int") (reparse-symbol classsubparts) [17906 17936]))                  
+                :type "struct")
+                nil [17553 17984])
+            ("EVENT_TYPE_E" type
+               (:typedef ("_event_type" type (:type "enum") nil nil)
+                :superclasses "_event_type"
+                :type "typedef")
+                nil [18173 18527])
+            ("_event_type" type
+               (:members 
+                  ( ("EVENT_TYPE_LOGIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18201 18218])
+                    ("EVENT_TYPE_LOGOUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18243 18261])
+                    ("EVENT_TYPE_ROUTECHECK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18285 18307])
+                    ("EVENT_TYPE_FAULT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18327 18344])
+                    ("EVENT_TYPE_MAINTAIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18369 18389])
+                    ("EVENT_TYPE_STALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18455 18472])
+                    ("EVENT_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18497 18514]))                  
+                :type "enum")
+                nil [18173 18527])
+            ("EVENT_DATA_U" type
+               (:typedef ("_event_data" type (:type "union") nil nil)
+                :superclasses "_event_data"
+                :type "typedef")
+                nil [18540 18943])
+            ("_event_data" type
+               (:members 
+                  ( ("stFaultData" variable (:type ("FAULT_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18569 18603])
+                    ("stMaintainData" variable (:type ("MAINTENCE_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18628 18665])
+                    ("stRoutecheckData" variable (:type ("ROUTECHECK_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18689 18728])
+                    ("stLogoutData" variable (:type ("LOGOUT_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18750 18785])
+                    ("stLoginData" variable (:type ("LOGIN_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18809 18843])
+                    ("stStatisticData" variable (:type ("STALL_EVENT_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18869 18907]))                  
+                :type "union")
+                nil [18540 18943])
+            ("EVENT_MSG_ST" type
+               (:typedef ("_event_msg" type (:type "struct") nil nil)
+                :superclasses "_event_msg"
+                :type "typedef")
+                nil [18956 19088])
+            ("_event_msg" type
+               (:members 
+                  ( ("uiEventType" variable (:type "unsigned int") (reparse-symbol classsubparts) [18985 19011])
+                    ("uData" variable (:type ("EVENT_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19030 19050]))                  
+                :type "struct")
+                nil [18956 19088])
+            ("EXCEPTION" variable (:constant-flag t) nil [19099 19108])
+            ("LOGIN_EXCEPTION_ST" type
+               (:typedef ("_login_exception" type (:type "struct") nil nil)
+                :superclasses "_login_exception"
+                :type "typedef")
+                nil [19305 19599])
+            ("_login_exception" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19340 19373])
+                    ("uiAccessType" variable (:type "unsigned int") (reparse-symbol classsubparts) [19406 19433])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19464 19485])
+                    ("uiExceptionType" variable (:type "unsigned int") (reparse-symbol classsubparts) [19522 19552]))                  
+                :type "struct")
+                nil [19305 19599])
+            ("ROUTECHECK_EXCEPTION_ST" type
+               (:typedef ("_routecheck_exception" type (:type "struct") nil nil)
+                :superclasses "_routecheck_exception"
+                :type "typedef")
+                nil [19788 20111])
+            ("_routecheck_exception" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19828 19861])
+                    ("uiCheckstateType" variable (:type "unsigned int") (reparse-symbol classsubparts) [19894 19930])
+                    ("uiCheckitemType" variable (:type "unsigned int") (reparse-symbol classsubparts) [19959 19994]))                  
+                :type "struct")
+                nil [19788 20111])
+            ("IMPACT_DATA_ST" type
+               (:typedef ("_impact_data" type (:type "struct") nil nil)
+                :superclasses "_impact_data"
+                :type "typedef")
+                nil [20414 20530])
+            ("_impact_data" type
+               (:members 
+                  ( ("fLevel" variable (:type "float") (reparse-symbol classsubparts) [20445 20459])
+                    ("fDircttion" variable (:type "float") (reparse-symbol classsubparts) [20481 20499]))                  
+                :type "struct")
+                nil [20414 20530])
+            ("EXCEEDLIMIT_DATA_U" type
+               (:typedef ("_exceedlimit_data" type (:type "union") nil nil)
+                :superclasses "_exceedlimit_data"
+                :type "typedef")
+                nil [20532 20861])
+            ("_exceedlimit_data" type
+               (:members 
+                  ( ("stImpactData" variable (:type ("IMPACT_DATA_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20567 20597])
+                    ("fSpeed" variable (:type "float") (reparse-symbol classsubparts) [20616 20633])
+                    ("fWeight" variable (:type "float") (reparse-symbol classsubparts) [20655 20675])
+                    ("fHeight" variable (:type "float") (reparse-symbol classsubparts) [20696 20714])
+                    ("uiTimeout" variable (:type "unsigned int") (reparse-symbol classsubparts) [20737 20757])
+                    ("bBeltSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [20776 20798])
+                    ("bDistrictSwitch" variable (:type "unsigned int") (reparse-symbol classsubparts) [20800 20826]))                  
+                :type "union")
+                nil [20532 20861])
+            ("EXCEEDLIMIT_EXECPTION_ST" type
+               (:typedef ("_exceedlimit_execption" type (:type "struct") nil nil)
+                :superclasses "_exceedlimit_execption"
+                :type "typedef")
+                nil [20875 21308])
+            ("_exceedlimit_execption" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20916 20949])
+                    ("uiType" variable (:type "unsigned int") (reparse-symbol classsubparts) [20982 21000])
+                    ("uiLevel" variable (:type "unsigned int") (reparse-symbol classsubparts) [21042 21061])
+                    ("uiDuration" variable (:type "unsigned int") (reparse-symbol classsubparts) [21097 21127])
+                    ("uExceptionData" variable (:type ("EXCEEDLIMIT_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21160 21194])
+                    ("uThreshold" variable (:type ("THRESHOLD_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21222 21252]))                  
+                :type "struct")
+                nil [20875 21308])
+            ("EXCEPTION_TYPE_E" type
+               (:typedef ("_exception_type" type (:type "enum") nil nil)
+                :superclasses "_exception_type"
+                :type "typedef")
+                nil [21493 21967])
+            ("_exception_type" type
+               (:members 
+                  ( ("EXCEPTION_TYPE_IMPACT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21525 21547])
+                    ("EXCEPTION_TYPE_OVERDISTRICT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21569 21597])
+                    ("EXCEPTION_TYPE_OVERSPEED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21613 21638])
+                    ("EXCEPTION_TYPE_OVERLOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21657 21681])
+                    ("EXCEPTION_TYPE_OVERTOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21701 21724])
+                    ("EXCEPTION_TYPE_BELT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21745 21765])
+                    ("EXCEPTION_TYPE_SEAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21790 21810])
+                    ("EXCEPTION_TYPE_LOGIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21838 21859])
+                    ("EXCEPTION_TYPE_ROUTECHECK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21882 21908])
+                    ("EXCEPTION_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21929 21950]))                  
+                :type "enum")
+                nil [21493 21967])
+            ("EXCEPTIONLEVEL_TYPE_E" type
+               (:typedef ("_exceptionlevel_type" type (:type "enum") nil nil)
+                :superclasses "_exceptionlevel_type"
+                :type "typedef")
+                nil [21980 22219])
+            ("_exceptionlevel_type" type
+               (:members 
+                  ( ("EXCEPTIONLEVEL_TYPE_SLIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22017 22044])
+                    ("EXCEPTIONLEVEL_TYPE_ACCEPT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22063 22090])
+                    ("EXCEPTIONLEVEL_TYPE_BAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22112 22136])
+                    ("EXCEPTIONLEVEL_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22158 22183]))                  
+                :type "enum")
+                nil [21980 22219])
+            ("EXCEPTION_DATA_U" type
+               (:typedef ("_exception_data" type (:type "union") nil nil)
+                :superclasses "_exception_data"
+                :type "typedef")
+                nil [22232 22449])
+            ("_exception_data" type
+               (:members 
+                  ( ("stExceedlimit" variable (:type ("EXCEEDLIMIT_EXECPTION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22265 22304])
+                    ("stRoutecheck" variable (:type ("ROUTECHECK_EXCEPTION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22320 22358])
+                    ("stLogin" variable (:type ("LOGIN_EXCEPTION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22377 22410]))                  
+                :type "union")
+                nil [22232 22449])
+            ("EXCEPTION_MSG_ST" type
+               (:typedef ("_exception_msg" type (:type "struct") nil nil)
+                :superclasses "_exception_msg"
+                :type "typedef")
+                nil [22462 22835])
+            ("_exception_msg" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22495 22528])
+                    ("uiExecptionType" variable (:type ("EXCEPTION_TYPE_E" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22563 22598])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22626 22652])
+                    ("stLocation" variable (:type ("LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22691 22721])
+                    ("uData" variable (:type ("EXCEPTION_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22756 22781]))                  
+                :type "struct")
+                nil [22462 22835])
+            ("UPDATA_TYPE_E" type
+               (:typedef ("_updata_type" type (:type "enum") nil nil)
+                :superclasses "_updata_type"
+                :type "typedef")
+                nil [23021 23146])
+            ("_updata_type" type
+               (:members 
+                  ( ("UPDATA_TYPE_QUERY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23050 23068])
+                    ("UPDATA_TYPE_CYCLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23070 23088])
+                    ("UPDATA_TYPE_STATISTIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23090 23112])
+                    ("UPDATA_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23114 23132]))                  
+                :type "enum")
+                nil [23021 23146])
+            ("QUERY_UPDATA_ST" type
+               (:typedef ("_query_updata" type (:type "struct") nil nil)
+                :superclasses "_query_updata"
+                :type "typedef")
+                nil [23161 23403])
+            ("_query_updata" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23193 23226])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23259 23285])
+                    ("stStates" variable (:type ("STATES_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23326 23354]))                  
+                :type "struct")
+                nil [23161 23403])
+            ("CYCLE_UPDATA_ST" type
+               (:typedef ("_cycle_updata" type (:type "struct") nil nil)
+                :superclasses "_cycle_updata"
+                :type "typedef")
+                nil [23418 23658])
+            ("_cycle_updata" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23450 23483])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23516 23542])
+                    ("stStates" variable (:type ("STATES_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23581 23609]))                  
+                :type "struct")
+                nil [23418 23658])
+            ("STATISTIC_UPDATA_ST" type
+               (:typedef ("_statistic_updata" type (:type "struct") nil nil)
+                :superclasses "_statistic_updata"
+                :type "typedef")
+                nil [23671 24112])
+            ("_statistic_updata" type
+               (:members 
+                  ( ("stLoginMenber" variable (:type ("LOGIN_MEMBER_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23707 23740])
+                    ("stTime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23773 23799])
+                    ("stLocation" variable (:type ("LOCATION_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23836 23866])
+                    ("uiStatus" variable (:type "unsigned int") (reparse-symbol classsubparts) [23899 23927])
+                    ("uiMileage" variable (:type "unsigned int") (reparse-symbol classsubparts) [23964 23993])
+                    ("uiWorktime" variable (:type "unsigned int") (reparse-symbol classsubparts) [24029 24059]))                  
+                :type "struct")
+                nil [23671 24112])
+            ("UPDATA_DATA_U" type
+               (:typedef ("_updata_data" type (:type "union") nil nil)
+                :superclasses "_updata_data"
+                :type "typedef")
+                nil [24125 24323])
+            ("_updata_data" type
+               (:members 
+                  ( ("stStaticData" variable (:type ("STATISTIC_UPDATA_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24155 24188])
+                    ("stCycleData" variable (:type ("CYCLE_UPDATA_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24205 24237])
+                    ("stQueryData" variable (:type ("QUERY_UPDATA_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24258 24290]))                  
+                :type "union")
+                nil [24125 24323])
+            ("UPDATA_MSG_ST" type
+               (:typedef ("_updata_msg" type (:type "struct") nil nil)
+                :superclasses "_updata_msg"
+                :type "typedef")
+                nil [24339 24470])
+            ("_updata_msg" type
+               (:members 
+                  ( ("uiDataType" variable (:type "unsigned int") (reparse-symbol classsubparts) [24369 24396])
+                    ("uData" variable (:type ("UPDATA_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24414 24436]))                  
+                :type "struct")
+                nil [24339 24470])
+            ("MSG_TYPE_E" type
+               (:typedef ("_msg_type" type (:type "enum") nil nil)
+                :superclasses "_msg_type"
+                :type "typedef")
+                nil [24659 25011])
+            ("_msg_type" type
+               (:members 
+                  ( ("MSG_TYPE_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24700 24717])
+                    ("MSG_TYPE_QUERY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24735 24750])
+                    ("MSG_TYPE_INFORMATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24774 24795])
+                    ("MSG_TYPE_CONFIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24813 24829])
+                    ("MSG_TYPE_UPDATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24868 24884])
+                    ("MSG_TYPE_EVENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24907 24922])
+                    ("MSG_TYPE_EXCEPTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24946 24965])
+                    ("MSG_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24985 25000]))                  
+                :type "enum")
+                nil [24659 25011])
+            ("MSG_DATA_U" type
+               (:typedef ("_msg_data" type (:type "union") nil nil)
+                :superclasses "_msg_data"
+                :type "typedef")
+                nil [25024 25434])
+            ("_msg_data" type
+               (:members 
+                  ( ("stControlMsg" variable (:type ("CONTROL_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25051 25083])
+                    ("stQueryMsg" variable (:type ("QUERY_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25104 25134])
+                    ("stInfoMsg" variable (:type ("INFORMATION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25157 25186])
+                    ("stConfigMsg" variable (:type ("CONFIG_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25210 25241])
+                    ("stUpdataMsg" variable (:type ("UPDATA_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25264 25295])
+                    ("stEventMsg" variable (:type ("EVENT_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25317 25347])
+                    ("stExceptionMsg" variable (:type ("EXCEPTION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25370 25404]))                  
+                :type "union")
+                nil [25024 25434])
+            ("DOWNLOADMSG_DATA_U" type
+               (:typedef ("_downloadmsg_data" type (:type "union") nil nil)
+                :superclasses "_downloadmsg_data"
+                :type "typedef")
+                nil [25447 25714])
+            ("_downloadmsg_data" type
+               (:members 
+                  ( ("stControlMsg" variable (:type ("CONTROL_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25483 25515])
+                    ("stQueryMsg" variable (:type ("QUERY_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25536 25566])
+                    ("stInfoMsg" variable (:type ("INFORMATION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25589 25618])
+                    ("stConfigMsg" variable (:type ("CONFIG_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25642 25673]))                  
+                :type "union")
+                nil [25447 25714])
+            ("UPLOADMSG_DATA_U" type
+               (:typedef ("_uploadmsg_data" type (:type "union") nil nil)
+                :superclasses "_uploadmsg_data"
+                :type "typedef")
+                nil [25729 25940])
+            ("_uploadmsg_data" type
+               (:members 
+                  ( ("stUpdataMsg" variable (:type ("UPDATA_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25762 25793])
+                    ("stEventMsg" variable (:type ("EVENT_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25817 25847])
+                    ("stExceptionMsg" variable (:type ("EXCEPTION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25870 25904]))                  
+                :type "union")
+                nil [25729 25940])
+            ("MSG_ST" type
+               (:typedef ("_msg" type (:type "struct") nil nil)
+                :superclasses "_msg"
+                :type "typedef")
+                nil [25957 26100])
+            ("_msg" type
+               (:members 
+                  ( ("uiMsgType" variable (:type "long") (reparse-symbol classsubparts) [26019 26041])
+                    ("uMsgData" variable (:type ("MSG_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26056 26077]))                  
+                :type "struct")
+                nil [25957 26100])
+            ("IPC_MSG_ST" type
+               (:typedef ("_ipc_msg" type (:type "struct") nil nil)
+                :superclasses "_ipc_msg"
+                :type "typedef")
+                nil [26103 26181])
+            ("_ipc_msg" type
+               (:members 
+                  ( ("lIpcmsgType" variable (:type "long") (reparse-symbol classsubparts) [26130 26151])
+                    ("stMsg" variable (:type ("MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26153 26168]))                  
+                :type "struct")
+                nil [26103 26181])
+            ("g_stDisplayKey" variable (:type ("key_t" type (:type "class") nil nil)) nil [26183 26209])
+            ("g_stUploadKey" variable (:type ("key_t" type (:type "class") nil nil)) nil [26226 26251])
+            ("g_stQueryKey" variable (:type ("key_t" type (:type "class") nil nil)) nil [26271 26295])
+            ("g_stResponseKey" variable (:type ("key_t" type (:type "class") nil nil)) nil [26314 26341])
+            ("g_iDisplayMsgId" variable (:type "int") nil [26360 26387])
+            ("g_iUploadMsgId" variable (:type "int") nil [26407 26433])
+            ("g_iQueryMsgId" variable (:type "int") nil [26454 26479])
+            ("g_iResponseMsgId" variable (:type "int") nil [26499 26527])
+            ("g_stMonitorPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [26552 26580])
+            ("g_stServerPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [26600 26627])
+            ("g_stStatisticPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [26648 26678])
+            ("g_stInteractionPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [26696 26728])
+            ("g_stUploadMsgPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [26744 26775])
+            ("g_stDisplayKey" variable
+               (:typemodifiers ("extern")
+                :type ("key_t" type (:type "class") nil nil))
+                nil [26794 26823])
+            ("g_stUploadKey" variable
+               (:typemodifiers ("extern")
+                :type ("key_t" type (:type "class") nil nil))
+                nil [26840 26868])
+            ("g_stQueryKey" variable
+               (:typemodifiers ("extern")
+                :type ("key_t" type (:type "class") nil nil))
+                nil [26888 26915])
+            ("g_stResponseKey" variable
+               (:typemodifiers ("extern")
+                :type ("key_t" type (:type "class") nil nil))
+                nil [26934 26964])
+            ("g_iDisplayMsgId" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [26983 27013])
+            ("g_iUploadMsgId" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [27033 27062])
+            ("g_iQueryMsgId" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [27082 27110])
+            ("g_iResponseMsgId" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [27130 27161])
+            ("g_stLoginMember" variable
+               (:typemodifiers ("extern")
+                :type ("LOGIN_MEMBER_ST" type (:type "class") nil nil))
+                nil [27183 27223])
+            ("InitIpc" function
+               (:prototype-flag t
+                :type "int")
+                nil [27241 27255])
+            ("MSGSND_MainLoop" function
+               (:prototype-flag t
+                :type "void")
+                nil [27257 27280])
+            ("Monitor_MainLoop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27303 27308]))                  
+                :type "void")
+                nil [27281 27309])
+            ("MSGRESPONSE_MainLoop" function
+               (:prototype-flag t
+                :type "void")
+                nil [27310 27339])
+            ("MANAGE_MainLoop" function
+               (:prototype-flag t
+                :type "void")
+                nil [27340 27363])
+            ("INTERACTION_MainLoop" function
+               (:prototype-flag t
+                :type "void")
+                nil [27364 27392])
+            ("welcom" function
+               (:prototype-flag t
+                :type "void")
+                nil [27394 27408])
+            ("win_admin" function
+               (:prototype-flag t
+                :type "void")
+                nil [27409 27427])
+            ("set_time" function
+               (:prototype-flag t
+                :type "void")
+                nil [27428 27444])
+            ("refreshStateswin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pstStates" variable
+                       (:pointer 1
+                        :type ("STATES_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27468 27489]))                  
+                :type "void")
+                nil [27446 27490])
+            ("refreshinfowin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pstInfoMsg" variable
+                       (:pointer 1
+                        :type ("INFORMATION_MSG_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27511 27542]))                  
+                :type "void")
+                nil [27491 27543])
+            ("runwindow" function
+               (:prototype-flag t
+                :type "void")
+                nil [27544 27561])
+            ("initwindow" function
+               (:prototype-flag t
+                :type "void")
+                nil [27562 27580])
+            ("refreshTimewin" function
+               (:prototype-flag t
+                :type "void")
+                nil [27581 27603])
+            ("LocationToStr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("pstLocation" variable
+                       (:pointer 1
+                        :type ("LOCATION_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27625 27650])
+                    ("pcLocationstr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27651 27671]))                  
+                :type "char")
+                nil [27605 27672])
+            ("PrintStates" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pstStates" variable
+                       (:pointer 1
+                        :type ("STATES_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27691 27712]))                  
+                :type "void")
+                nil [27674 27713]))          
+    :file "common.h"
+    :pointmax 27715
+    :fsize 30873
+    :lastmodtime '(20954 39860)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FORKLIFT_ID_LEN" . ((number "10" 2358 . 2360)))
+          ("EXCEPTION")
+          ("REPLAY_DEVICE_NAME" . ((string "\"/dev/replay\"" 1713 . 1726)))
+          ("BOOL_TRUE" . ((number "1" 1098 . 1099)))
+          ("KEY_DEVICE_NAME" . ((string "\"/dev/key\"" 1539 . 1549)))
+          ("RIFD_ID_LEN" . ((number "10" 2215 . 2217)))
+          ("MAX_INFORMATION_LEN" . ((number "80" 2268 . 2270)))
+          ("STATISTIC_CONFIG_FILE" . ((string "\"statistic.config\"" 1388 . 1406)))
+          ("MAX_ACCESSMEMBER_NUM" . ((number "100" 2314 . 2317)))
+          ("RIFD_SENSORID_LEN" . ((number "10" 10504 . 10506)))
+          ("INOUT")
+          ("BELT_DEVICE_NAME" . ((string "\"/dev/belt\"" 1625 . 1636)))
+          ("READER_DEVICE_NAME" . ((string "\"/dev/reader\"" 1803 . 1816)))
+          ("WEIGHT_DEVICE_NAME" . ((string "\"/dev/weight\"" 1895 . 1908)))
+          ("ROUTECHECK_EVENT")
+          ("DISTRICT_ID_LEN" . ((number "20" 2170 . 2172)))
+          ("OPERATOR_ID_LEN" . ((number "10" 2398 . 2400)))
+          ("RUELS_CONFIG_FILE" . ((string "\"ruels.config\"" 1238 . 1252)))
+          ("ACCESSLIST_CONFIG_FILE" . ((string "\"accesslist.config\"" 1285 . 1304)))
+          ("UINT" . ((UNSIGNED "unsigned" 994 . 1002) (INT "int" 1003 . 1006)))
+          ("PARAMETER_CONFIG_FILE" . ((string "\"parameter.config\"" 1439 . 1457)))
+          ("LCD_DEVICE_NAME" . ((string "\"/dev/lcd\"" 1582 . 1592)))
+          ("EVENT")
+          ("BOOL_FALSE" . ((number "0" 1146 . 1147)))
+          ("RUEL_CONFIG")
+          ("OUT")
+          ("DISTRICT_CONFIG_FILE" . ((string "\"district.config\"" 1188 . 1205)))
+          ("BOOL" . ((UNSIGNED "unsigned" 1041 . 1049) (INT "int" 1050 . 1053)))
+          ("IMPACT_DEVICE_NAME" . ((string "\"/dev/impact\"" 1493 . 1506)))
+          ("CHECKLIST_CONFIG_FILE" . ((string "\"checklist.config\"" 1337 . 1355)))
+          ("RIFD_DEVICE_NAME" . ((string "\"/dev/rifd\"" 1759 . 1770)))
+          ("HEIGHT_DEVICE_NAME" . ((string "\"/dev/height\"" 1941 . 1954)))
+          ("ZONEID_LEN" . ((number "10" 10533 . 10535)))
+          ("IN")
+          ("SEAT_DEVICE_NAME" . ((string "\"/dev/seat\"" 1669 . 1680)))
+          ("SPEED_DEVICE_NAME" . ((string "\"/dev/speed\"" 1850 . 1862)))
+          )
+
+    )
+   )
+  :file "!home!cpper!workspace!forklift!smartlift!src!app!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

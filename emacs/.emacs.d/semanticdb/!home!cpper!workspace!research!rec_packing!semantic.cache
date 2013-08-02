@@ -1,0 +1,228 @@
+;; Object rec_packing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rec_packing/"
+  :tables (list 
+    (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [187 206])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [208 228])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [248 260]))                  
+                :type "int")
+                nil [230 302])
+            ("test" function (:type "void") nil [304 394]))          
+    :file "test.c"
+    :pointmax 397
+    :fsize 396
+    :lastmodtime '(20984 32005)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "class.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CLASS_H" variable (:constant-flag t) nil [25 32]))          
+    :file "class.h"
+    :pointmax 109
+    :fsize 108
+    :lastmodtime '(20984 32049)
+    :unmatched-syntax '((semantic-list 45 . 99) (symbol 40 . 44) (CLASS 34 . 39) (semantic-list 45 . 53) (symbol 40 . 44) (CLASS 34 . 39))
+    :lexical-table 
+        '(("CLASS_H")
+          )
+
+    )
+   (semanticdb-table "rec_packing1.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("REC_PACKING1_H" variable (:constant-flag t) nil [32 46]))          
+    :file "rec_packing1.h"
+    :pointmax 116
+    :fsize 115
+    :lastmodtime '(20984 33853)
+    :unmatched-syntax '((semantic-list 60 . 106) (symbol 54 . 59) (CLASS 48 . 53) (semantic-list 60 . 101) (symbol 54 . 59) (CLASS 48 . 53))
+    :lexical-table 
+        '(("REC_PACKING1_H")
+          )
+
+    )
+   (semanticdb-table "rec_packing.H"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("REC_PACKING_H" variable (:constant-flag t) nil [31 44])
+            ("Conner" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [72 78])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [83 89])
+                    ("c_type" variable (:type "int") (reparse-symbol classsubparts) [94 105]))                  
+                :type "struct")
+                nil [52 113])
+            ("Hline" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [151 158])
+                    ("x_left" variable (:type "int") (reparse-symbol classsubparts) [163 174])
+                    ("x_right" variable (:type "int") (reparse-symbol classsubparts) [179 191])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [196 202])
+                    ("isblock" variable (:type "int") (reparse-symbol classsubparts) [207 219])
+                    ("isblock" function (:type "int") (reparse-symbol classsubparts) [360 390])
+                    ("<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("hline1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Hline" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [420 441]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [404 496])
+                    (">" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("hline1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Hline" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [517 538]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [501 593]))                  
+                :type "class")
+                nil [137 597]))          
+    :file "rec_packing.H"
+    :pointmax 767
+    :fsize 776
+    :lastmodtime '(20984 53073)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("REC_PACKING_H")
+          )
+
+    )
+   (semanticdb-table "comm.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("COMM_H" variable (:constant-flag t) nil [24 30]))          
+    :file "comm.h"
+    :pointmax 40
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("COMM_H")
+          )
+
+    )
+   (semanticdb-table "rec_packing.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [216 235])
+            ("set" include (:system-flag t) nil [236 250])
+            ("vector" include (:system-flag t) nil [251 268])
+            ("rec_packing.H" include nil nil [270 294])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [296 316])
+            ("lbset" variable (:type ("set" type
+                 (:template-specifier 
+                    ( ("Hline" type nil nil nil)
+                      ("std::less" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [320 356])
+            ("ltset" variable (:type ("set" type
+                 (:template-specifier 
+                    ( ("Hline" type nil nil nil)
+                      ("std::greater" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [370 409])
+            ("lbiterator" variable (:type ("iterator" type (:type "class") nil nil)) nil [466 486])
+            ("ltiterator" variable (:type ("iterator" type (:type "class") nil nil)) nil [544 564])
+            ("lbitera" variable (:type ("lbiterator" type (:type "class") nil nil)) nil [583 602])
+            ("ltitera" variable (:type ("ltiterator" type (:type "class") nil nil)) nil [603 622])
+            ("ivec" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [624 641])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [655 664])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [664 676]))                  
+                :type "int")
+                nil [646 775])
+            ("_lblineIsblock" function
+               (:arguments 
+                  ( ("hline" variable
+                       (:reference 1
+                        :type ("Hilne" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [798 813])
+                    ("cner" variable (:type ("Conner" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [813 825]))                  
+                :type "bool")
+                nil [777 1359])
+            ("_lblineIsvalid" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("hline" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("lbiterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1388 1414])
+                    ("cner" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coner" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1415 1434]))                  
+                :type "bool")
+                nil [1361 1523])
+            ("_lbline_is_block_others" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("hline" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("lbiterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1592 1617]))                  
+                :type "bool")
+                nil [1556 1671])
+            ("update_lb_line" function
+               (:arguments 
+                  ( ("hline" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("lbiterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1693 1718]))                  
+                :type "void")
+                nil [1673 1865]))          
+    :file "rec_packing.cpp"
+    :pointmax 1820
+    :fsize 1985
+    :lastmodtime '(20984 56883)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("pack" function (:arguments ("rec_packing.o")) nil [1 47])
+            ("rec_packing.o" function (:arguments ("rec_packing.cpp")) nil [47 101])
+            ("clean" function nil nil [101 119]))          
+    :file "makefile"
+    :pointmax 115
+    :fsize 118
+    :lastmodtime '(20984 50705)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!research!rec_packing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

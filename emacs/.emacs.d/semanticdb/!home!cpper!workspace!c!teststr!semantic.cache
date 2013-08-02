@@ -1,0 +1,117 @@
+;; Object teststr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "teststr/"
+  :tables (list 
+   (semanticdb-table "teststr.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [200 219])
+            ("stdio.h" include (:system-flag t) nil [220 238])
+            ("stdlib.h" include (:system-flag t) nil [239 258])
+            ("deal_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 287])
+                    ("deli" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [288 302])
+                    ("data_number" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [302 321])
+                    ("strdeli" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [322 343]))                  
+                :type "void")
+                nil [261 344])
+            ("getdata" function
+               (:prototype-flag t
+                :type "void")
+                nil [345 360])
+            ("get_code" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [374 391]))                  
+                :type "int")
+                nil [361 392])
+            ("DATA_ROW" variable (:constant-flag t) nil [403 411])
+            ("DATA_NUMBER" variable (:constant-flag t) nil [423 434])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [450 459])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [460 473]))                  
+                :type "int")
+                nil [441 1280])
+            ("deal_data" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1331 1342])
+                    ("deli" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1343 1357])
+                    ("data_number" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1357 1376])
+                    ("strdeli" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1377 1398]))                  
+                :type "void")
+                nil [1316 1572])
+            ("getdata" function (:type "void") nil [1574 2416])
+            ("get_code" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2431 2448]))                  
+                :type "int")
+                nil [2418 2706]))          
+    :file "teststr.c"
+    :pointmax 2708
+    :fsize 2771
+    :lastmodtime '(20958 47293)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DATA_ROW" . ((number "10" 412 . 414)))
+          ("DATA_NUMBER" . ((number "30" 435 . 437)))
+          )
+
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("teststr" function (:arguments ("teststr.o")) nil [1 45])
+            ("teststr.o" function (:arguments ("teststr.c")) nil [45 83])
+            ("clean" function nil nil [83 101]))          
+    :file "makefile"
+    :pointmax 101
+    :fsize 100
+    :lastmodtime '(20951 53087)
+    :unmatched-syntax '((shell-command 91 . 100) (bol 90 . 90) (shell-command 91 . 100) (bol 90 . 90))
+    )
+   )
+  :file "!home!cpper!workspace!c!teststr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

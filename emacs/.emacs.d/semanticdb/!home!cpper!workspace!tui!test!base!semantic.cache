@@ -1,0 +1,38 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables (list 
+   (semanticdb-table "base.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [213 233])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [244 253])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [253 265]))                  
+                :type "int")
+                nil [235 728]))          
+    :file "base.c"
+    :pointmax 729
+    :fsize 728
+    :lastmodtime '(20908 25297)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "makefile"
+    :pointmax 1
+    :fsize 93
+    :lastmodtime '(20908 25254)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

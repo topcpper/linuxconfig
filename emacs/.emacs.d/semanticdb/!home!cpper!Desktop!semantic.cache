@@ -1,0 +1,49 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("vector" include (:system-flag t) nil [19 36])
+            ("iostream" include (:system-flag t) nil [37 56])
+            ("string" include (:system-flag t) nil [57 74])
+            ("main" function (:type "int") nil [75 234]))          
+    :file "test.cpp"
+    :pointmax 235
+    :fsize 234
+    :lastmodtime '(20520 29992)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("stdio.h" include (:system-flag t) nil [38 55])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [56 76])
+            ("Node" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [103 109])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [114 120])
+                    ("c" variable (:type "int") (reparse-symbol classsubparts) [125 131])
+                    ("c" variable (:type "int") (reparse-symbol classsubparts) [133 139]))                  
+                :type "struct")
+                nil [85 148])
+            ("main" function (:type "int") nil [155 281])
+            ("test" function (:type "void") nil [282 297]))          
+    :file "test.c"
+    :pointmax 298
+    :fsize 297
+    :lastmodtime '(20520 30238)
+    :unmatched-syntax '((thing 77 . 84))
+    )
+   )
+  :file "!home!cpper!Desktop!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

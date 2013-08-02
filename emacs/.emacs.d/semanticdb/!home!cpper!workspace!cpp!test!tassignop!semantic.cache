@@ -1,0 +1,68 @@
+;; Object tassignop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tassignop/"
+  :tables (list 
+   (semanticdb-table "assignop.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [228 247])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [249 269])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [303 308])
+                    ("b" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [308 312]))                  
+                :prototype-flag t)
+                nil [270 313])
+            ("widgetimpl" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [333 340]))                  
+                :type "class")
+                nil [314 364])
+            ("widgets" type (:type "class") nil [366 389])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [411 420])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [420 432]))                  
+                :type "int")
+                nil [402 453])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [488 493])
+                    ("b" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [493 497]))                  )
+                nil [455 546]))          
+    :file "assignop.cpp"
+    :pointmax 547
+    :fsize 564
+    :lastmodtime '(20797 55420)
+    :unmatched-syntax '((punctuation 355 . 356) (punctuation 354 . 355) (symbol 353 . 354) (punctuation 352 . 353) (symbol 351 . 352) (punctuation 350 . 351) (symbol 349 . 350) (INT 345 . 348))
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!tassignop!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

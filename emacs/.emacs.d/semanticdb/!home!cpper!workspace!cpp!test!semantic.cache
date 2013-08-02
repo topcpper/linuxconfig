@@ -1,0 +1,45 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "tcompiler.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [210 229])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [231 251])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [262 271])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [271 283]))                  
+                :type "int")
+                nil [253 347]))          
+    :file "tcompiler.cpp"
+    :pointmax 348
+    :fsize 347
+    :lastmodtime '(20838 25942)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("tbk" function (:arguments ("tconst.o")) nil [1 36])
+            ("tbk.o" function (:arguments ("tconst.cpp")) nil [36 81])
+            ("clean" function nil nil [81 99]))          
+    :file "makefile"
+    :pointmax 99
+    :fsize 98
+    :lastmodtime '(20733 11433)
+    :unmatched-syntax '((shell-command 89 . 98) (bol 88 . 88))
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

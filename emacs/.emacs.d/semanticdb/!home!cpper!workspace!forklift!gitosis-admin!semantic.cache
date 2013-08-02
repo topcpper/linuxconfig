@@ -1,0 +1,9 @@
+;; Object gitosis-admin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gitosis-admin/"
+  :tables (list 
+    )
+  :file "!home!cpper!workspace!forklift!gitosis-admin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

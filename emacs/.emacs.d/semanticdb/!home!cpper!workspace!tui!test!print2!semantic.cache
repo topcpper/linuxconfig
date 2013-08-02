@@ -1,0 +1,68 @@
+;; Object print2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "print2/"
+  :tables (list 
+   (semanticdb-table "helloword.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ncursesw/ncurses.h" include (:system-flag t) nil [915 944])
+            ("string.h" include (:system-flag t) nil [945 964])
+            ("locale.h" include (:system-flag t) nil [965 984])
+            ("win_print_top" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("local_win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1005 1024])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1025 1037]))                  
+                :type "void")
+                nil [986 1038])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [1050 1059])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1059 1071]))                  
+                :type "int")
+                nil [1041 2635])
+            ("win_print_top" function
+               (:arguments 
+                  ( ("local_win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2655 2674])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2675 2687]))                  
+                :type "void")
+                nil [2636 2776]))          
+    :file "helloword.c"
+    :pointmax 2777
+    :fsize 2824
+    :lastmodtime '(20947 36449)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("helloword" function (:arguments ("helloword.o")) nil [1 66])
+            ("helloword.o" function (:arguments ("helloword.c")) nil [66 112])
+            ("clean" function nil nil [112 130]))          
+    :file "makefile"
+    :pointmax 130
+    :fsize 129
+    :lastmodtime '(20942 41138)
+    :unmatched-syntax '((shell-command 120 . 129) (bol 119 . 119))
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!print2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

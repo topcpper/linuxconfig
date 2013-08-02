@@ -1,0 +1,18 @@
+;; Object cogre/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cogre/"
+  :tables (list 
+   (semanticdb-table "cedet-cogre-settings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "cedet-cogre-settings.el"
+    :pointmax 1137
+    :fsize 1136
+    :lastmodtime '(20985 51938)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!桌面!dea-read-only!my-lisps!cedet!cogre!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

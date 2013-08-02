@@ -1,0 +1,59 @@
+;; Object reverse/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reverse/"
+  :tables (list 
+   (semanticdb-table "reverse.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [210 229])
+            ("stdio.h" include (:system-flag t) nil [230 248])
+            ("reverse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [262 271]))                  
+                :type "void")
+                nil [249 272])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [283 292])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [292 304]))                  
+                :type "int")
+                nil [274 485])
+            ("reverse" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [499 508]))                  
+                :type "void")
+                nil [486 680]))          
+    :file "reverse.c"
+    :pointmax 614
+    :fsize 680
+    :lastmodtime '(20778 53609)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("rev" function (:arguments ("reverse.o")) nil [1 37])
+            ("reverse.o" function (:arguments ("reverse.c")) nil [37 75])
+            ("clean" function nil nil [75 93]))          
+    :file "makefile"
+    :pointmax 93
+    :fsize 94
+    :lastmodtime '(20778 52416)
+    :unmatched-syntax '((shell-command 83 . 92) (bol 82 . 82) (shell-command 58 . 70) (bol 57 . 57) (symbol 47 . 52) (punctuation 46 . 47) (symbol 37 . 46) (bol 37 . 37) (symbol 37 . 42) (bol 37 . 37) (shell-command 16 . 32) (bol 15 . 15) (symbol 5 . 8) (punctuation 4 . 5) (symbol 1 . 4) (bol 1 . 1) (symbol 5 . 8) (punctuation 4 . 5) (symbol 1 . 4) (bol 1 . 1))
+    )
+   )
+  :file "!home!cpper!workspace!c!reverse!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

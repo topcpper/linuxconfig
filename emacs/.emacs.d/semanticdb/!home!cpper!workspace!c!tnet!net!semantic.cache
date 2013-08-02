@@ -1,0 +1,58 @@
+;; Object net/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "net/"
+  :tables (list 
+   (semanticdb-table "client.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [215 232])
+            ("string.h" include (:system-flag t) nil [233 251])
+            ("stdlib.h" include (:system-flag t) nil [252 270])
+            ("errno.h" include (:system-flag t) nil [271 288])
+            ("sys/types.h" include (:system-flag t) nil [289 310])
+            ("sys/socket.h" include (:system-flag t) nil [311 333])
+            ("unistd.h" include (:system-flag t) nil [334 352])
+            ("netinet/in.h" include (:system-flag t) nil [362 384])
+            ("arpa/inet.h" include (:system-flag t) nil [405 426])
+            ("DEST_PORT" variable (:constant-flag t) nil [446 455])
+            ("DEST_IP_ADDRESS" variable (:constant-flag t) nil [470 485])
+            ("process_info" function
+               (:arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [533 539]))                  
+                :type "void")
+                nil [515 1120])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1130 1139])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1139 1152]))                  
+                :type "int")
+                nil [1121 2163]))          
+    :file "client.c"
+    :pointmax 2164
+    :fsize 2191
+    :lastmodtime '(20983 34866)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEST_PORT" . ((number "23456" 456 . 461)))
+          ("DEST_IP_ADDRESS" . ((string "\"\"" 486 . 488)))
+          )
+
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "makefile"
+    :pointmax 100
+    :fsize 99
+    :lastmodtime '(20958 29523)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!c!tnet!net!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

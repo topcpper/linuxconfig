@@ -1,0 +1,72 @@
+;; Object color/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "color/"
+  :tables (list 
+   (semanticdb-table "color.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [201 221])
+            ("print_in_middle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 258])
+                    ("starty" variable (:type "int") (reparse-symbol arg-sub-list) [258 269])
+                    ("startx" variable (:type "int") (reparse-symbol arg-sub-list) [269 281])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [282 293])
+                    ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [293 307]))                  
+                :type "void")
+                nil [223 308])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [319 328])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [329 342]))                  
+                :type "int")
+                nil [310 751])
+            ("print_in_middle" function
+               (:arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [774 788])
+                    ("starty" variable (:type "int") (reparse-symbol arg-sub-list) [788 799])
+                    ("startx" variable (:type "int") (reparse-symbol arg-sub-list) [799 811])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [812 823])
+                    ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 837]))                  
+                :type "void")
+                nil [753 1214]))          
+    :file "color.c"
+    :pointmax 1215
+    :fsize 1214
+    :lastmodtime '(20915 7797)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("color" function (:arguments ("color.o")) nil [1 49])
+            ("color.o" function (:arguments ("color.c")) nil [49 83])
+            ("clean" function nil nil [83 101]))          
+    :file "makefile"
+    :pointmax 101
+    :fsize 100
+    :lastmodtime '(20915 3794)
+    :unmatched-syntax '((shell-command 91 . 100) (bol 90 . 90))
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!color!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

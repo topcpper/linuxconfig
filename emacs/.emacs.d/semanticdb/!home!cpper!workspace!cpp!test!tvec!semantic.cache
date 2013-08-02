@@ -1,0 +1,30 @@
+;; Object tvec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tvec/"
+  :tables (list 
+   (semanticdb-table "tvec.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "tvec.cpp"
+    :pointmax 2068
+    :fsize 2067
+    :lastmodtime '(20845 71)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("vec" function (:arguments ("tvec.o")) nil [1 31])
+            ("tvec.o" function (:arguments ("tvec.cpp")) nil [31 64])
+            ("clean" function nil nil [64 82]))          
+    :file "makefile"
+    :pointmax 82
+    :fsize 81
+    :lastmodtime '(20843 48650)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!tvec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

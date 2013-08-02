@@ -1,0 +1,331 @@
+;; Object swaord2offer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "swaord2offer/"
+  :tables (list 
+   (semanticdb-table "3_insteadch_str.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [236 255])
+            ("string.h" include (:system-flag t) nil [256 275])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [277 297])
+            ("instead_char" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [317 329])
+                    ("schar" variable (:type "char") (reparse-symbol arg-sub-list) [330 341])
+                    ("str1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [342 360]))                  
+                :type "void")
+                nil [299 1087])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [1099 1108])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1108 1120]))                  
+                :type "int")
+                nil [1090 1229]))          
+    :file "3_insteadch_str.cpp"
+    :pointmax 1231
+    :fsize 1230
+    :lastmodtime '(20972 60342)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("search" function (:arguments ("10_numberof1.o")) nil [1 53])
+            ("10_numberof1.o" function (:arguments ("10_numberof1.cpp")) nil [53 110])
+            ("clean" function nil nil [110 128]))          
+    :file "makefile"
+    :pointmax 128
+    :fsize 127
+    :lastmodtime '(20975 17812)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3_merge_sorrted_array.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [226 245])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [247 267])
+            ("merge_array" function
+               (:arguments 
+                  ( ("array_a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [286 301])
+                    ("len_a" variable (:type "int") (reparse-symbol arg-sub-list) [302 312])
+                    ("array_b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [313 328])
+                    ("len_b" variable (:type "int") (reparse-symbol arg-sub-list) [329 339]))                  
+                :type "void")
+                nil [269 687])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [700 709])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [709 721]))                  
+                :type "int")
+                nil [691 927]))          
+    :file "3_merge_sorrted_array.cpp"
+    :pointmax 401
+    :fsize 927
+    :lastmodtime '(20972 61757)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "6_construct_btree.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [272 291])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [293 313])
+            ("Node" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [333 342])
+                    ("lchild" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [347 361])
+                    ("rchild" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [366 380]))                  
+                :type "struct")
+                nil [315 383])
+            ("get_nleft" function
+               (:arguments 
+                  ( ("dhead" variable (:type "int") (reparse-symbol arg-sub-list) [398 408])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [408 417])
+                    ("b_l" variable (:type "int") (reparse-symbol arg-sub-list) [417 425])
+                    ("b_r" variable (:type "int") (reparse-symbol arg-sub-list) [425 433]))                  
+                :type "int")
+                nil [384 613])
+            ("_construct" function
+               (:pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [633 641])
+                    ("a_l" variable (:type "int") (reparse-symbol arg-sub-list) [641 650])
+                    ("a_r" variable (:type "int") (reparse-symbol arg-sub-list) [650 658])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [658 666])
+                    ("b_l" variable (:type "int") (reparse-symbol arg-sub-list) [666 675])
+                    ("b_r" variable (:type "int") (reparse-symbol arg-sub-list) [675 683])
+                    ("head" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [683 695]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [615 1147])
+            ("_construct_back" function
+               (:pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1172 1180])
+                    ("a_l" variable (:type "int") (reparse-symbol arg-sub-list) [1180 1189])
+                    ("a_r" variable (:type "int") (reparse-symbol arg-sub-list) [1189 1197])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1197 1205])
+                    ("b_l" variable (:type "int") (reparse-symbol arg-sub-list) [1205 1214])
+                    ("b_r" variable (:type "int") (reparse-symbol arg-sub-list) [1214 1222])
+                    ("head" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1222 1234]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [1149 1696])
+            ("construct_bitree" function
+               (:pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1726 1735])
+                    ("a_len" variable (:type "int") (reparse-symbol arg-sub-list) [1735 1745])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1745 1754])
+                    ("b_len" variable (:type "int") (reparse-symbol arg-sub-list) [1755 1765]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [1702 1915])
+            ("construct_bitree_back" function
+               (:pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1946 1955])
+                    ("a_len" variable (:type "int") (reparse-symbol arg-sub-list) [1955 1965])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1965 1974])
+                    ("b_len" variable (:type "int") (reparse-symbol arg-sub-list) [1975 1985]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [1917 2140])
+            ("test" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2152 2160]))                  
+                :type "void")
+                nil [2142 2186])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [2200 2209])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2209 2221]))                  
+                :type "int")
+                nil [2191 3746]))          
+    :file "6_construct_btree.cpp"
+    :pointmax 3125
+    :fsize 3812
+    :lastmodtime '(20974 16152)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "8_find_min.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [249 268])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [270 290])
+            ("search_min" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [307 316])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [316 324]))                  
+                :type "int")
+                nil [292 918])
+            ("search_max" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [935 943])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [943 951]))                  
+                :type "int")
+                nil [920 1255])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [1268 1277])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1277 1289]))                  
+                :type "int")
+                nil [1259 1539]))          
+    :file "8_find_min.cpp"
+    :pointmax 1540
+    :fsize 1561
+    :lastmodtime '(20975 12985)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "9_fibonaacci.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [220 239])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [241 261])
+            ("fibonacci" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [278 284]))                  
+                :type "long")
+                nil [263 566])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [578 587])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [587 599]))                  
+                :type "int")
+                nil [569 664]))          
+    :file "9_fibonaacci.cpp"
+    :pointmax 665
+    :fsize 664
+    :lastmodtime '(20975 14965)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "10_numberof1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [218 237])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [239 259])
+            ("get1number" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [276 282]))                  
+                :type "int")
+                nil [261 469])
+            ("get1number_1" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [488 494]))                  
+                :type "int")
+                nil [471 599])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [611 620])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [620 632]))                  
+                :type "int")
+                nil [602 807]))          
+    :file "10_numberof1.cpp"
+    :pointmax 315
+    :fsize 807
+    :lastmodtime '(20975 18775)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!cpp!cpplib!swaord2offer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

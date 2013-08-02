@@ -1,0 +1,21 @@
+;; Object input/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "input/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("*.mb")) nil [1 19])
+            ("install-data-local" function nil nil [20 136])
+            ("uninstall-local" function nil nil [137 189]))          
+    :file "Makefile.am"
+    :pointmax 189
+    :fsize 188
+    :lastmodtime '(17484 65300)
+    :unmatched-syntax '((shell-command 155 . 188) (bol 154 . 154))
+    )
+   )
+  :file "!home!cpper!桌面!zhcon-0.2.5!input!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

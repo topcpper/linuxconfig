@@ -1,0 +1,33 @@
+;; Object semantic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semantic/"
+  :tables (list 
+   (semanticdb-table "cedet-semantic-settings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("semantic-load-enable-excessive-code-helpers" code nil nil [958 1003])
+            ("global-semantic-idle-completions-mode" code nil nil [1004 1046])
+            ("semantic-load-enable-semantic-debugging-helpers" code nil nil [1047 1096])
+            ("when" code nil nil [1097 1156])
+            ("eal-define-keys-commonly" code nil nil [1158 1235])
+            ("cedet-semantic-settings" function nil nil [1237 3963])
+            ("semantic-decorate-include-settings" function nil nil [3965 4160])
+            ("cedet-semantic-idle-settings" function nil nil [4162 5083])
+            ("semantic-decorate-mode-settings" function nil nil [5085 5380])
+            ("eal-define-keys" code nil nil [5382 5566])
+            ("eval-after-load" code nil nil [5568 5653])
+            ("eval-after-load" code nil nil [5655 5734])
+            ("eval-after-load" code nil nil [5736 5803])
+            ("eval-after-load" code nil nil [5805 5862])
+            ("cedet-semantic-settings" package nil nil [5864 5898]))          
+    :file "cedet-semantic-settings.el"
+    :pointmax 5899
+    :fsize 5898
+    :lastmodtime '(20985 51938)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!桌面!dea-read-only!my-lisps!cedet!semantic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

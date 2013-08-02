@@ -1,0 +1,82 @@
+;; Object vecrotate/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vecrotate/"
+  :tables (list 
+   (semanticdb-table "tvectotate.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [215 234])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [236 256])
+            ("reverse" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 303])
+                    ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [304 315])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [315 325]))                  
+                :prototype-flag t)
+                nil [258 326])
+            ("rotate" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [361 371])
+                    ("distance" variable (:type "int") (reparse-symbol arg-sub-list) [372 385]))                  
+                :prototype-flag t)
+                nil [328 386])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [397 406])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [406 418]))                  
+                :type "int")
+                nil [388 642])
+            ("reverse" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [678 689])
+                    ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [690 701])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [701 711]))                  )
+                nil [644 955]))          
+    :file "tvectotate.cpp"
+    :pointmax 951
+    :fsize 955
+    :lastmodtime '(20847 43602)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("rotate" function (:arguments ("tvectotate.o")) nil [1 49])
+            ("tvectotate.o" function (:arguments ("tvectotate.cpp")) nil [49 100])
+            ("clean" function nil nil [100 118]))          
+    :file "makefile"
+    :pointmax 118
+    :fsize 117
+    :lastmodtime '(20839 60834)
+    :unmatched-syntax '((shell-command 108 . 117) (bol 107 . 107) (shell-command 108 . 117) (bol 107 . 107))
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!vecrotate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

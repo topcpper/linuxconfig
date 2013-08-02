@@ -1,0 +1,314 @@
+;; Object display/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "display/"
+  :tables (list 
+   (semanticdb-table "fblinear4.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("assert.h" include (:system-flag t) nil [1113 1132])
+            ("endian.h" include (:system-flag t) nil [1133 1152])
+            ("global.h" include nil nil [1153 1172])
+            ("fblinear4.h" include nil nil [1173 1195])
+            ("FBLinear4::nibbletab_cfb4" variable
+               (:dereference 1
+                :type ("__u16" type (:type "class") nil nil))
+                nil [1197 1512])
+            ("FBLinear4" function
+               (:constructor-flag t
+                :parent "FBLinear4"
+                :type ("FBLinear4" type (:type "class") nil nil))
+                nil [1514 1610])
+            ("InitColorMap" function
+               (:parent "FBLinear4"
+                :type "void")
+                nil [1612 1645])
+            ("FillRect" function
+               (:parent "FBLinear4"
+                :arguments 
+                  ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [1691 1698])
+                    ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [1698 1705])
+                    ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [1705 1712])
+                    ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [1712 1719])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1719 1729]))                  
+                :type "void")
+                nil [1666 3283])
+            ("PutPixel" function
+               (:parent "FBLinear4"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3335 3341])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3341 3347])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [3347 3357]))                  
+                :type "void")
+                nil [3303 3585])
+            ("DrawChar" function
+               (:parent "FBLinear4"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3612 3618])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3618 3624])
+                    ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [3624 3631])
+                    ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [3631 3638])
+                    ("pFont" variable
+                       (:pointer 1
+                        :type ("CharBitMap" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3638 3663]))                  
+                :type "void")
+                nil [3587 4769]))          
+    :file "fblinear4.cpp"
+    :pointmax 4771
+    :fsize 4770
+    :lastmodtime '(17484 65279)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libdisplay.a")) nil [1 33])
+            ("libdisplay_a_SOURCES" variable (:default-value ("fbdev.cpp" "fblinear15.cpp" "fblinear16.cpp" "fblinear24.cpp" "fblinear32.cpp" "fblinear4.cpp" "fblinear8.cpp" "fbvgaplanes.cpp" "libggi.cpp" "lrmi.c" "vgadev.cpp")) nil [33 199])
+            ("EXTRA_DIST" variable (:default-value ("fbdev.h" "fblinear15.h" "fblinear16.h" "fblinear24.h" "fblinear32.h" "fblinear4.h" "fblinear8.h" "fbvgaplanes.h" "libggi.h" "lrmi.h" "vgadev.h")) nil [200 336])
+            ("INCLUDES" variable (:default-value ("-I${top_srcdir}/src")) nil [337 368]))          
+    :file "Makefile.am"
+    :pointmax 369
+    :fsize 368
+    :lastmodtime '(17484 65279)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fblinear4.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FBLINEAR4_H" variable (:constant-flag t) nil [1139 1150])
+            ("fbdev.h" include nil nil [1152 1170])
+            ("FBLinear4" type
+               (:superclasses 
+                  ( ("FBDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1234 1241])
+                    ("FBLinear4" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FBLinear4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1250 1262])
+                    ("PutPixel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1286 1292])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1292 1298])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1298 1308]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1272 1309])
+                    ("FillRect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [1332 1339])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [1339 1346])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [1346 1353])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [1353 1360])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1360 1370]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1318 1371])
+                    ("DrawChar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1394 1400])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1400 1406])
+                            ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [1406 1413])
+                            ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [1413 1420])
+                            ("pFont" variable
+                               (:pointer 1
+                                :type ("CharBitMap" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1420 1445]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1380 1446])
+                    ("private" label nil (reparse-symbol classsubparts) [1452 1460])
+                    ("InitColorMap" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1469 1489])
+                    ("nibbletab_cfb4" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("__u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1498 1528]))                  
+                :type "class")
+                nil [1197 1531]))          
+    :file "fblinear4.h"
+    :pointmax 1540
+    :fsize 1539
+    :lastmodtime '(17484 65279)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FBLINEAR4_H")
+          )
+
+    )
+   (semanticdb-table "fbdev.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FBDEV_H" variable (:constant-flag t) nil [1131 1138])
+            ("basefont.h" include nil nil [1140 1161])
+            ("graphdev.h" include nil nil [1162 1183])
+            ("FBDev" type
+               (:superclasses 
+                  ( ("GraphDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1222 1229])
+                    ("FBDev" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1238 1255])
+                    ("TryOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("OPEN_RC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1283 1308])
+                    ("TryOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [1360 1369])
+                            ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [1370 1379])
+                            ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [1380 1390]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1340 1391])
+                    ("PutPixel" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1423 1429])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1429 1435])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1435 1445]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1401 1450])
+                    ("FillRect" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x1" variable (:type "int") (reparse-symbol arg-sub-list) [1481 1488])
+                            ("y1" variable (:type "int") (reparse-symbol arg-sub-list) [1488 1495])
+                            ("x2" variable (:type "int") (reparse-symbol arg-sub-list) [1495 1502])
+                            ("y2" variable (:type "int") (reparse-symbol arg-sub-list) [1502 1509])
+                            ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1509 1519]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1459 1524])
+                    ("DrawChar" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1555 1561])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1561 1567])
+                            ("fg" variable (:type "int") (reparse-symbol arg-sub-list) [1567 1574])
+                            ("bg" variable (:type "int") (reparse-symbol arg-sub-list) [1574 1581])
+                            ("pFont" variable
+                               (:pointer 1
+                                :type ("CharBitMap" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1581 1606]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1533 1611])
+                    ("SwitchToGraph" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1621 1642])
+                    ("SwitchToText" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1651 1671])
+                    ("Name" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1680 1710])
+                    ("private" label nil (reparse-symbol classsubparts) [1716 1724])
+                    ("LinearSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("Vinfo" variable
+                               (:reference 1
+                                :type ("fb_var_screeninfo" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1759 1792]))                          
+                        :type ("OPEN_RC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1733 1793])
+                    ("VGAPlaneSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1827 1833]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1802 1834])
+                    ("mCurrentMode" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1843 1867])
+                    ("protected" label nil (reparse-symbol classsubparts) [1889 1899])
+                    ("mpBuf" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type "char")
+                        (reparse-symbol classsubparts) [1944 1963])
+                    ("mpBufLen" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1972 1992])
+                    ("mNextLine" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [2002 2033])
+                    ("mNextPlane" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [2070 2102])
+                    ("mFd" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2175 2190])
+                    ("blue16" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("__u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2199 2239])
+                    ("green16" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("__u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2199 2239])
+                    ("red16" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("__u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2199 2239]))                  
+                :type "class")
+                nil [1185 2242]))          
+    :file "fbdev.h"
+    :pointmax 2253
+    :fsize 2252
+    :lastmodtime '(17495 38255)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FBDEV_H")
+          )
+
+    )
+   )
+  :file "!home!cpper!桌面!zhcon-0.2.5!src!display!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

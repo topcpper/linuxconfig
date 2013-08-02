@@ -1,0 +1,30 @@
+;; Object maxline/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "maxline/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("maxline" function (:arguments ("maxline.o")) nil [1 45])
+            ("maxline.o" function (:arguments ("maxline.c")) nil [45 83])
+            ("clean" function nil nil [83 101]))          
+    :file "makefile"
+    :pointmax 101
+    :fsize 100
+    :lastmodtime '(20772 29562)
+    :unmatched-syntax '((shell-command 91 . 100) (bol 90 . 90) (symbol 83 . 88) (bol 83 . 83))
+    )
+   (semanticdb-table "maxline.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "maxline.c"
+    :pointmax 1939
+    :fsize 1938
+    :lastmodtime '(20772 54398)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!c!maxline!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

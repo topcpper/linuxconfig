@@ -1,0 +1,327 @@
+;; Object circle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "circle/"
+  :tables (list 
+   (semanticdb-table "circle.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [23 42])
+            ("vector" include (:system-flag t) nil [43 60])
+            ("fstream" include (:system-flag t) nil [61 79])
+            ("algorithm" include (:system-flag t) nil [80 100])
+            ("circlerectangle.h" include nil nil [101 129])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [200 220])
+            ("N" variable (:type "int") nil [222 231])
+            ("pattern" variable
+               (:pointer 1
+                :type ("Pattern" type (:type "class") nil nil))
+                nil [232 284])
+            ("actionS" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Action" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [285 308])
+            ("actionNew" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Action" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [315 340])
+            ("deletN" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [352 371])
+            ("rem" variable (:type "int") nil [372 382])
+            ("a" variable (:type "double") nil [393 402])
+            ("InitAction1" function
+               (:pointer 1
+                :arguments 
+                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [424 434])
+                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [434 444])
+                    ("x2" variable (:type "double") (reparse-symbol arg-sub-list) [444 454])
+                    ("y2" variable (:type "double") (reparse-symbol arg-sub-list) [454 464]))                  
+                :type ("Action" type (:type "class") nil nil))
+                nil [404 578])
+            ("sortCircle" function (:type "void") nil [581 930])
+            ("isShorter" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [947 963])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [963 979]))                  
+                :type "bool")
+                nil [932 1122])
+            ("main" function (:type "int") nil [1124 6096])
+            ("InitRectangle" function
+               (:pointer 1
+                :arguments 
+                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [6124 6134])
+                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [6135 6145]))                  
+                :type ("Rectangles" type (:type "class") nil nil))
+                nil [6098 6273])
+            ("InitCircle" function
+               (:pointer 1
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [6294 6303])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [6304 6313])
+                    ("r" variable (:type "double") (reparse-symbol arg-sub-list) [6314 6323]))                  
+                :type ("Circle" type (:type "class") nil nil))
+                nil [6275 6445])
+            ("RangewithR" function
+               (:arguments 
+                  ( ("contain" variable (:type ("Rectangles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6465 6484])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6484 6494]))                  
+                :type "double")
+                nil [6447 7139])
+            ("BounceCircles" function
+               (:arguments 
+                  ( ("A" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7179 7189])
+                    ("B" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7190 7200]))                  
+                :type "void")
+                nil [7160 8711])
+            ("Update" function
+               (:arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8750 8767]))                  
+                :type "void")
+                nil [8738 9561])
+            ("InitAction" function
+               (:arguments 
+                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [9581 9591])
+                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [9591 9601])
+                    ("x2" variable (:type "double") (reparse-symbol arg-sub-list) [9601 9611])
+                    ("y2" variable (:type "double") (reparse-symbol arg-sub-list) [9611 9621]))                  
+                :type ("Action" type (:type "class") nil nil))
+                nil [9563 9737])
+            ("deletAspace" function (:type "void") nil [9739 12163])
+            ("FindCorner" function
+               (:arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12181 12198]))                  
+                :type "void")
+                nil [12165 19123])
+            ("random" function
+               (:arguments 
+                  ( ("start" variable (:type "double") (reparse-symbol arg-sub-list) [19139 19152])
+                    ("end" variable (:type "double") (reparse-symbol arg-sub-list) [19153 19164]))                  
+                :type "double")
+                nil [19125 19227]))          
+    :file "circle.cpp"
+    :pointmax 19228
+    :fsize 20326
+    :lastmodtime '(20822 21991)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("cir" function (:arguments ("circle.o")) nil [1 35])
+            ("circle.o" function (:arguments ("circle.cpp" "circlerectangle.h")) nil [35 92])
+            ("clean" function nil nil [92 110]))          
+    :file "makefile"
+    :pointmax 101
+    :fsize 109
+    :lastmodtime '(20822 21531)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "circlerectangle.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("time.h" include (:system-flag t) nil [58 75])
+            ("MULTI" variable (:constant-flag t) nil [114 119])
+            ("MULTI" variable (:constant-flag t) nil [114 119])
+            ("CENTREX" variable (:constant-flag t) nil [143 150])
+            ("CENTREY" variable (:constant-flag t) nil [173 180])
+            ("PIE" variable (:constant-flag t) nil [194 197])
+            ("U" variable (:constant-flag t) nil [216 217])
+            ("F" variable (:constant-flag t) nil [248 249])
+            ("MINH" variable (:constant-flag t) nil [280 284])
+            ("INITH" variable (:constant-flag t) nil [314 319])
+            ("kt" variable (:constant-flag t) nil [334 336])
+            ("square" variable (:constant-flag t) nil [359 365])
+            ("area" variable (:constant-flag t) nil [387 391])
+            ("distance" variable (:constant-flag t) nil [431 439])
+            ("Action" type
+               (:typedef ("Action" type (:type "struct") nil nil)
+                :superclasses "Action"
+                :type "typedef")
+                nil [540 620])
+            ("Action" type
+               (:members 
+                  ( ("x1" variable (:type "double") (reparse-symbol classsubparts) [565 575])
+                    ("y1" variable (:type "double") (reparse-symbol classsubparts) [577 587])
+                    ("x2" variable (:type "double") (reparse-symbol classsubparts) [589 599])
+                    ("y2" variable (:type "double") (reparse-symbol classsubparts) [601 611]))                  
+                :type "struct")
+                nil [540 620])
+            ("Direct" type
+               (:typedef ("Direct" type (:type "struct") nil nil)
+                :superclasses "Direct"
+                :type "typedef")
+                nil [622 676])
+            ("Direct" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [647 656])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [658 667]))                  
+                :type "struct")
+                nil [622 676])
+            ("Circle" type
+               (:typedef ("Circle" type (:type "struct") nil nil)
+                :superclasses "Circle"
+                :type "typedef")
+                nil [678 811])
+            ("Circle" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [709 718])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [720 729])
+                    ("radius" variable (:type "double") (reparse-symbol classsubparts) [731 745])
+                    ("direct" variable (:type ("Direct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [747 761])
+                    ("eng" variable (:type "double") (reparse-symbol classsubparts) [763 774]))                  
+                :type "struct")
+                nil [678 811])
+            ("Rectangles" type
+               (:typedef ("Rectangles" type (:type "struct") nil nil)
+                :superclasses "Rectangles"
+                :type "typedef")
+                nil [813 875])
+            ("Rectangles" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [842 851])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [853 862]))                  
+                :type "struct")
+                nil [813 875])
+            ("Pattern" type
+               (:typedef ("Pattern" type (:type "struct") nil nil)
+                :superclasses "Pattern"
+                :type "typedef")
+                nil [877 1107])
+            ("Pattern" type
+               (:members 
+                  ( ("N" variable (:type "int") (reparse-symbol classsubparts) [903 909])
+                    ("h" variable (:type "double") (reparse-symbol classsubparts) [917 926])
+                    ("energy" variable (:type "double") (reparse-symbol classsubparts) [951 965])
+                    ("fe" variable (:type "double") (reparse-symbol classsubparts) [972 982])
+                    ("circles" variable
+                       (:pointer 2
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [989 1006])
+                    ("container" variable
+                       (:pointer 1
+                        :type ("Rectangles" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1019 1041])
+                    ("flag" variable (:type "double") (reparse-symbol classsubparts) [1054 1066]))                  
+                :type "struct")
+                nil [877 1107])
+            ("PackingMain" function
+               (:prototype-flag t
+                :type "int")
+                nil [1109 1127])
+            ("InitRectangle" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [1154 1164])
+                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [1165 1175]))                  
+                :type ("Rectangles" type (:type "class") nil nil))
+                nil [1128 1176])
+            ("InitCircle" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [1196 1205])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [1206 1215])
+                    ("r" variable (:type "double") (reparse-symbol arg-sub-list) [1215 1224]))                  
+                :type ("Circle" type (:type "class") nil nil))
+                nil [1177 1225])
+            ("Update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1238 1255]))                  
+                :type "void")
+                nil [1226 1256])
+            ("InitAction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [1275 1285])
+                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [1285 1295])
+                    ("x2" variable (:type "double") (reparse-symbol arg-sub-list) [1295 1305])
+                    ("y2" variable (:type "double") (reparse-symbol arg-sub-list) [1305 1315]))                  
+                :type ("Action" type (:type "class") nil nil))
+                nil [1257 1316])
+            ("FindCorner" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1333 1350]))                  
+                :type "void")
+                nil [1317 1351])
+            ("deletAspace" function
+               (:prototype-flag t
+                :type "void")
+                nil [1352 1371])
+            ("random" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start" variable (:type "double") (reparse-symbol arg-sub-list) [1386 1399])
+                    ("end" variable (:type "double") (reparse-symbol arg-sub-list) [1400 1411]))                  
+                :type "double")
+                nil [1372 1412]))          
+    :file "circlerectangle.h"
+    :pointmax 1413
+    :fsize 1577
+    :lastmodtime '(20822 21728)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MULTI" . ((semantic-list "(150)" 120 . 125)))
+          ("PIE" . ((number "3.1415926" 196 . 205)))
+          ("kt" . ((semantic-list "(1)" 335 . 338)))
+          ("area" (spp-arg-list ("c") 389 . 392) . ((semantic-list "(PIE*(c).radius*(c).radius)" 393 . 420)))
+          ("INITH" . ((semantic-list "(1.2)" 318 . 323)))
+          ("square" (spp-arg-list ("x") 363 . 366) . ((semantic-list "((x)*(x))" 367 . 376)))
+          ("F" . 
+              ((number "1" 248 . 249) (punctuation "*" 249 . 250) (symbol "pow" 250 . 253) (semantic-list "(10,-15)" 253 . 261)))
+          ("CENTREX" . ((semantic-list "(100)" 149 . 154)))
+          ("U" . 
+              ((number "1" 216 . 217) (punctuation "*" 217 . 218) (symbol "pow" 218 . 221) (semantic-list "(10,-20)" 221 . 229)))
+          ("MINH" . 
+              ((number "1" 283 . 284) (punctuation "*" 284 . 285) (symbol "pow" 285 . 288) (semantic-list "(10,-5)" 288 . 295)))
+          ("CENTREY" . ((semantic-list "(40)" 179 . 183)))
+          ("distance" (spp-arg-list ("x1" "y1" "x2" "y2") 437 . 453) . ((symbol "sqrt" 454 . 458) (semantic-list "((square((x1)-(x2))+square((y1)-(y2))))" 458 . 497)))
+          )
+
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!circle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,136 @@
+;; Object tconst/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tconst/"
+  :tables (list 
+   (semanticdb-table "tconst.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [211 230])
+            ("string" include (:system-flag t) nil [231 248])
+            ("stdlib.h" include (:system-flag t) nil [249 268])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [269 289])
+            ("testconst" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [304 318]))                  
+                :type "int")
+                nil [290 319])
+            ("testconst" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [334 342]))                  
+                :type "int")
+                nil [320 343])
+            ("testbook" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [367 374])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("position" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [397 418]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [379 492])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("position" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [515 536]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [497 605])
+                    ("testbook" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [620 635]))                          
+                        :type ("testbook" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [610 772])
+                    ("tprint" function (:type "void") (reparse-symbol classsubparts) [778 951])
+                    ("tprint" function (:type "void") (reparse-symbol classsubparts) [956 1128])
+                    ("private" label nil (reparse-symbol classsubparts) [1139 1147])
+                    ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1152 1165])
+                    ("str" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1170 1195])
+                    ("a" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1200 1224])
+                    ("str1" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1229 1248]))                  
+                :type "class")
+                nil [345 1256])
+            ("testbook::str" variable
+               (:constant-flag t
+                :type ("string" type (:type "class") nil nil))
+                nil [1257 1295])
+            ("main" function
+               (:arguments 
+                  ( ("arg" variable (:type "int") (reparse-symbol arg-sub-list) [1387 1396])
+                    ("arv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1396 1408]))                  
+                :type "int")
+                nil [1378 1632])
+            ("testconst" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1647 1655]))                  
+                :type "int")
+                nil [1633 1694])
+            ("testconst" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1710 1724]))                  
+                :type "int")
+                nil [1696 1753])
+            ("str" variable (:type ("string" type (:type "class") nil nil)) nil [1755 1766]))          
+    :file "tconst.cpp"
+    :pointmax 1767
+    :fsize 1766
+    :lastmodtime '(20987 5748)
+    :unmatched-syntax '((punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (symbol 1771 . 1772) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (symbol 1771 . 1775) (punctuation 1770 . 1771) (symbol 1767 . 1770) (symbol 1771 . 1774) (punctuation 1770 . 1771) (symbol 1767 . 1770) (symbol 1771 . 1772) (punctuation 1770 . 1771) (symbol 1767 . 1770) (symbol 1771 . 1772) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1770 . 1771) (symbol 1767 . 1770) (punctuation 1771 . 1772) (symbol 1768 . 1771) (symbol 1768 . 1771) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (symbol 1760 . 1765) (punctuation 1759 . 1760) (symbol 1753 . 1759) (punctuation 1752 . 1753) (symbol 1748 . 1752) (symbol 1748 . 1752) (symbol 1748 . 1750) (symbol 1748 . 1752) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751) (punctuation 1751 . 1752) (symbol 1748 . 1751))
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("tcon" function (:arguments ("tconst.o")) nil [1 37])
+            ("tconst.o" function (:arguments ("tconst.cpp")) nil [37 76])
+            ("clean" function nil nil [76 94]))          
+    :file "makefile"
+    :pointmax 94
+    :fsize 93
+    :lastmodtime '(20820 11521)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!workspace!cpp!test!tconst!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

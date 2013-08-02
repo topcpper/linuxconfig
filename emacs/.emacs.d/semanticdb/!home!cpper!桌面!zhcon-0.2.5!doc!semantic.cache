@@ -1,0 +1,21 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("zhcon.1.in" "poem.big5" "poem.gb" "poem.gb.utf8" "bpsf.txt" "manual.tex" "manual.dvi" "manual.ps" "README.html" "default.css" "html.tar.gz")) nil [45 177])
+            ("install-data-local" function nil nil [178 300])
+            ("uninstall-local" function nil nil [301 349]))          
+    :file "Makefile.am"
+    :pointmax 349
+    :fsize 348
+    :lastmodtime '(17495 40318)
+    :unmatched-syntax '((shell-command 319 . 348) (bol 318 . 318))
+    )
+   )
+  :file "!home!cpper!桌面!zhcon-0.2.5!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

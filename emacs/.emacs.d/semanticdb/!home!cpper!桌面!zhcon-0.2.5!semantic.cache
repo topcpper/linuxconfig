@@ -1,0 +1,21 @@
+;; Object zhcon-0.2.5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zhcon-0.2.5/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [1 28])
+            ("EXTRA_DIST" variable (:default-value ("README.utf8" "README.BSD" "README.gpm" "bootstrap")) nil [29 86])
+            ("SUBDIRS" variable (:default-value ("src" "doc" "input" "font" "debian" "tools")) nil [86 128]))          
+    :file "Makefile.am"
+    :pointmax 129
+    :fsize 128
+    :lastmodtime '(17495 11222)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!cpper!桌面!zhcon-0.2.5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

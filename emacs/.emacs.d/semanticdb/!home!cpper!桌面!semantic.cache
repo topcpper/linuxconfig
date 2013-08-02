@@ -1,0 +1,548 @@
+;; Object 桌面/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "桌面/"
+  :tables (list 
+   (semanticdb-table "temp.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CONFIG_MSG_ST" type
+               (:typedef ("_config_msg" type (:type "struct") nil nil)
+                :superclasses "_config_msg"
+                :type "typedef")
+                nil [14 193])
+            ("_config_msg" type
+               (:members 
+                  ( ("uiConfigType" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44 72])
+                    ("uiBehavor" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [88 113])
+                    ("uData" variable (:type ("CONFIG_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [134 155]))                  
+                :type "struct")
+                nil [14 193])
+            ("CONFIG_TYPE_E" type
+               (:typedef ("_config_type" type (:type "enum") nil nil)
+                :superclasses "_config_type"
+                :type "typedef")
+                nil [208 653])
+            ("_config_type" type
+               (:members 
+                  ( ("CONFIG_TYPE_TIMEOUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [276 296])
+                    ("CONFIG_TYPE_DISTRICT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [313 334])
+                    ("CONFIG_TYPE_RUEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [351 368])
+                    ("CONFIG_TYPE_ACESSLIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [388 410])
+                    ("CONFIG_TYPE_CHECKLIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [428 450])
+                    ("CONFIG_TYPE_MAINTAIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [468 489])
+                    ("CONFIG_TYPE_CYCLEUPLOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [505 529])
+                    ("CONFIG_TYPE_SERVER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [545 564])
+                    ("CONFIG_TYPE_RENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [585 602])
+                    ("CFG_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [624 639]))                  
+                :type "enum")
+                nil [208 653])
+            ("CONFIG_DATA_U" type
+               (:typedef ("_config_data" type (:type "union") nil nil)
+                :superclasses "_config_data"
+                :type "typedef")
+                nil [667 1004])
+            ("_config_data" type
+               (:members 
+                  ( ("stDistrict" variable (:type ("DISTRICT_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [697 732])
+                    ("stRuel" variable (:type ("RUEL_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [734 765])
+                    ("stAccesslist" variable (:type ("ACESSLIST_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [767 804])
+                    ("stChecklist" variable (:type ("CHECKLIST_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [806 842])
+                    ("stMaintain" variable (:type ("MAINTAIN_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [844 879])
+                    ("stCycleupload" variable (:type ("CYCLEUPLOAD_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [881 919])
+                    ("stServer" variable (:type ("SERVER_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [922 955])
+                    ("stRent" variable (:type ("RENT_CONFIG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [957 988]))                  
+                :type "union")
+                nil [667 1004])
+            ("CONFIG_MSG_ST" type
+               (:typedef ("_config_msg" type (:type "struct") nil nil)
+                :superclasses "_config_msg"
+                :type "typedef")
+                nil [1019 1198])
+            ("_config_msg" type
+               (:members 
+                  ( ("uiConfigType" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1049 1077])
+                    ("uiBehavor" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1093 1118])
+                    ("uData" variable (:type ("CONFIG_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1160]))                  
+                :type "struct")
+                nil [1019 1198])
+            ("MSG_DATA_U" type
+               (:typedef ("_msg_data" type (:type "union") nil nil)
+                :superclasses "_msg_data"
+                :type "typedef")
+                nil [1211 1621])
+            ("_msg_data" type
+               (:members 
+                  ( ("stControlMsg" variable (:type ("CONTROL_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1238 1270])
+                    ("stQueryMsg" variable (:type ("QUERY_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1291 1321])
+                    ("stInfoMsg" variable (:type ("INFORMATION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1344 1373])
+                    ("stConfigMsg" variable (:type ("CONFIG_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1397 1428])
+                    ("stUpdataMsg" variable (:type ("UPDATA_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1451 1482])
+                    ("stEventMsg" variable (:type ("EVENT_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1504 1534])
+                    ("stExceptionMsg" variable (:type ("EXCEPTION_MSG_ST" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1557 1591]))                  
+                :type "union")
+                nil [1211 1621])
+            ("MSG_TYPE_E" type
+               (:typedef ("_msg_type" type (:type "enum") nil nil)
+                :superclasses "_msg_type"
+                :type "typedef")
+                nil [1623 1975])
+            ("_msg_type" type
+               (:members 
+                  ( ("MSG_TYPE_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1664 1681])
+                    ("MSG_TYPE_QUERY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1699 1714])
+                    ("MSG_TYPE_INFORMATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1738 1759])
+                    ("MSG_TYPE_CONFIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1777 1793])
+                    ("MSG_TYPE_UPDATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1832 1848])
+                    ("MSG_TYPE_EVENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1871 1886])
+                    ("MSG_TYPE_EXCEPTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1910 1929])
+                    ("MSG_TYPE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1949 1964]))                  
+                :type "enum")
+                nil [1623 1975])
+            ("MSG_ST" type
+               (:typedef ("_msg" type (:type "struct") nil nil)
+                :superclasses "_msg"
+                :type "typedef")
+                nil [1992 2135])
+            ("_msg" type
+               (:members 
+                  ( ("uiMsgType" variable (:type "long") (reparse-symbol classsubparts) [2054 2076])
+                    ("uMsgData" variable (:type ("MSG_DATA_U" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2091 2112]))                  
+                :type "struct")
+                nil [1992 2135])
+            ("MSG_Parse" function
+               (:arguments 
+                  ( ("" variable (:type ("IN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2153 2160])
+                    ("pcMsg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2156 2168])
+                    ("MSG_ST" variable (:type ("OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2169 2181])
+                    ("" variable (:type ("pstMsg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2181 2188]))                  
+                :type "int")
+                nil [2139 7760]))          
+    :file "temp.c"
+    :pointmax 7761
+    :fsize 8296
+    :lastmodtime '(20968 43064)
+    :unmatched-syntax '((punctuation 2180 . 2181))
+    )
+   (semanticdb-table "teststr.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [200 219])
+            ("stdio.h" include (:system-flag t) nil [220 238])
+            ("stdlib.h" include (:system-flag t) nil [239 258])
+            ("deal_dada" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 287])
+                    ("deli" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [288 302])
+                    ("data_number" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [302 321])
+                    ("strdeli" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [322 343]))                  
+                :type "void")
+                nil [261 344])
+            ("getdata" function
+               (:prototype-flag t
+                :type "void")
+                nil [345 360])
+            ("DATA_ROW" variable (:constant-flag t) nil [369 377])
+            ("DATA_NUMBER" variable (:constant-flag t) nil [389 400])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [416 425])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [426 439]))                  
+                :type "int")
+                nil [407 1132])
+            ("deal_dada" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1183 1194])
+                    ("deli" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1195 1209])
+                    ("data_number" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1209 1228])
+                    ("strdeli" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1229 1250]))                  
+                :type "void")
+                nil [1168 1424])
+            ("getdata" function (:type "void") nil [1426 1894])
+            ("delwin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("win_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1899]))                  
+                :type "int")
+                nil [1899 1899])
+            ("delwin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("win_load" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1899]))                  
+                :type "int")
+                nil [1899 1899])
+            ("delwin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("win_location" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1899]))                  
+                :type "int")
+                nil [1899 1899])
+            ("delwin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("win_speed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1899]))                  
+                :type "int")
+                nil [1899 1899])
+            ("delwin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("win_height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1899]))                  
+                :type "int")
+                nil [1899 1899])
+            ("buf_time" variable
+               (:dereference 1
+                :type "char")
+                nil [1899 1899])
+            ("temp_buf" variable
+               (:dereference 1
+                :type "char")
+                nil [1899 1899])
+            ("FALSE" variable (:type "int") nil [1899 1899]))          
+    :file "teststr.c"
+    :pointmax 1899
+    :fsize 1962
+    :lastmodtime '(20963 46187)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DATA_ROW" . ((number "10" 378 . 380)))
+          ("DATA_NUMBER" . ((number "30" 401 . 403)))
+          )
+
+    )
+   (semanticdb-table "interface.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [207 225])
+            ("stdlib.h" include (:system-flag t) nil [226 245])
+            ("fcntl.h" include (:system-flag t) nil [246 264])
+            ("unistd.h" include (:system-flag t) nil [265 284])
+            ("bmp.h" include nil nil [285 301])
+            ("string.h" include (:system-flag t) nil [302 321])
+            ("interface.h" include nil nil [323 345])
+            ("lcd.h" include nil nil [346 362])
+            ("win_top" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [363 378])
+            ("win_bottle" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [379 397])
+            ("win_time" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [399 416])
+            ("win_location" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [417 438])
+            ("win_load" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [439 456])
+            ("win_speed" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [457 475])
+            ("win_height" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [476 495])
+            ("win_info" variable (:type ("WINDOW" type (:type "class") nil nil)) nil [496 513])
+            ("LINES" variable (:constant-flag t) nil [523 528])
+            ("COLS" variable (:constant-flag t) nil [541 545])
+            ("g_fd" variable (:type "int") nil [551 561])
+            ("datetostr" function
+               (:arguments 
+                  ( ("thedate" variable (:type ("smt_date" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [578 602])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [602 613]))                  
+                :type "void")
+                nil [563 910])
+            ("timetostr" function
+               (:arguments 
+                  ( ("thetime" variable (:type ("smt_time" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [927 952])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [952 963]))                  
+                :type "void")
+                nil [912 1164])
+            ("refresh_time" function (:type "void") nil [1168 1481])
+            ("refresh_speed" function
+               (:arguments 
+                  ( ("speed" variable (:type "float") (reparse-symbol arg-sub-list) [1501 1514]))                  
+                :type "void")
+                nil [1482 1673])
+            ("refresh_load" function
+               (:arguments 
+                  ( ("load" variable (:type "float") (reparse-symbol arg-sub-list) [1693 1704]))                  
+                :type "void")
+                nil [1675 1857])
+            ("refresh_location" function
+               (:arguments 
+                  ( ("plocation" variable
+                       (:pointer 1
+                        :type ("LOCATION_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1882 1906]))                  
+                :type "void")
+                nil [1859 2426])
+            ("refresh_height" function
+               (:arguments 
+                  ( ("height" variable (:type "float") (reparse-symbol arg-sub-list) [2449 2462]))                  
+                :type "void")
+                nil [2428 2619])
+            ("refresh_info" function
+               (:arguments 
+                  ( ("pinfo" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2639 2658])
+                    ("display_time" variable (:type "int") (reparse-symbol arg-sub-list) [2659 2676]))                  
+                :type "void")
+                nil [2621 2877])
+            ("refresh_state" function
+               (:arguments 
+                  ( ("pstateMsg" variable
+                       (:pointer 1
+                        :type ("STATES_ST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3004]))                  
+                :type "void")
+                nil [2963 3182])
+            ("set_date" function
+               (:arguments 
+                  ( ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3197 3214]))                  
+                :type "void")
+                nil [3183 5764])
+            ("set_timeout" function
+               (:arguments 
+                  ( ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5782 5799]))                  
+                :type "void")
+                nil [5765 6085])
+            ("set_trvaltime" function
+               (:arguments 
+                  ( ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6105 6122]))                  
+                :type "void")
+                nil [6086 6378])
+            ("set_mileage" function
+               (:arguments 
+                  ( ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6396 6413]))                  
+                :type "void")
+                nil [6379 6664])
+            ("set_rent" function
+               (:arguments 
+                  ( ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6679 6696]))                  
+                :type "void")
+                nil [6665 7589])
+            ("deal_win_set0" function
+               (:arguments 
+                  ( ("strs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7610 7623])
+                    ("prefix" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7623 7637])
+                    ("suffix" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7637 7652])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [7653 7664])
+                    ("number_dealta" variable (:type "int") (reparse-symbol arg-sub-list) [7665 7683])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7683 7694])
+                    ("win_set" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7694 7710])
+                    ("curdelta" variable (:type "int") (reparse-symbol arg-sub-list) [7711 7724]))                  
+                :type "void")
+                nil [7590 8623])
+            ("win_admin" function (:type "void") nil [8624 9532])
+            ("win_run" function (:type "void") nil [9535 10300])
+            ("welcom" function (:type "void") nil [10306 10848])
+            ("werase" function
+               (:arguments 
+                  ( ("local_win" variable (:type ("WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10865 10883]))                  
+                :type "void")
+                nil [10853 11136])
+            ("mvwprintw" function
+               (:arguments 
+                  ( ("local_win" variable (:type ("WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11153 11171])
+                    ("beginy" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11171 11188])
+                    ("beginx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11188 11204])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11204 11220]))                  
+                :type "void")
+                nil [11138 11363])
+            ("win_print_middle" function
+               (:arguments 
+                  ( ("local_win" variable (:type ("WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11386 11404])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11405 11416]))                  
+                :type "void")
+                nil [11364 11678])
+            ("win_print_top" function
+               (:arguments 
+                  ( ("local_win" variable (:type ("WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11700 11718])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11719 11731]))                  
+                :type "void")
+                nil [11681 11794])
+            ("win_print_bottle" function
+               (:arguments 
+                  ( ("local_win" variable (:type ("WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11819 11837])
+                    ("strs" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11838 11850])
+                    ("str_number" variable (:type "int") (reparse-symbol arg-sub-list) [11851 11867]))                  
+                :type "void")
+                nil [11797 12162])
+            ("init_lcd" function (:type "int") nil [12164 12293])
+            ("exit_lcd" function (:type "void") nil [12295 12354])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12366 12375])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12376 12389]))                  
+                :type "int")
+                nil [12357 12469])
+            ("welcom_error" function
+               (:arguments 
+                  ( ("local_win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12489 12508]))                  
+                :type "void")
+                nil [12470 12640])
+            ("init_window" function
+               (:arguments 
+                  ( ("plocal_win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12659 12679])
+                    ("beginy" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12680 12697])
+                    ("beginx" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12698 12714])
+                    ("height" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12733 12750])
+                    ("width" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12750 12765])
+                    ("color" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12765 12780]))                  
+                :type "void")
+                nil [12642 12945]))          
+    :file "interface.c"
+    :pointmax 12947
+    :fsize 13260
+    :lastmodtime '(20987 47340)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LINES" . ((number "240" 529 . 532)))
+          ("COLS" . ((number "400" 546 . 549)))
+          )
+
+    )
+   )
+  :file "!home!cpper!桌面!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

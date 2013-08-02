@@ -1,0 +1,59 @@
+;; Object clock/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clock/"
+  :tables (list 
+   (semanticdb-table "clock.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [191 211])
+            ("unistd.h" include (:system-flag t) nil [212 231])
+            ("time.h" include (:system-flag t) nil [232 249])
+            ("string.h" include (:system-flag t) nil [250 269])
+            ("stdlib.h" include (:system-flag t) nil [270 289])
+            ("pthread.h" include (:system-flag t) nil [290 310])
+            ("errno.h" include (:system-flag t) nil [311 329])
+            ("error_quit" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [346 356]))                  
+                :type "void")
+                nil [330 390])
+            ("normal_quit" function
+               (:pointer 1
+                :arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [409 419]))                  
+                :type "void")
+                nil [391 599])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [610 615]))                  
+                :type "int")
+                nil [601 1304]))          
+    :file "clock.c"
+    :pointmax 1305
+    :fsize 1304
+    :lastmodtime '(20915 9503)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("clock" function (:arguments ("clock.o")) nil [1 58])
+            ("clock.o" function (:arguments ("clock.c")) nil [58 92])
+            ("clean" function nil nil [92 110]))          
+    :file "makefile"
+    :pointmax 110
+    :fsize 109
+    :lastmodtime '(20915 9855)
+    :unmatched-syntax '((shell-command 100 . 109) (bol 99 . 99))
+    )
+   )
+  :file "!home!cpper!workspace!tui!test!clock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
