@@ -5,3 +5,18 @@
 	editor = emacsclient
 [color]
 	diff = true
+
+[diff]
+        tool = ediff
+
+[difftool "ediff"]
+        cmd = /home/cpper/bin/ediff.sh $LOCAL $REMOTE $MERGED
+
+[merge]
+        tool = ediff
+
+[mergetool "ediff"]
+        cmd = /home/cpper/bin/ediff.sh $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
+[alias]
+	ediff = difftool --tool=ediff
