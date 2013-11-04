@@ -1,9 +1,0 @@
-;; Object c/
-;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "c/"
-  :tables (list 
-    )
-  :file "!home!cpper!workspace!c!semantic.cache"
-  :semantic-tag-version "2.0pre7"
-  :semanticdb-version "2.0pre7"
-  )
