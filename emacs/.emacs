@@ -38,7 +38,7 @@
 ;;(require 'auto-complete-clang-setting)
 (require 'hide-block-setting)
 (require 'xsel-setting)
-
+(require 'python-mode-setting)
 
 
 ;;global-hot-key
@@ -53,5 +53,3 @@
 ;防止输入发截获c-@ ,改为 C-c m 
 (global-set-key "\C-cm" 'set-mark-command)
 
-;; 跳转到全局定义
-;;(global-set-key "\C-xg" 'cscope-find-global-definition-no-prompting)
