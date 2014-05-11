@@ -53,3 +53,9 @@
 ;防止输入发截获c-@ ,改为 C-c m 
 (global-set-key "\C-cm" 'set-mark-command)
 
+;; f5 refresh file
+(defun refresh-file ()
+  (interactive)
+  (revert-buffer t (not (buffer-modified-p)) t))
+
+(global-set-key [( f5)] 'refresh-file)
