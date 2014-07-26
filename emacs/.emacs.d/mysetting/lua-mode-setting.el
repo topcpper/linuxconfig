@@ -37,6 +37,19 @@
   ;; If there is more than one, they won't work right.
  '(lua-indent-level 4))
 
+(defun my-lua-mode-auto-pair ()
+  (interactive)
+  (make-local-variable 'skeleton-pair-alist)
+  (setq skeleton-pair-alist  '(
+    (?{ \n > _ \n ?} >)))
+  (setq skeleton-pair t)
+  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
+  (backward-char))
+(add-hook 'lua-mode-hook 'my-lua-mode-auto-pair)
+
 
 (provide 'lua-mode-setting)
 ;;; tools.el ends here

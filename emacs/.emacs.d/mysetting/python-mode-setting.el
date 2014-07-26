@@ -51,7 +51,18 @@
 )
 (add-hook 'python-mode-hook 'my-python-mode-hook)
 
-
+(defun my-python-mode-auto-pair ()
+  (interactive)
+  (make-local-variable 'skeleton-pair-alist)
+  (setq skeleton-pair-alist  '(
+    (?{ \n > _ \n ?} >)))
+  (setq skeleton-pair t)
+  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
+  (backward-char))
+(add-hook 'python-mode-hook 'my-python-mode-auto-pair)
 
 (provide 'python-mode-setting)
 ;;; python-mode-setting.el ends here
