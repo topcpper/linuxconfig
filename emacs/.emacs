@@ -39,8 +39,8 @@
 (require 'hide-block-setting)
 (require 'xsel-setting)
 (require 'python-mode-setting)
-
-
+(require 'lua-mode-setting)
+;;(require 'autopair-setting)
 ;;global-hot-key
 (global-set-key "\C-xe" 'open-init-file)
 (global-set-key (kbd "C-w") 'backward-kill-word)
@@ -59,3 +59,7 @@
   (revert-buffer t (not (buffer-modified-p)) t))
 
 (global-set-key [( f5)] 'refresh-file)
+
+;; 设置默认编码方式
+(setq default-buffer-file-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
