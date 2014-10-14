@@ -1,4 +1,10 @@
-((("auto-complete" .
+((("color-theme-initialize" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("auto-complete" .
    [0 0 0 0 0 0 0 0 2 0 1 0 0])
   ("pointer" .
    [1 0 0 0 0 0 0])

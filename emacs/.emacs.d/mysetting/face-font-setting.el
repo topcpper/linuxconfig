@@ -23,6 +23,7 @@
 ;; 
 
 ;;; Code:
+(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme")
 
 ;; default to better frame titles
 (setq frame-title-format
@@ -134,10 +135,13 @@ scroll-conservatively 10000)
 
 
 ;背景颜色
-(set-background-color "gray")
+;; (set-background-color "gray")
 
-;(require 'color-theme)
+;; (require 'color-theme)
+;; (color-theme-initialize)
+;; (require 'color-theme-cpper)
 ;(color-theme-gnome2)
+
 
 ;;set default font
 ;;(set-face-attribute 'default nil :font "Monaco 10")

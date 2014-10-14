@@ -77,7 +77,7 @@
 ;; (setq-default semantic-idle-scheduler-idle-time 432000)
 
 (setq semanticdb-default-save-directory
-      (expand-file-name "~/.emacs.d/semanticdb"))
+      (expand-file-name "~/semanticdb"))
 
 (require 'semantic-ia)
 (require 'semantic-gcc)

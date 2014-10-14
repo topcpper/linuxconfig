@@ -63,3 +63,6 @@
 ;; 设置默认编码方式
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;; add cscope
+(require 'xcscope)

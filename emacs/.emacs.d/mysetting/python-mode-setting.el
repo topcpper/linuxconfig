@@ -44,13 +44,6 @@
  '(ediff-current-diff-A ((((class color)) (:background "yellow" :foreground "blue"))))
  '(ediff-current-diff-B ((((class color)) (:background "yellow" :foreground "black" :weight bold)))))
 
-
-(defun my-python-mode-hook()
-    (local-set-key  (kbd "C-c C-k") 'kill-region)
-    (local-set-key  (kbd "C-c C-p") 'python-mark-block)
-)
-(add-hook 'python-mode-hook 'my-python-mode-hook)
-
 (defun my-python-mode-auto-pair ()
   (interactive)
   (make-local-variable 'skeleton-pair-alist)
@@ -63,6 +56,14 @@
   (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
   (backward-char))
 (add-hook 'python-mode-hook 'my-python-mode-auto-pair)
+
+(defun my-python-mode-hook()
+    (local-set-key  (kbd "C-c C-k") 'kill-region)
+    (local-set-key  (kbd "C-c C-p") 'python-mark-block)
+)
+(add-hook 'python-mode-hook 'my-python-mode-hook)
+
+
 
 (provide 'python-mode-setting)
 ;;; python-mode-setting.el ends here
