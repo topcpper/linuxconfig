@@ -66,3 +66,8 @@
 
 ;; add cscope
 (require 'xcscope)
+
+;; the 'untablity-file is a micro ,replace the tab to blank and save the file
+(fset 'my-untablity-file
+   [?\C-x ?h ?\M-x ?u ?n ?t ?a tab return ?\C-x ?\C-s])
+(global-set-key (kbd "C-x t") 'my-untablity-file)
