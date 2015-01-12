@@ -25,7 +25,7 @@
 ;;; Code:
 
 ;; auto-complete
-(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete-1.3.1")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
 (require 'auto-complete-config)
 (require 'auto-complete)
 (ac-config-default)
@@ -45,30 +45,31 @@
                        (cons "\\." '(ac-source-semantic)))
           (add-to-list 'ac-omni-completion-sources
                        (cons "->" '(ac-source-semantic)))
-		  ;;ac-sources
+ 		  ;;ac-sources
           (setq ac-sources '(ac-source-semantic
                              ac-source-yasnippet
-			     ac-source-imenu
-			     ac-source-symbols
-			     ac-source-filename
-			     ac-source-gtags
-			     ac-source-abbrev
-			     ac-source-functions
-			     ac-source-variables
-			     ac-source-semantic-raw
-			     ac-source-files-in-current-dir
-			     ac-source-features
-			     ;; ac-source-available-p
-			     ;; ac-source-eclim
-			     ;; ac-source-rcodetools
-			     ;; ac-source-entity
-			     ac-source-words-in-buffer
-			     ;;ac-source-words-in-all-buffer
-			     ac-source-yasnippet
-			     )
-				)
+ 			     ac-source-imenu
+ 			     ac-source-symbols
+ 			     ac-source-filename
+ 			     ac-source-gtags
+ 			     ac-source-abbrev
+ 			     ac-source-functions
+ 			     ac-source-variables
+ 			     ac-source-semantic-raw
+ 			     ac-source-files-in-current-dir
+ 			     ac-source-features
+ 			     ;; ac-source-available-p
+ 			     ;; ac-source-eclim
+ 			     ;; ac-source-rcodetools
+ 			     ;; ac-source-entity
+ 			     ac-source-words-in-buffer
+ 			     ;;ac-source-words-in-all-buffer
+ 			     ;; ac-source-yasnippet
+ 			     )
+ 				)
   ))
 (setq ac-auto-show-menu 0.8)
+(define-key ac-mode-map  [(control tab)] 'auto-complete)  
  ;(define-key ac-complete-mode-map "<return>"   'nil)
   ;(define-key ac-complete-mode-map "RET"        'nil)
 ;;  (define-key ac-complete-mode-map "M-j"        'ac-complete)
